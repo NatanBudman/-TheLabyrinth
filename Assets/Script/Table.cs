@@ -27,7 +27,7 @@ public class Table : MonoBehaviour
         
         }
 
-        if ((Input.GetAxisRaw("Horizontal") < -0) && (currentRot.z >= 349 || currentRot.z <= 11)) 
+        if ((Input.GetAxisRaw("Horizontal") < 0) && (currentRot.z >= 349 || currentRot.z <= 11)) 
         {
 
 
@@ -36,20 +36,21 @@ public class Table : MonoBehaviour
         }
 
 
-        if ((Input.GetAxisRaw("Vertical")  > 0) && (currentRot.x <= 10 || currentRot.x >= 348)) 
+        if ((Input.GetAxisRaw("Vertical")  > 0) && (currentRot.x <= 11 || currentRot.x >= 349)) 
         {
 
 
-            transform.Rotate(speed * Time.deltaTime * 1, 0, 0);
+            transform.Rotate(speed * Time.deltaTime * -1, 0, 0);
 
+            Debug.Log("adelante");
         }
 
-        if ((Input.GetAxisRaw("Vertical") < -0) && (currentRot.x >= 349 || currentRot.x <= 11)) 
+        if ((Input.GetAxisRaw("Vertical") < 0) && (currentRot.x >= 348 || currentRot.x <= 10)) 
         {
 
 
-            transform.Rotate (speed * Time.deltaTime * -1, 0, 0) ;
-
+            transform.Rotate (speed * Time.deltaTime * 1, 0, 0) ;
+            Debug.Log("atras");
         }
     }
 }
