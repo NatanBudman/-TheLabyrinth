@@ -10,7 +10,7 @@ public class RandomSystem : MonoBehaviour
    }
 
 
-   public T Roulette<T>(Dictionary<T, float> items)
+   public static T Roulette<T>(Dictionary<T, float> items)
    {
       float total = 0;
 
@@ -34,5 +34,26 @@ public class RandomSystem : MonoBehaviour
       }
 
       return default(T);
+   }
+   
+   public static void Shuffle<T>(T[] items)
+   {
+      for (int i = 0; i < items.Length; i++)
+      {
+         int random = Random.Range(0, items.Length);
+         T randomItem = items[i];
+         items[random] = items[i];
+         items[i] = randomItem;
+      }
+   }
+   public static void Shuffle<T>(List<T> items)
+   {
+      for (int i = 0; i < items.Count; i++)
+      {
+         int random = Random.Range(0, items.Count);
+         T randomItem = items[i];
+         items[random] = items[i];
+         items[i] = randomItem;
+      }
    }
 }
