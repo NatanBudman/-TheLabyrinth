@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
-    private Rigidbody _rb;
+     private Rigidbody _rb;
 
-    [SerializeField] private float _speed;
+    public float _speed;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class EntityBase : MonoBehaviour
 
     public void LookDir(Vector3 dir)
     {
-        if (dir == Vector3.zero) return;
+        if (dir == Vector3.zero) return; 
         dir.y = 0;
         transform.forward = dir;
     }
