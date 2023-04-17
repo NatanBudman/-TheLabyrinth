@@ -9,6 +9,7 @@ public class EntityBase : MonoBehaviour
 
     public float _speed;
 
+    public float jumpforce = 10f;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -21,6 +22,7 @@ public class EntityBase : MonoBehaviour
         _rb.velocity = dirrection;
     }
 
+
     public void LookDir(Vector3 dir)
     {
         if (dir == Vector3.zero) return; 
@@ -28,6 +30,15 @@ public class EntityBase : MonoBehaviour
         transform.forward = dir;
     }
 
+    public void Jump ()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _rb.AddForce(Vector3.up * jumpforce, ForceMode.Impulse);
+
+        }
+
+    }
     public Vector3 GetForward => transform.forward;
 
     public float GetVelocity => _rb.velocity.magnitude;
