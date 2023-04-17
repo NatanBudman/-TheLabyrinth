@@ -5,14 +5,15 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
-      Rigidbody _rb;
+    public Rigidbody _rb;
 
     public float _speed;
+    public float _speedRotate;
 
     public float jumpforce = 10f;
     private void Awake()
     {
-        _rb = GetComponent<Rigidbody>();
+        _rb =GetComponent<Rigidbody>();
     }
 
     public void Move(Vector3 dir)
@@ -28,6 +29,16 @@ public class EntityBase : MonoBehaviour
         if (dir == Vector3.zero) return; 
         dir.y = 0;
         transform.forward = dir;
+    }
+    
+        
+    public void LookRotate(Vector3 dir)
+    {
+
+        Quaternion targetRotation = Quaternion.LookRotation(dir);
+
+        transform.transform.rotation = Quaternion.RotateTowards(transform.transform.rotation,
+            targetRotation, _speedRotate * Time.deltaTime);
     }
 
     public void Jump ()

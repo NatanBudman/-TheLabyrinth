@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class ObstacleAvoidance : ISteering
     private float _radius;
     private float _angle;
     private Collider[] _colliders;
+    
     public ObstacleAvoidance(Transform origin,LayerMask layerMask, int ObstacleLenght, float radius, float angle)
     {
         _origin = origin;
