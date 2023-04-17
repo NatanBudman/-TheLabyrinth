@@ -12,7 +12,7 @@ public class EntityBase : MonoBehaviour
 
     private void Awake()
     {
-        _rb.GetComponent<Rigidbody>();
+        _rb =GetComponent<Rigidbody>();
     }
 
     public void Move(Vector3 dir)
