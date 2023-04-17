@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
-     private Rigidbody _rb;
+      Rigidbody _rb;
 
     public float _speed;
 
     private void Awake()
     {
-        _rb.GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
     public void Move(Vector3 dir)

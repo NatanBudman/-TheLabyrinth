@@ -4,15 +4,39 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    EntityBase _model;
+    FSM<PlayerStateEnum> _fsm;
+    List<PlayerStateBase<PlayerStateEnum>> _states;
+    void InitializedFSM()
     {
-        
-    }
+        _fsm = new FSM<PlayerStateEnum>();
+        _states = new List<PlayerStateBase<PlayerStateEnum>>();
+        var idle = new PlayerStateIdle<PlayerStateEnum>(PlayerStateEnum.Walking);
+        var move = new PlayerStateMove<PlayerStateEnum>(PlayerStateEnum.Idle);
 
-    // Update is called once per frame
-    void Update()
+        _states.Add(idle);
+        _states.Add(move);
+
+        idle.AddTransition(PlayerStateEnum.Walking, move);
+
+        move.AddTransition(PlayerStateEnum.Idle, idle);
+
+
+        for (int i = 0; i < _states.Count; i++)
+        {
+            _states[i].InitializedState(_model, _fsm);
+        }
+        _states = null;
+
+        _fsm.SetInit(idle);
+    }
+    private void Awake()
     {
-        
+        _model = GetComponent<EntityBase>();
+        InitializedFSM();
+    }
+    private void Update()
+    {
+        _fsm.OnUpdate();
     }
 }
