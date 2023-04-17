@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class EntityBase : MonoBehaviour
 {
-     private Rigidbody _rb;
+    public Rigidbody _rb;
 
     public float _speed;
+    public float _speedRotate;
 
     private void Awake()
     {
@@ -26,6 +27,16 @@ public class EntityBase : MonoBehaviour
         if (dir == Vector3.zero) return; 
         dir.y = 0;
         transform.forward = dir;
+    }
+    
+        
+    public void LookRotate(Vector3 dir)
+    {
+
+        Quaternion targetRotation = Quaternion.LookRotation(dir);
+
+        transform.transform.rotation = Quaternion.RotateTowards(transform.transform.rotation,
+            targetRotation, _speedRotate * Time.deltaTime);
     }
 
     public Vector3 GetForward => transform.forward;
