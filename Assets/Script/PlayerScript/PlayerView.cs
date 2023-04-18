@@ -12,7 +12,8 @@ public class PlayerView : MonoBehaviour
     }
     private void Update()
     {
-        var vel = _rb.velocity.magnitude;
-        anim.SetFloat("Velocity", vel);
+        var vel = _rb.velocity;
+        vel.y = 0;
+        anim.SetFloat("Velocity", vel.magnitude);
     }
 }

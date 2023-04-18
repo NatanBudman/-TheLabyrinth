@@ -13,14 +13,15 @@ public class EntityBase : MonoBehaviour
     public float jumpforce = 10f;
     private void Awake()
     {
-        _rb =GetComponent<Rigidbody>();
+        _rb = GetComponent<Rigidbody>();
     }
 
-    public void Move(Vector3 dir)
+    public  void Move(Vector3 dir)
     {
         Vector3 dirrection = dir * _speed;
         dirrection.y = _rb.velocity.y;
         _rb.velocity = dirrection;
+        //agregar Obstacle avoidance
     }
 
 
