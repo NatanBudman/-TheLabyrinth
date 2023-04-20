@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    EntityBase _model;
+    PlayerModel _model;
     FSM<PlayerStateEnum> _fsm;
     List<PlayerStateBase<PlayerStateEnum>> _states;
     void InitializedFSM()
@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     }
     private void Awake()
     {
-        _model = GetComponent<EntityBase>();
+        _model = GetComponent<PlayerModel>();
         InitializedFSM();
     }
     private void Update()
