@@ -29,7 +29,7 @@ public class LaberynthEnemyController : MonoBehaviour
       //  var persuit = new Persuit(transform, _target,time);
        // var evade = new Evade(transform, _target,time);
         var obsAvoid = new ObstacleAvoidance(transform,_layerMask, 20,_radius,_angle);
-        roadPoint = new RoadPoint(transform,_target.transform,_layerMaskPath,_layerMask, 20,_radius,_angle,5);
+        roadPoint = new RoadPoint(transform,_target.transform,_layerMaskPath,_layerMask, 20,_radius,_angle,20);
         _steering = obsAvoid;
     }
 
