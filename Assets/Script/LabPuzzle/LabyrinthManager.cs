@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class LabyrinthManager : MonoBehaviour
 {
-    private Dictionary<DoorPuzzle, float> Dictionary = new Dictionary<DoorPuzzle, float>();
+    private Dictionary<Skewers, float> Dictionary = new Dictionary<Skewers, float>();
 
-    public DoorPuzzle[] doors;
+    public Skewers[] doors;
 
     private void Awake()
     {
@@ -24,9 +24,9 @@ public class LabyrinthManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            DoorPuzzle doorPuzzle = RandomSystem.Roulette(Dictionary);
-            doorPuzzle.isOpen =! doorPuzzle.isOpen;
-            doorPuzzle = null;
+            Skewers skewers = RandomSystem.Roulette(Dictionary);
+            skewers.isActive =! skewers.isActive;
+            skewers = null;
             
         }
     }

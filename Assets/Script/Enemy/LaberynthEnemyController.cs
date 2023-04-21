@@ -16,13 +16,20 @@ public class LaberynthEnemyController : MonoBehaviour
     public float _angle;
     public int mutliplier;
 
+    
+    [Header("Path")]
+    [SerializeField]private RoadPoint roadPoint;
+    public LayerMask _layerMaskPath;
+    public Transform obss;
+
     private void InicializateSeek()
     {
-        var seek = new Seek(transform, _target.transform);
-        var flee = new Flee(transform, _target.transform);
-        var persuit = new Persuit(transform, _target,time);
-        var evade = new Evade(transform, _target,time);
+      //  var seek = new Seek(transform, _target.transform);
+       // var flee = new Flee(transform, _target.transform);
+      //  var persuit = new Persuit(transform, _target,time);
+       // var evade = new Evade(transform, _target,time);
         var obsAvoid = new ObstacleAvoidance(transform,_layerMask, 20,_radius,_angle);
+        roadPoint = new RoadPoint(transform,_target.transform,_layerMaskPath,_layerMask, 20,_radius,_angle,20);
         _steering = obsAvoid;
     }
 
@@ -33,14 +40,19 @@ public class LaberynthEnemyController : MonoBehaviour
 
     private void Update()
     {
+        /*
         Vector3 obstacleAvoid = _steering.GetDir();
         Vector3 dir = (_target.transform.position - transform.position).normalized;
         Vector3 direction = (dir + obstacleAvoid * mutliplier).normalized;
-        
+        */
         _entityBase._rb.velocity = transform.forward * _entityBase._speed;
-       _entityBase.LookRotate(direction);
+       _entityBase.LookRotate(roadPoint.GetDir());
+       obss.transform.position = roadPoint.GetDir().normalized;
     }
-    
+
+
+   
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;

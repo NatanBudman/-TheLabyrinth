@@ -20,7 +20,7 @@ public class SenserObstacles
       _angle = angle;
       Obstacle = new Collider[ObstacleLenght];
    }
-
+// Detector de obstaculos cercanos
    public void ObstacleDetected()
    {
       int countObstacle = Physics.OverlapSphereNonAlloc(_origin.position, _radius, Obstacle, _ObstacleLayers);
@@ -39,7 +39,7 @@ public class SenserObstacles
          
          if (col.GetComponent<IObstacles>() != null) obstacles = col.GetComponent<IObstacles>();
          else continue;
-         
+         // Activa el Obstaculo
          obstacles.Execute();   
          
 
