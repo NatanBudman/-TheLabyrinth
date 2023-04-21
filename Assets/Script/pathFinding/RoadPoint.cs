@@ -72,50 +72,32 @@ public class RoadPoint
 
             if (angleToPoint > _angle / 2) continue;
 
-            if (distance < diffTargetAndOrigin && !isUsePoint(col) && CheckView(col.transform, _ObstacleLayers))
+            if (col.GetComponent<Node>().walkable)
             {
-                isFindPoint = true;
-                dir = (col.transform.position - _origin.transform.position).normalized;
-                _collider = col;
-                UsePoint(col);
-                
-            }
-
-            if (!isFindPoint)
-            {
-                if (CheckView(col.transform, _ObstacleLayers) && !isUsePoint(col))
+                if (CheckView(col.transform,_ObstacleLayers) && !CheckView(_target.transform,_ObstacleLayers))
                 {
-                    float wayPoint;
-                
-                    float LowDisWayPoint = Vector3.Distance(col.transform.position, _origin.position);
-                    
-                    if (_collider != null)
+                    Collider before = _collider;
+                    if (distance < diffTargetAndOrigin || !isFindPoint )
                     {
-                        wayPoint = Vector3.Distance(col.transform.position, _collider.transform.position);
-                    }
-                    else
+                        dir = (col.transform.position - _origin.transform.position).normalized;
+                        _collider = col;
+                        isFindPoint = true;
+                        col.GetComponent<Node>().walkable = false;
+                    }else if (distance < diffTargetAndOrigin && _collider != col)
                     {
-                        wayPoint = Vector3.Distance(col.transform.position, _origin.transform.position);
-                    }
-                    
-                    
-                    if (LowDisWayPoint < wayPoint && distance < diffTargetAndOrigin)
-                    {
-                        if (distance < diffTargetAndOrigin)
-                        {
-                            Debug.Log("pepe");
-                            dir = (col.transform.position - _origin.transform.position).normalized;
-                            UsePoint(col);
-                            isFindPoint = true;
-                        }
-                     
+                        dir = (col.transform.position - _origin.transform.position).normalized;
+                        _collider = col;
+                        isFindPoint = true;
+                        col.GetComponent<Node>().walkable = false;
                     }
                 }
-               
                 
+            }else if(CheckView(_target.transform,_ObstacleLayers))
+            {
+                dir = (_target.transform.position - _origin.transform.position).normalized;
             }
 
-
+           
 
             dirToPoint = dir;
         }
