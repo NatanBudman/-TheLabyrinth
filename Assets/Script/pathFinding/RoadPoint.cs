@@ -14,7 +14,15 @@ public class RoadPoint
     private Collider[] points;
     [SerializeField] private Collider[] pointsTraveled;
     private int _index;
-
+    
+    
+    
+    
+    private Collider _collider;
+    
+    
+    
+    
     [SerializeField] private Vector3 dir = Vector3.zero;
 
     public RoadPoint(Transform origin, Transform target, LayerMask pointsLayer, LayerMask ObstacleLayers,
@@ -33,6 +41,7 @@ public class RoadPoint
     public Vector3 GetDir()
     {
         int countObstacle = Physics.OverlapSphereNonAlloc(_origin.position, _radius, points, _pointsLayer);
+        
         Vector3 dirToPoint = dir;
 
         int detectedPoint = 0;
@@ -40,71 +49,57 @@ public class RoadPoint
 
         for (int i = 0; i < countObstacle; i++)
         {
+         
             Collider col = points[i];
-            Vector3 newpos = dir;
 
             Vector3 diffPoint = col.transform.position - _origin.position;
 
             float angleToPoint = Vector3.Angle(_origin.forward, diffPoint);
 
             float distance = Vector3.Distance(_target.position, col.transform.position);
-            float diffTargetAndOrigin = Vector3.Distance(_target.position, _origin.transform.position);
+            
+            float diffTargetAndOrigin;
+
+            if (_collider != null)
+            {
+                diffTargetAndOrigin = Vector3.Distance(_target.position, _collider.transform.position);
+            }
+            else
+            {
+                diffTargetAndOrigin = Vector3.Distance(_target.position, _origin.transform.position);
+            }
+
 
             if (angleToPoint > _angle / 2) continue;
-            
-            
-            
-            if (distance < diffTargetAndOrigin && !isUsePoint(col) && CheckView(col.transform, _ObstacleLayers))
+
+            if (col.GetComponent<Node>().walkable)
             {
-               
-                if (distance < diffTargetAndOrigin && CheckView(col.transform, _ObstacleLayers))
+                if (CheckView(col.transform,_ObstacleLayers) && !CheckView(_target.transform,_ObstacleLayers))
                 {
-                    isFindPoint = true;
-                    Debug.Log( CheckView(col.transform, _ObstacleLayers));
-                    dir = (col.transform.position - _origin.transform.position).normalized;
-                    UsePoint(col);
+                    Collider before = _collider;
+                    if (distance < diffTargetAndOrigin || !isFindPoint )
+                    {
+                        dir = (col.transform.position - _origin.transform.position).normalized;
+                        _collider = col;
+                        isFindPoint = true;
+                        col.GetComponent<Node>().walkable = false;
+                    }else if (distance < diffTargetAndOrigin && _collider != col)
+                    {
+                        dir = (col.transform.position - _origin.transform.position).normalized;
+                        _collider = col;
+                        isFindPoint = true;
+                        col.GetComponent<Node>().walkable = false;
+                    }
                 }
-
-            } 
-            if (distance > diffTargetAndOrigin && !isUsePoint(col) && CheckView(col.transform, _ObstacleLayers) && !isFindPoint)
-            {
-                dir = (col.transform.position - _origin.transform.position).normalized;
-                UsePoint(col);
-            }
-           
-
-
-
-
-
-
-
-            /*
-            if (distance < diffTargetAndOrigin && CheckView(col.transform, _ObstacleLayers) && !isUsePoint(col))
-            {
-                dir = (col.transform.position - _origin.transform.position).normalized;
-                // int countPointTraveled = Physics.OverlapSphereNonAlloc(_origin.position, _radius,pointsTraveled, _pointsLayer);
-                Debug.Log(col);
-
-                UsePoint(col);
-            }else if (distance > diffTargetAndOrigin && CheckView(_target.transform, _ObstacleLayers))
+                
+            }else if(CheckView(_target.transform,_ObstacleLayers))
             {
                 dir = (_target.transform.position - _origin.transform.position).normalized;
-                Debug.Log("entre2");
-
-            }else if (!CheckView(col.transform, _ObstacleLayers) && !CheckView(_target.transform, _ObstacleLayers))
-            {
-
-                if (CheckView(col.transform, _ObstacleLayers))
-                {
-                    Debug.Log(col);
-
-                    dir = (col.transform.position - _origin.transform.position).normalized;
-                    UsePoint(col);
-                }
-
             }
-            */
+
+           
+
+            dirToPoint = dir;
         }
         
         dirToPoint.y = 0;
