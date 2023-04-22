@@ -11,7 +11,7 @@ public class ObstacleManager : MonoBehaviour
     [SerializeField] private float _radius;
     [SerializeField] private int _maxObstacleDetected;
 
-    private SenserObstacles Doors;
+    private SenserObstacles Doors; // CENSOR DE OBSTACULOS CERCANOS AL TARGET
     // Start is called before the first frame update
     void Start()
     {

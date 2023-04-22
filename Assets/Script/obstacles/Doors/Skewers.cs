@@ -4,9 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Door : MonoBehaviour,IObstacles
+public class Skewers : MonoBehaviour,IObstacles
 {
-    public bool isOpen = true;
+    public bool isActive = true;
 
     public float VelDoor;
 
@@ -18,7 +18,6 @@ public class Door : MonoBehaviour,IObstacles
    [SerializeField] private float MaxCoolwdownToActive;
    private float _currentToActive;
 
-   private Action OnExecuted;
    private void Awake()
    {
        max = transform.position.y;
@@ -27,22 +26,22 @@ public class Door : MonoBehaviour,IObstacles
 
    private void Update()
    {
-       if (isOpen)
+       if (isActive)
        {
-           OpenDoor();
+           OpenSkewers();
        }
        else
        {
-           CloseDoor();
+           CloseSkewers();
        }
    }
 
-   private void Doors()
+   private void skewers()
    {
-       isOpen = !isOpen;
+       isActive = !isActive;
    }
 
-   private void OpenDoor()
+   private void OpenSkewers()
     {
         if (transform.position.y < max )
         {
@@ -53,7 +52,7 @@ public class Door : MonoBehaviour,IObstacles
         
     }
 
-    private void CloseDoor()
+    private void CloseSkewers()
     {
         if (transform.position.y >= min)
         {
@@ -70,9 +69,7 @@ public class Door : MonoBehaviour,IObstacles
         
         if (_currentToActive > CoolwdownToActive)
         {
-            OnExecuted += Doors;
-            
-            OnExecuted.Invoke();
+            skewers();
 
             _currentToActive = 0;
             
