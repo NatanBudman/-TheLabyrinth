@@ -12,10 +12,15 @@ public class Skewers : MonoBehaviour,IObstacles
 
    float max;
    private float min;
+   
+   [Header("floats")]
 
    [SerializeField] private float CoolwdownToActive;
    [SerializeField] private float minCoolwdownToActive;
    [SerializeField] private float MaxCoolwdownToActive;
+   
+   [Header("Sound")]
+   [SerializeField] private AudioSource SkewersActiveSound;
    private float _currentToActive;
 
    private void Awake()
@@ -47,6 +52,8 @@ public class Skewers : MonoBehaviour,IObstacles
         {
             transform.position = new Vector3(transform.position.x, transform.position.y + VelDoor * Time.deltaTime,
                 transform.position.z);
+
+            if (SkewersActiveSound != null) SkewersActiveSound.Play();
 
         }
         
