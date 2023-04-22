@@ -1,0 +1,833 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.18f1 (3129e69bc0c7) revision 3221990'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19044) 64bit Professional' Language: 'es' Physical Memory: 16315 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Unity 2021.3.18f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/GitHub/BackRoom
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+51838
+Successfully changed project path to: D:/GitHub/BackRoom
+D:/GitHub/BackRoom
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8572] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 975682564 [EditorId] 975682564 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3EJR84T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8572] Host "[IP] 192.168.1.105 [Port] 0 [Flags] 2 [Guid] 975682564 [EditorId] 975682564 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-3EJR84T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 60.07 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity 2021.3.18f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/GitHub/BackRoom/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 570 Series (ID=0x67df)
+    Vendor:   ATI
+    VRAM:     8170 MB
+    Driver:   31.0.14043.7000
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity 2021.3.18f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity 2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Unity 2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56168
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity 2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.160851 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 28.54 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  5.594 seconds
+Domain Reload Profiling:
+	ReloadAssembly (5595ms)
+		BeginReloadAssembly (4137ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (885ms)
+			LoadAssemblies (4137ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (595ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (29ms)
+			SetupLoadedEditorAssemblies (214ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (29ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (126ms)
+				ProcessInitializeOnLoadMethodAttributes (50ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002314 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.737 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2738ms)
+		BeginReloadAssembly (122ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (2484ms)
+			LoadAssemblies (1584ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (505ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (335ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (43ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (19ms)
+				AfterProcessingInitializeOnLoad (3ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 0.40 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1372 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (56.1 KB). Loaded Objects now: 1842.
+Memory consumption went from 63.3 MB to 63.2 MB.
+Total: 2.617700 ms (FindLiveObjects: 0.137800 ms CreateObjectMapping: 0.030400 ms MarkObjects: 2.377600 ms  DeleteObjects: 0.071000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 242895.447625 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01_n.tga
+  artifactKey: Guid(cd06954b13214cf408ffd82d415b1c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01_n.tga using Guid(cd06954b13214cf408ffd82d415b1c02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d5d07dff0a5d236aea15016c32cbb8c') in 0.104032 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate04_n.tga
+  artifactKey: Guid(8a95ecbcd3fe7b84589875b0577ab4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate04_n.tga using Guid(8a95ecbcd3fe7b84589875b0577ab4c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8564e60ff1b0201dd8ec3de816c66f3') in 0.016440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor02.tga
+  artifactKey: Guid(55e3f281a52f486448ea8aff038f5611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor02.tga using Guid(55e3f281a52f486448ea8aff038f5611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '686d0efe0437e9b92851f13592f9ca48') in 0.013283 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02n.tga
+  artifactKey: Guid(44e7e8d8e7e49e647bfb5b9a14b44937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02n.tga using Guid(44e7e8d8e7e49e647bfb5b9a14b44937) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9787f2bb60a950ccc46e2b4aeb604a1') in 0.011013 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor01.tga
+  artifactKey: Guid(09cc5c07839e6844ea3df8025374eb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor01.tga using Guid(09cc5c07839e6844ea3df8025374eb00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2489671c42986cd055dfa5251db81b60') in 0.012962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01b.tga
+  artifactKey: Guid(18bb432a4f4f2f64db9c00369b711a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01b.tga using Guid(18bb432a4f4f2f64db9c00369b711a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d3b0487213b73ee35017c96da612c1e') in 0.012755 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17fd6655398a238c034bea8e441aa70e') in 0.013234 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01.tga
+  artifactKey: Guid(be9ca1ac78c9ccc43a8c390a68ee4404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate01.tga using Guid(be9ca1ac78c9ccc43a8c390a68ee4404) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eca4981e01ee603358d7f7d9d51d46d') in 0.012692 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01_n.tga
+  artifactKey: Guid(1ef4aad253cf7e9488305da905643f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01_n.tga using Guid(1ef4aad253cf7e9488305da905643f09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de3ca58eb604ece059c8845434eb9488') in 0.012195 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate03_n.tga
+  artifactKey: Guid(c7e45e7934279ee4388e65e67d731336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate03_n.tga using Guid(c7e45e7934279ee4388e65e67d731336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b71f0732b6b5edb71d6d2f972d7d839') in 0.012920 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor04.tga
+  artifactKey: Guid(1451eaddde3f8304ca8c4c5a4242e657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor04.tga using Guid(1451eaddde3f8304ca8c4c5a4242e657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2bab165523342a236ad613456c7ba01') in 0.012545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor02_n.tga
+  artifactKey: Guid(d4830846b663872459fb9ef203912360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor02_n.tga using Guid(d4830846b663872459fb9ef203912360) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78955828c51b85419788150f19c384fa') in 0.012041 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02b.tga
+  artifactKey: Guid(ab1c9c94982507b448e0fa12b8bd76e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02b.tga using Guid(ab1c9c94982507b448e0fa12b8bd76e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47423e2bab21ed4d17c5ff976e431c85') in 0.013412 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy
+  artifactKey: Guid(84693b20a9ebda746939880fb5b76b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy using Guid(84693b20a9ebda746939880fb5b76b42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18da446abb4a3dcd96f319f12efaa468') in 0.006672 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor03_n.tga
+  artifactKey: Guid(56a7bb02f80bb1c48a6f33003919632d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor03_n.tga using Guid(56a7bb02f80bb1c48a6f33003919632d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5f55cf91bb6805edbc43eafbecdcd50') in 0.011832 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate04.tga
+  artifactKey: Guid(012905d592b8a3844989724e1680425e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate04.tga using Guid(012905d592b8a3844989724e1680425e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fde7b28ccf1f4f1ca01aaa5c7063ac6') in 0.012675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate03.tga
+  artifactKey: Guid(9a93a076a27cdf6418727f271f77b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate03.tga using Guid(9a93a076a27cdf6418727f271f77b6c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7b663ac6855097464d449a8cc813d85') in 0.012675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor03.tga
+  artifactKey: Guid(0ab42b35d6999c946886efa454543e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor03.tga using Guid(0ab42b35d6999c946886efa454543e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3638ba24735d2e32f44652eb16f22d86') in 0.011929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor04_n.tga
+  artifactKey: Guid(b896dc1c37cc5604780521e4fd5fcb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor04_n.tga using Guid(b896dc1c37cc5604780521e4fd5fcb96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0527840420b491a8c0dc7cc8a7771345') in 0.013042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02.tga
+  artifactKey: Guid(0c531deb5ae040149bc01b5893d22d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Crate02.tga using Guid(0c531deb5ae040149bc01b5893d22d10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5f0554f01a28f7f0741cf9ca31e4ac') in 0.012853 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Floor01_n.tga
+  artifactKey: Guid(6a5842d29645b3b4f9f1828caf550835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Floor01_n.tga using Guid(6a5842d29645b3b4f9f1828caf550835) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3713c9e0335af086ed7444cc680fa3ae') in 0.012969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 87.980898 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe41dd215d44e4781d35cd9f87b9b68') in 0.010593 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.452519 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d289faa20de52fca59966d197c73a1b') in 0.010681 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 37.569916 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8beca8600dccccf3a029625a0a882ad') in 0.010482 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.797767 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cfaa95a637573a62a142a6101dd02fa') in 0.011645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.982266 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga
+  artifactKey: Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Wall01.tga using Guid(0ce4715b95ec59e4ca799c740a5e144a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'adcbc3c5cd988f344e9b6d089cadbd4d') in 0.010767 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.492061 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock01.tga
+  artifactKey: Guid(57c2f406d6a15f942a4432715764dd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock01.tga using Guid(57c2f406d6a15f942a4432715764dd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d3148542fa74d6d839b0d8046235a6a') in 0.011978 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock03_n.tga
+  artifactKey: Guid(4d558a6925b18c7419a07b816623c32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock03_n.tga using Guid(4d558a6925b18c7419a07b816623c32a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c176bf340361bda7540582cd6b1349b') in 0.013181 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock02_n.tga
+  artifactKey: Guid(524a912a5162c004bb1fec220c56f988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock02_n.tga using Guid(524a912a5162c004bb1fec220c56f988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eed3e2076e5bdd376938e51f92188bd') in 0.012019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock04_n.tga
+  artifactKey: Guid(6bacdfc4eb95d7340b768512583f650f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock04_n.tga using Guid(6bacdfc4eb95d7340b768512583f650f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa24edb65d04be9004c934d7d17733a6') in 0.011559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock01_n.tga
+  artifactKey: Guid(8360145162f99ca4d9eeff1960c8be54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock01_n.tga using Guid(8360145162f99ca4d9eeff1960c8be54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7db6802920595de5d5a0fa6c390b1fd') in 0.012944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock04.tga
+  artifactKey: Guid(81bedc0b87ad7a54bb7fe8bc6655974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock04.tga using Guid(81bedc0b87ad7a54bb7fe8bc6655974a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e6b58dfd941884487bbe1b4ebf344b0') in 0.011429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock03.tga
+  artifactKey: Guid(f26122a62ee4fc544b2b9c10de8cdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock03.tga using Guid(f26122a62ee4fc544b2b9c10de8cdf9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fde013ce16f16cdaec2a9342387c0b8') in 0.011114 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Rock02.tga
+  artifactKey: Guid(9286ed6171f6bf747904d03a1370799c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Rock02.tga using Guid(9286ed6171f6bf747904d03a1370799c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a24528e618a3487b4cad6caabe3432aa') in 0.012008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 264.794197 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials
+  artifactKey: Guid(e47a761fa415b5e4386e23aea2802f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials using Guid(e47a761fa415b5e4386e23aea2802f1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc14c2a1df32947dafc32cf3a93667d4') in 0.016196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.038799 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat
+  artifactKey: Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat using Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '276f105b21e4f9e8f8d2be61d16d92e6') in 0.075218 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock04.mat
+  artifactKey: Guid(121c90085685e5b418eec406a6496e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock04.mat using Guid(121c90085685e5b418eec406a6496e39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5cf7affa090be8ef237e288fb60f2b45') in 0.014534 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock03.mat
+  artifactKey: Guid(8eecec960822c544aa5c7efbad7f4125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock03.mat using Guid(8eecec960822c544aa5c7efbad7f4125) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd22cce9095db4c0edc6012e566caf80') in 0.012248 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 167.300841 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat
+  artifactKey: Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat using Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '979bfe6c8f591217ce9bf6fbb5bc11be') in 0.013882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 422.612747 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat
+  artifactKey: Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat using Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7cd6af320be04ce82d74c58a82132a0') in 0.012844 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 38.755586 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat
+  artifactKey: Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks/Materials/Rock02.mat using Guid(51539121b072d1e4389959e723c9da06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9d9b650ebd88a59b382f649dda63f09') in 0.012970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 312.828853 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG
+  artifactKey: Guid(d94cbdcc406c19d4b8861e647c96ad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG using Guid(d94cbdcc406c19d4b8861e647c96ad85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232b16db773388d11a29d7428c7c3309') in 0.006365 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.040671 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_AmbientOcclusion.jpg
+  artifactKey: Guid(049730988fc007c48b7097349cbee3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_AmbientOcclusion.jpg using Guid(049730988fc007c48b7097349cbee3f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d3832aca81f3c79785f5ef20be8c26') in 0.020535 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalDX.jpg
+  artifactKey: Guid(deb746f65c71c0b4db4a85be2bd64430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalDX.jpg using Guid(deb746f65c71c0b4db4a85be2bd64430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af68dc47a822c97b52983b47a79e73a7') in 0.016158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Color.jpg
+  artifactKey: Guid(362f0e6ead3d1c54b84102f7fa00cb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Color.jpg using Guid(362f0e6ead3d1c54b84102f7fa00cb48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ad60f6437918af7e8a652d45a226346') in 0.013070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalGL.jpg
+  artifactKey: Guid(1b7b523e17142114d8e94dc78744063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalGL.jpg using Guid(1b7b523e17142114d8e94dc78744063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '806990930e75c18e1c0cdf3038f846df') in 0.014682 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_PREVIEW.jpg
+  artifactKey: Guid(1a1037adb6056cf45b6ced283f6c9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_PREVIEW.jpg using Guid(1a1037adb6056cf45b6ced283f6c9274) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe07f50a213dfc4e65222929fe95e82a') in 0.011857 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Roughness.jpg
+  artifactKey: Guid(46a293b3f76e71e4a83108ab238108a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Roughness.jpg using Guid(46a293b3f76e71e4a83108ab238108a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8596a6c4dad876e61404417feda2b1ed') in 0.013742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Displacement.jpg
+  artifactKey: Guid(8ecf5c4e817a6d2499ecdb5fec28396a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_Displacement.jpg using Guid(8ecf5c4e817a6d2499ecdb5fec28396a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4743120e858bccbc22e7cdbc57cb660') in 0.011988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 255.393642 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials
+  artifactKey: Guid(90b99fa92e2807e45845ab4ba5312e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials using Guid(90b99fa92e2807e45845ab4ba5312e96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d57f703c57816f1461e0ddacba1e74') in 0.001950 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.055736 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat
+  artifactKey: Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat using Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dff9fe06fd0bb370370ca53c58bd1a61') in 0.014031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 757.944416 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K-JPG.usdc
+  artifactKey: Guid(29c8ada1bbe48524ea0daffd5248d930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K-JPG.usdc using Guid(29c8ada1bbe48524ea0daffd5248d930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b258d207af9429921c9267ce43602c0') in 0.008005 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.551192 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K-JPG.usda
+  artifactKey: Guid(2068ca3c38b4b5446b631ca15d7324f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K-JPG.usda using Guid(2068ca3c38b4b5446b631ca15d7324f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5df88e055ddaaa8b4b428cfaf6594ce') in 0.003750 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 77.569595 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalDX.jpg
+  artifactKey: Guid(deb746f65c71c0b4db4a85be2bd64430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalDX.jpg using Guid(deb746f65c71c0b4db4a85be2bd64430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb80982e869008e960115d3dca03925e') in 0.046884 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 173.810291 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalGL.jpg
+  artifactKey: Guid(1b7b523e17142114d8e94dc78744063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Rock030_2K_NormalGL.jpg using Guid(1b7b523e17142114d8e94dc78744063d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6710fd1b82129ac18c07ab0c05e4bb5') in 0.014212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 232.627269 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat
+  artifactKey: Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat using Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f19db0216a2d86c6f32e1508f4eace03') in 0.181614 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 460.632539 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Materials
+  artifactKey: Guid(0a6feb7fcd05ed24190da964e71fb51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Materials using Guid(0a6feb7fcd05ed24190da964e71fb51c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8c9d5a0f8d6e8c098c699ed023b964') in 0.006341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.084432 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Floor04.mat
+  artifactKey: Guid(8983036f0b9c6b44eb1147c62b23d3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Floor04.mat using Guid(8983036f0b9c6b44eb1147c62b23d3ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ea275a85ed18507ab4306aba05c4b8') in 0.021019 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Wall01.mat
+  artifactKey: Guid(2c3583c6b347caa459622290d14a2dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Wall01.mat using Guid(2c3583c6b347caa459622290d14a2dfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f08094d5aae538fec9f323cb52b43ea') in 0.020366 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Floor04_n.mat
+  artifactKey: Guid(0d115431802a83d43893b30b8180a983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Fantasy/Materials/Floor04_n.mat using Guid(0d115431802a83d43893b30b8180a983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add9f0c348cc73ebed4ce96cdd59610d') in 0.022297 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 997.729898 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat
+  artifactKey: Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rock030_2K-JPG/Materials/Rock030_2K_Color.mat using Guid(6b95fd20bf2a3734c94fd58268f3f2f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05a4a2ffc4af8e256e75b2ce164ca88') in 0.231304 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1375.279486 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG
+  artifactKey: Guid(b5bc40c0921fefd4e9616198418254fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG using Guid(b5bc40c0921fefd4e9616198418254fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26c68c39dc0eb025fcb247fb8f199184') in 0.006511 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041120 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_AmbientOcclusion.png
+  artifactKey: Guid(4a93b46ac959919458df5937b10f6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_AmbientOcclusion.png using Guid(4a93b46ac959919458df5937b10f6f70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76faf2d73d3bdafa026db17fd4c430aa') in 0.015124 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Color.png
+  artifactKey: Guid(1b763d1d00b07454bb246779ac778cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Color.png using Guid(1b763d1d00b07454bb246779ac778cd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96cf09a1de171d3a9f0c9171496cfaed') in 0.013862 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_PREVIEW.jpg
+  artifactKey: Guid(1d0878c489748a64f80eb71efbdb7878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_PREVIEW.jpg using Guid(1d0878c489748a64f80eb71efbdb7878) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b503669c391f176998a0a587ae71690') in 0.013490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalDX.png
+  artifactKey: Guid(2ccaf076a9ef4d54199a1940eb858376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalDX.png using Guid(2ccaf076a9ef4d54199a1940eb858376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e079cff81081ec9430e6d59a0b55efa') in 0.013271 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Roughness.png
+  artifactKey: Guid(4df1b05aed9005049b9daedd66db55a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Roughness.png using Guid(4df1b05aed9005049b9daedd66db55a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf885f7b95f09656d499f628a772021') in 0.013447 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Displacement.png
+  artifactKey: Guid(b8c5673d5c7c02c409035a9c26071be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_Displacement.png using Guid(b8c5673d5c7c02c409035a9c26071be1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcf77c58716052f3edd7474539c793fa') in 0.013774 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalGL.png
+  artifactKey: Guid(70e20974f289f60499ebdab2d42592cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalGL.png using Guid(70e20974f289f60499ebdab2d42592cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebb9adb9b2f4c6d06d99f8fb9c94400c') in 0.013001 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.699792 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials
+  artifactKey: Guid(4ed389f7e49879e46abb240c57149b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials using Guid(4ed389f7e49879e46abb240c57149b4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da222fbb99bef8fc92f1a9cb52707b54') in 0.002058 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.065086 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat
+  artifactKey: Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat using Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef10883d9b2c6ff59f1f2d7d55c910f') in 0.013746 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_PREVIEW.mat
+  artifactKey: Guid(c37b9a4eb70e5ff459322c8a950af71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_PREVIEW.mat using Guid(c37b9a4eb70e5ff459322c8a950af71f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a186165129d31a3af55e18461c340cfe') in 0.014012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.585048 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalDX.png
+  artifactKey: Guid(2ccaf076a9ef4d54199a1940eb858376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalDX.png using Guid(2ccaf076a9ef4d54199a1940eb858376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e22763650366ade7879f89557f0b7b3') in 0.039584 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 230.166637 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat
+  artifactKey: Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat using Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ad6e52dc52118e7581d70294cfff9f7') in 0.023158 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.985565 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat
+  artifactKey: Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Materials/Rocks007_2K_Color.mat using Guid(68699f301c40d894e9b04ed551cbc97a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ee7dea6ce67ce8d65b2d97777f33097') in 0.020835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2042.742425 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalGL.png
+  artifactKey: Guid(70e20974f289f60499ebdab2d42592cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Rocks007_2K-PNG/Rocks007_2K_NormalGL.png using Guid(70e20974f289f60499ebdab2d42592cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb821eac9a574105afb48c4fb0a1489') in 0.054358 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 300.901537 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG
+  artifactKey: Guid(6850ccd4cac43aa43806d7f5ff94cfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG using Guid(6850ccd4cac43aa43806d7f5ff94cfdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04ee92591a094b83278b41ac157916a6') in 0.006545 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.014691 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_AmbientOcclusion.png
+  artifactKey: Guid(7c57c9e38da193e4cab0897eb7cc3401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_AmbientOcclusion.png using Guid(7c57c9e38da193e4cab0897eb7cc3401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51f940087a5abf088a7793a6d47247bd') in 0.013847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Color.png
+  artifactKey: Guid(3c6cd5b56f8b25c40bd7f1f42f91400b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Color.png using Guid(3c6cd5b56f8b25c40bd7f1f42f91400b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9698d324c7320b0b56aac2da3038b85e') in 0.014621 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Displacement.png
+  artifactKey: Guid(5696f4e0c2fef1d42b76f57a1d967923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Displacement.png using Guid(5696f4e0c2fef1d42b76f57a1d967923) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a253cdcd7001b3cc8c7b9e86f1e84ed2') in 0.012986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_PREVIEW.jpg
+  artifactKey: Guid(a1f7504cf8433e6409c189fda362a8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_PREVIEW.jpg using Guid(a1f7504cf8433e6409c189fda362a8de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00230d133d4b1256cf3ed36bb49a936f') in 0.010635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalDX.png
+  artifactKey: Guid(bbe81319458c8b8438db36af3bf8c601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalDX.png using Guid(bbe81319458c8b8438db36af3bf8c601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d4012db4cebdfd3a6cdae6ff1521d60') in 0.012042 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalGL.png
+  artifactKey: Guid(d3bea045961499a4884c268c9adc7382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalGL.png using Guid(d3bea045961499a4884c268c9adc7382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fd03df18ef77429570e61a7b43a075c') in 0.012518 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Roughness.png
+  artifactKey: Guid(4c44992ae654f9b41af5a988fe3c268d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_Roughness.png using Guid(4c44992ae654f9b41af5a988fe3c268d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a61b621e9bb6782eef7e29f874ecc9b') in 0.013856 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.792325 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials
+  artifactKey: Guid(aeea24b1a0fdfc943ba672d85162ca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials using Guid(aeea24b1a0fdfc943ba672d85162ca34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a4df8f028478e9a159c1eb0f3584db2') in 0.006517 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.063216 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials/Ground039_2K_Color.mat
+  artifactKey: Guid(d9c5c3a8ffe3aed4bbefe0a8b3241310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials/Ground039_2K_Color.mat using Guid(d9c5c3a8ffe3aed4bbefe0a8b3241310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b5a07e0c4fd0824bb66ed611362357e') in 0.012167 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1464.323911 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG
+  artifactKey: Guid(d1835f23fdd5d9041ad25e257df6ed74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG using Guid(d1835f23fdd5d9041ad25e257df6ed74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '878bdd2cb9af2518524ac3a469d16b41') in 0.006138 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.041048 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_AmbientOcclusion.png
+  artifactKey: Guid(ad5f9e6dd8578ef4c890165d93ada68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_AmbientOcclusion.png using Guid(ad5f9e6dd8578ef4c890165d93ada68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e87fd9ff04ebc320f5ca172544d9d9c5') in 0.024112 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalGL.png
+  artifactKey: Guid(c2c9d8e000c8961478780684e0736dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalGL.png using Guid(c2c9d8e000c8961478780684e0736dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e79063b1a99e037b2ee068a95bf01f4') in 0.012961 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Color.png
+  artifactKey: Guid(200a15d4f6ecc33458404a1d751a77ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Color.png using Guid(200a15d4f6ecc33458404a1d751a77ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dc607ae393380770e8cecf658d35dbd') in 0.013317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_PREVIEW.jpg
+  artifactKey: Guid(71aaf8540b8ce9a4ca1283c8ee69f220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_PREVIEW.jpg using Guid(71aaf8540b8ce9a4ca1283c8ee69f220) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36b919bb4c1de24d5127118df175afe8') in 0.011529 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Displacement.png
+  artifactKey: Guid(90f56b8f837a0d544b59ab8283a3df86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Displacement.png using Guid(90f56b8f837a0d544b59ab8283a3df86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ac5b8917b219dd101b5e187201af5f3') in 0.014179 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalDX.png
+  artifactKey: Guid(885d9ebc5f235634c87a52baf0e1c85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalDX.png using Guid(885d9ebc5f235634c87a52baf0e1c85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe7b7cf07a3add66795a2aefd750fc16') in 0.015986 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Roughness.png
+  artifactKey: Guid(d35e3bcbf3e15b747aa6ac5b43db22b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_Roughness.png using Guid(d35e3bcbf3e15b747aa6ac5b43db22b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '185266be8de32d412e663290827ac368') in 0.014153 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.171772 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials
+  artifactKey: Guid(0fa3c2ef9c448034ca6dc2463cd11f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials using Guid(0fa3c2ef9c448034ca6dc2463cd11f4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da7304e8ecc15ec6c4b657e6fb1ec68') in 0.001993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.054068 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials/Gravel033_2K_Color.mat
+  artifactKey: Guid(24ad04df979a00642918e14146ceeff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials/Gravel033_2K_Color.mat using Guid(24ad04df979a00642918e14146ceeff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9d3c636220b46e4102739aa02f655f2') in 0.011579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.365197 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalGL.png
+  artifactKey: Guid(c2c9d8e000c8961478780684e0736dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalGL.png using Guid(c2c9d8e000c8961478780684e0736dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '832da0efa8b3dba26f12e8fa6df3e297') in 0.030312 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.825554 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalDX.png
+  artifactKey: Guid(885d9ebc5f235634c87a52baf0e1c85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Gravel033_2K_NormalDX.png using Guid(885d9ebc5f235634c87a52baf0e1c85c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbb47aafe5658936dd6e482da7c52d77') in 0.014866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 106.022411 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials/Gravel033_2K_Color.mat
+  artifactKey: Guid(24ad04df979a00642918e14146ceeff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Gravel033_2K-PNG/Materials/Gravel033_2K_Color.mat using Guid(24ad04df979a00642918e14146ceeff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87018800a254b3cce9795c8463ff8af8') in 0.024802 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1323.964015 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalDX.png
+  artifactKey: Guid(bbe81319458c8b8438db36af3bf8c601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalDX.png using Guid(bbe81319458c8b8438db36af3bf8c601) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8713764ce91eb5a0251789c4429d7c0f') in 0.013636 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalGL.png
+  artifactKey: Guid(d3bea045961499a4884c268c9adc7382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Ground039_2K_NormalGL.png using Guid(d3bea045961499a4884c268c9adc7382) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4595a0765f9ba1abea23a676761607') in 0.018775 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.229582 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG
+  artifactKey: Guid(c563fe873f9fbaf4cbcc40f3475d0a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG using Guid(c563fe873f9fbaf4cbcc40f3475d0a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17190a6ce05f3f80c8b7724e7c5d19ea') in 0.007486 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.047740 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_AmbientOcclusion.png
+  artifactKey: Guid(58f1fa5a0ee7ef74291027702669e0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_AmbientOcclusion.png using Guid(58f1fa5a0ee7ef74291027702669e0c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82acb89505d9f848188d24d85b0ce334') in 0.023955 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Roughness.png
+  artifactKey: Guid(bcb8c08884a63464ea161979624bc1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Roughness.png using Guid(bcb8c08884a63464ea161979624bc1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '774202c49f819bbfabe546185c4ed809') in 0.015240 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_NormalDX.png
+  artifactKey: Guid(136fc9fc404c7064ca3bd46959af76e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_NormalDX.png using Guid(136fc9fc404c7064ca3bd46959af76e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0601f82865e9352293fa1c5c72cc07') in 0.014146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_NormalGL.png
+  artifactKey: Guid(aa3be86aca8da534fab29a696d91aefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_NormalGL.png using Guid(aa3be86aca8da534fab29a696d91aefd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd35ac1425e45e47af25e4a5da0f380c2') in 0.012537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_PREVIEW.jpg
+  artifactKey: Guid(fe4a3871c08cb5344a520878d7a6fa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_PREVIEW.jpg using Guid(fe4a3871c08cb5344a520878d7a6fa62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7522d5f81a254d919f8ed2bc4fc3db62') in 0.015127 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Displacement.png
+  artifactKey: Guid(ce85a5f8e7b9d71408ec31cef459cb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Displacement.png using Guid(ce85a5f8e7b9d71408ec31cef459cb4d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04a9a69219376ede35b6910d0d351ce2') in 0.012842 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Color.png
+  artifactKey: Guid(571e281650e08894f82dc267b81f83a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Ground048_2K_Color.png using Guid(571e281650e08894f82dc267b81f83a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae939813a259b5fe6aff8af4e66640f1') in 0.016046 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 302.107952 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Materials
+  artifactKey: Guid(8209db6bf9ceccb46a2822cde83a9887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Materials using Guid(8209db6bf9ceccb46a2822cde83a9887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a99e4ed0cac441f8ba71035d7c98638e') in 0.007369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036583 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Materials/Ground048_2K_Color.mat
+  artifactKey: Guid(16d4de25cf63317449900dee09420b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground048_2K-PNG/Materials/Ground048_2K_Color.mat using Guid(16d4de25cf63317449900dee09420b49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f58e5fb23b500a96da580f4099f10791') in 0.013587 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 136.408756 seconds.
+  path: Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials/Ground039_2K_Color.mat
+  artifactKey: Guid(d9c5c3a8ffe3aed4bbefe0a8b3241310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ArtzkillZnetTexturePack01/Ground039_2K-PNG/Materials/Ground039_2K_Color.mat using Guid(d9c5c3a8ffe3aed4bbefe0a8b3241310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807df98022d8f7934abce332fb7a86ab') in 0.022233 seconds 
