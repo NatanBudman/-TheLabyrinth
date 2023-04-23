@@ -48,6 +48,7 @@ public class EntityBase : MonoBehaviour
     }
     
         
+
     public void LookRotate(Vector3 dir)
     {
 

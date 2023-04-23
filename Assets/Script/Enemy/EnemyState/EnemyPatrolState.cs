@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class EnemyPatrolState<T> : EnemeyStateBase<T>
 {
-    // Start is called before the first frame update
-    void Start()
+    public override void Awake()
     {
+        base.Awake();
+       
+      
         
     }
-
-    // Update is called once per frame
-    void Update()
+    public override void Execute()
     {
-        
+        base.Execute();
+        _controller.InicializateSeek();
+        Debug.Log(_patrol);
+        _model.Move(_patrol.Patrullaje());
     }
 }

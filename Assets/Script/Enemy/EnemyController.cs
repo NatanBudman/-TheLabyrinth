@@ -6,10 +6,33 @@ public class EnemyController : MonoBehaviour
 {
     EntityBase _model;
     FSM<EnemyStateEnum> _fsm;
+     Patrol _patrol;
+    EnemyController _controller;
+    Seek _seek;
+
     ITreeNode _root;
+    [SerializeField]Transform target;
+    
+    private ISteering _steering;
+
+    [Header("Path")]
+
+    public LayerMask _layerMaskPath;
+ 
+    [SerializeField] Transform[] patrolPoints;
+
+    [Header("Detection Parameters")]
+    [SerializeField] private LayerMask layerObstacle;
+    public float detectionRadius;
+    public float detectionAngle;
     private void Awake()
     {
+        InicializateSeek();
+
+        _seek = new Seek(transform, target); 
         _model = GetComponent<EntityBase>();
+        
+        _controller = GetComponent<EnemyController>();
         IntializedFSM();
         InitializedTree();
     }
@@ -31,7 +54,7 @@ public class EnemyController : MonoBehaviour
 
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].InitializedState(_model, _fsm);
+            list[i].InitializedState(_model, _fsm, _controller, _patrol, _seek);
         }
 
         idle.AddTransition(EnemyStateEnum.Chase, chase);
@@ -68,9 +91,30 @@ public class EnemyController : MonoBehaviour
     {
         return _model.IsTouchPlayer;
     }
+
     bool SawPlayer()
     {
-        return _model.IsTouchPlayer;
+        bool isSeePlayer ;
+
+        Vector3 diffPoint = target.transform.position - transform.position;
+
+        float angleToPoint = Vector3.Angle(transform.forward, diffPoint);
+        if(angleToPoint > detectionAngle/2)
+        {
+            Vector3 diff = (target.position - transform.position);
+            Vector3 dirToTarget = diff.normalized;
+            float distTarget = diff.magnitude;
+
+            RaycastHit hit;
+
+           isSeePlayer= !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, layerObstacle);
+        }
+        else
+        {
+            isSeePlayer = false;
+        }
+
+        return isSeePlayer;
     }
     bool IsTimeOver()
     {
@@ -96,9 +140,29 @@ public class EnemyController : MonoBehaviour
     {
         _fsm.Transitions(EnemyStateEnum.Attack);
     }
+
+    public void InicializateSeek()
+    {
+
+       
+        RandomSystem.Shuffle(patrolPoints);
+        _patrol = new Patrol(transform, patrolPoints, patrolPoints[0], _layerMaskPath, layerObstacle, 20, detectionRadius, detectionAngle, 20);
+    
+    }
+
     private void Update()
     {
         _fsm.OnUpdate();
         _root.Execute();
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, detectionAngle / 2, 0) * transform.forward * detectionRadius);
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, - detectionAngle / 2, 0) * transform.forward * detectionRadius);
     }
 }

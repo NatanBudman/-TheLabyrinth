@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class LaberynthEnemyController : MonoBehaviour
 {
-    [SerializeField]private EntityBase _entityBase;
+    [SerializeField] private EntityBase _entityBase;
     public float time;
-    public PlayerController _target;
+    public EntityBase _target;
     private ISteering _steering;
 
     [Header("Obstacles Evade")]
@@ -16,20 +16,21 @@ public class LaberynthEnemyController : MonoBehaviour
     public float _angle;
     public int mutliplier;
 
-    
+
     [Header("Path")]
-    [SerializeField]private RoadPoint roadPoint;
+    [SerializeField] private Patrol roadPoint;
     public LayerMask _layerMaskPath;
     public Transform obss;
-
+    [SerializeField] Transform[] patrolPoints;
     private void InicializateSeek()
     {
-      //  var seek = new Seek(transform, _target.transform);
-       // var flee = new Flee(transform, _target.transform);
-      //  var persuit = new Persuit(transform, _target,time);
-       // var evade = new Evade(transform, _target,time);
-        var obsAvoid = new ObstacleAvoidance(transform,_layerMask, 20,_radius,_angle);
-        roadPoint = new RoadPoint(transform,_target.transform,_layerMaskPath,_layerMask, 20,_radius,_angle,20);
+        //  var seek = new Seek(transform, _target.transform);
+        // var flee = new Flee(transform, _target.transform);
+        //  var persuit = new Persuit(transform, _target,time);
+        // var evade = new Evade(transform, _target,time);
+        var obsAvoid = new ObstacleAvoidance(transform, _layerMask, 20, _radius, _angle);
+        RandomSystem.Shuffle(patrolPoints);
+        roadPoint = new Patrol(transform, patrolPoints, patrolPoints[0], _layerMaskPath, _layerMask, 20, _radius, _angle, 20);
         _steering = obsAvoid;
     }
 
@@ -46,20 +47,19 @@ public class LaberynthEnemyController : MonoBehaviour
         Vector3 direction = (dir + obstacleAvoid * mutliplier).normalized;
         */
         _entityBase._rb.velocity = transform.forward * _entityBase._speed;
-       _entityBase.LookRotate(roadPoint.GetDir());
-       obss.transform.position = roadPoint.GetDir().normalized;
+       
     }
 
 
-   
+
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.position,_radius);
+        Gizmos.DrawWireSphere(transform.position, _radius);
         Gizmos.color = Color.red;
-        
-        Gizmos.DrawRay(transform.position,Quaternion.Euler(0,_angle / 2,0)*transform.forward * _radius);
-        Gizmos.DrawRay(transform.position,Quaternion.Euler(0,-_angle / 2,0)*transform.forward * _radius);
+
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, _angle / 2, 0) * transform.forward * _radius);
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, -_angle / 2, 0) * transform.forward * _radius);
     }
 }
