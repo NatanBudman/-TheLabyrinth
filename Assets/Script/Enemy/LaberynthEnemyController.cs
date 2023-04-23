@@ -7,7 +7,7 @@ public class LaberynthEnemyController : MonoBehaviour
 {
     [SerializeField]private EntityBase _entityBase;
     public float time;
-    public EntityBase _target;
+    public PlayerController _target;
     private ISteering _steering;
 
     [Header("Obstacles Evade")]

@@ -7,10 +7,18 @@ public class EntityBase : MonoBehaviour
 {
     public Rigidbody _rb;
 
+    PlayerModel _lastPlayerTouch;
+
     public float _speed;
     public float _speedRotate;
 
     public float jumpforce = 10f;
+
+    float _timer;
+    public float maxTime;
+
+
+    bool _touchPlayer;
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
@@ -24,7 +32,14 @@ public class EntityBase : MonoBehaviour
         //agregar Obstacle avoidance
     }
 
-
+    public float GetRandomTime()
+    {
+        return UnityEngine.Random.Range(0, maxTime);
+    }
+    public void RunTimer()
+    {
+        _timer -= Time.deltaTime;
+    }
     public void LookDir(Vector3 dir)
     {
         if (dir == Vector3.zero) return; 
@@ -51,7 +66,40 @@ public class EntityBase : MonoBehaviour
         }
 
     }
+    public void Attack(PlayerModel player)
+    {
+        if (player != null)
+            Destroy(player.gameObject);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        PlayerModel player = collision.gameObject.GetComponent<PlayerModel>();
+        if (player != null)
+        {
+            _touchPlayer = true;
+            _lastPlayerTouch = player;
+        }
+        
+    }
+    public bool IsTouchPlayer => _touchPlayer;
+
     public Vector3 GetForward => transform.forward;
 
+    public PlayerModel LastPlayerTouch => _lastPlayerTouch;
+
+
     public float GetVelocity => _rb.velocity.magnitude;
+
+     public float CurrentTimer
+     {
+        set
+        {
+            _timer = value;
+        }
+        get
+        {
+            return _timer;
+        }
+     }
 }

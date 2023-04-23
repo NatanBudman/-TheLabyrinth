@@ -91,10 +91,7 @@ public class RoadPoint
                         col.GetComponent<Node>().walkable = false;
                     }
                 }
-                
-            }else if(CheckView(_target.transform,_ObstacleLayers))
-            {
-                dir = (_target.transform.position - _origin.transform.position).normalized;
+               
             }
 
            
