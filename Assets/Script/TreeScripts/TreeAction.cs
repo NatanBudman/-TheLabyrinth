@@ -1,18 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TreeAction : MonoBehaviour
+public class TreeAction : ITreeNode
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+
+    Action _action;
+   public TreeAction(Action action)
+   {
+        _action = action;
+
     }
 
     // Update is called once per frame
-    void Update()
+    public void Execute()
     {
-        
+        if (_action != null)
+            _action();
+
     }
+
 }

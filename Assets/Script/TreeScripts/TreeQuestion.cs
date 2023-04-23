@@ -1,18 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
-public class TreeQuestion : MonoBehaviour
+public class TreeQuestion : ITreeNode
 {
-    // Start is called before the first frame update
-    void Start()
+    Func<bool> _question;
+    ITreeNode _tNode;
+    ITreeNode _fNode;
+    public TreeQuestion(Func<bool> question, ITreeNode tNode, ITreeNode fNode)
     {
-        
+        _question = question;
+        _tNode = tNode;
+        _fNode = fNode;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Execute()
     {
-        
+        if (_question())
+        {
+            _tNode.Execute();
+        }
+        else
+        {
+            _fNode.Execute();
+        }
     }
 }
