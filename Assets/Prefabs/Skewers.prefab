@@ -61,11 +61,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32c1130999493cf418931c1ddcfa300e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isActive: 1
+  isActive: 0
   VelDoor: 10
-  maxUp: 0
-  minDown: 0
+  maxUp: 1
+  minDown: -4
   SkewerObject: {fileID: 4179809878556791719}
+  SkewerCol: {fileID: 147369678932926087}
   CoolwdownToActive: 4
   minCoolwdownToActive: 4
   MaxCoolwdownToActive: 6
@@ -81,7 +82,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3608d17218d88b149a2fa8199a31cf01, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.726
   m_Pitch: 1
   Loop: 0

@@ -13,6 +13,7 @@ public class Skewers : MonoBehaviour,IObstacles
    [SerializeField]float maxUp;
    [SerializeField]private float minDown;
    [SerializeField] private GameObject SkewerObject;
+   [SerializeField] private Collider SkewerCol;
    
    [Header("floats")]
 
@@ -54,6 +55,8 @@ public class Skewers : MonoBehaviour,IObstacles
 
             if (SkewersActiveSound != null) SkewersActiveSound.Play();
 
+            if (SkewerCol.isTrigger)  SkewerCol.isTrigger = false;
+
         }
         
     }
@@ -64,7 +67,12 @@ public class Skewers : MonoBehaviour,IObstacles
         {
             SkewerObject.transform.position = new Vector3(SkewerObject.transform.position.x, SkewerObject.transform.position.y - VelDoor * Time.deltaTime,
                 SkewerObject.transform.position.z);
-            
+
+            if (!SkewerCol.isTrigger)   SkewerCol.isTrigger = true;
+
+          
+
+
         }
     }
 
@@ -82,5 +90,12 @@ public class Skewers : MonoBehaviour,IObstacles
             CoolwdownToActive = RandomSystem.Range(minCoolwdownToActive, MaxCoolwdownToActive);
         }
        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+           Destroy(collision.gameObject); 
+        }
     }
 }
