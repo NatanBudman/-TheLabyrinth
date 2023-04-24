@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class RoadPoint
+public class Patrol
 {
     private Transform _origin;
     private Transform _target;
@@ -14,18 +14,19 @@ public class RoadPoint
     private Collider[] points;
     [SerializeField] private Collider[] pointsTraveled;
     private int _index;
-    
-    
-    
-    
+    Transform[] patrolPoints;
+
+
+
+
     private Collider _collider;
-    
-    
-    
-    
+
+
+
+
     [SerializeField] private Vector3 dir = Vector3.zero;
 
-    public RoadPoint(Transform origin, Transform target, LayerMask pointsLayer, LayerMask ObstacleLayers,
+    public Patrol(Transform origin, Transform[] patrolArrays, Transform target, LayerMask pointsLayer, LayerMask ObstacleLayers,
         int pointsLenght, float radius, float angle, int maxPointUsed)
     {
         _origin = origin;
@@ -36,12 +37,19 @@ public class RoadPoint
         _angle = angle;
         points = new Collider[pointsLenght];
         pointsTraveled = new Collider[maxPointUsed];
+        patrolPoints = patrolArrays;
+
     }
 
-    public Vector3 GetDir()
+    public Vector3 Patrullaje()
     {
+        if (Vector3.Distance(_target.transform.position, _origin.transform.position)< 1)
+        {
+            _target = patrolPoints[(int)RandomSystem.Range(0, patrolPoints.Length - 1)];
+
+        }
         int countObstacle = Physics.OverlapSphereNonAlloc(_origin.position, _radius, points, _pointsLayer);
-        
+
         Vector3 dirToPoint = dir;
 
         int detectedPoint = 0;
@@ -49,7 +57,7 @@ public class RoadPoint
 
         for (int i = 0; i < countObstacle; i++)
         {
-         
+
             Collider col = points[i];
 
             Vector3 diffPoint = col.transform.position - _origin.position;
@@ -57,7 +65,7 @@ public class RoadPoint
             float angleToPoint = Vector3.Angle(_origin.forward, diffPoint);
 
             float distance = Vector3.Distance(_target.position, col.transform.position);
-            
+
             float diffTargetAndOrigin;
 
             if (_collider != null)
@@ -74,16 +82,17 @@ public class RoadPoint
 
             if (col.GetComponent<Node>().walkable)
             {
-                if (CheckView(col.transform,_ObstacleLayers) && !CheckView(_target.transform,_ObstacleLayers))
+                if (CheckView(col.transform, _ObstacleLayers) && !CheckView(_target.transform, _ObstacleLayers))
                 {
                     Collider before = _collider;
-                    if (distance < diffTargetAndOrigin || !isFindPoint )
+                    if (distance < diffTargetAndOrigin || !isFindPoint)
                     {
                         dir = (col.transform.position - _origin.transform.position).normalized;
                         _collider = col;
                         isFindPoint = true;
                         col.GetComponent<Node>().walkable = false;
-                    }else if (distance < diffTargetAndOrigin && _collider != col)
+                    }
+                    else if (distance < diffTargetAndOrigin && _collider != col)
                     {
                         dir = (col.transform.position - _origin.transform.position).normalized;
                         _collider = col;
@@ -91,22 +100,23 @@ public class RoadPoint
                         col.GetComponent<Node>().walkable = false;
                     }
                 }
-                
-            }else if(CheckView(_target.transform,_ObstacleLayers))
+
+            }
+            else if (CheckView(_target.transform, _ObstacleLayers))
             {
                 dir = (_target.transform.position - _origin.transform.position).normalized;
             }
 
-           
+
 
             dirToPoint = dir;
         }
-        
+
         dirToPoint.y = 0;
         return dirToPoint.normalized;
     }
 
-    private bool CheckView(Transform target, LayerMask mask)
+    public bool CheckView(Transform target, LayerMask mask)
     {
         Vector3 diff = (target.position - _origin.position);
         Vector3 dirToTarget = diff.normalized;
@@ -120,7 +130,7 @@ public class RoadPoint
     private void UsePoint(Collider col)
     {
         bool isHasColl = false;
-        
+
         for (int j = 0; j < pointsTraveled.Length; j++)
         {
             if (col == pointsTraveled[j])
@@ -130,26 +140,26 @@ public class RoadPoint
             if (!isHasColl && j == pointsTraveled.Length - 1)
             {
                 if (_index < pointsTraveled.Length - 1) _index++;
-                else _index =0;
-                
+                else _index = 0;
+
                 pointsTraveled[_index] = col;
-                
+
                 isHasColl = true;
-            }  
+            }
         }
 
     }
     private bool isUsePoint(Collider col)
     {
         bool isHasColl = false;
-        
+
         for (int j = 0; j < pointsTraveled.Length; j++)
         {
             if (col == pointsTraveled[j])
             {
                 isHasColl = true;
             }
-           
+
         }
 
         return isHasColl;

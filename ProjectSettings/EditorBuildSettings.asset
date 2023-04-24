@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Labyrinth.unity
+    guid: 1348ed705d5d5fb4abbbf3f862b618c8
+  - enabled: 1
     path: Assets/Scenes/PuzzleBall.unity
     guid: 505a657987aa8f8498066587c9ff6c86
   - enabled: 1
     path: Assets/Scenes/TestScene.unity
     guid: 6a72bfe4960a95a439dce89f33aca681
+  - enabled: 1
+    path: Assets/Scenes/Lose.unity
+    guid: 1085b055fae9e464da0fba7a84604531
   m_configObjects: {}

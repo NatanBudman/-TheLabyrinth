@@ -12,7 +12,7 @@ public class PlayerStateMove<T> : PlayerStateBase<T>
     public override void Awake()
     {
         base.Awake();
-        Debug.Log("MOVE");
+      
     }
     public override void Execute()
     {
@@ -28,12 +28,13 @@ public class PlayerStateMove<T> : PlayerStateBase<T>
 
         Vector3 dir = new Vector3(h, 0, v).normalized;
 
-        _model.Move(dir);
-        _model.LookDir(dir);
+        _model.PlayerMove();
+        _model.MouseRotation();
     }
     public override void Sleep()
     {
         base.Sleep();
-        _model.Move(Vector3.zero);
+        _model.PlayerMove();
+        _model.MouseRotation();
     }
 }
