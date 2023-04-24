@@ -40349,8 +40349,20 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8829630987101477333, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
+      propertyPath: Camera
+      value: 
+      objectReference: {fileID: 1447545803}
+    - target: {fileID: 8829630987101477333, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: _speedRotate
-      value: 214.2
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829630987101477333, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
+      propertyPath: MaxRotateCameraY
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829630987101477333, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
+      propertyPath: MinRotateCameraY
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
@@ -48721,6 +48733,10 @@ PrefabInstance:
     - target: {fileID: 1462795116, guid: 0f7e760fc4b6df340a39b28e52be0032, type: 3}
       propertyPath: detectionRadius
       value: 20.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462795116, guid: 0f7e760fc4b6df340a39b28e52be0032, type: 3}
+      propertyPath: PlayerdetectionAngle
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 1462795116, guid: 0f7e760fc4b6df340a39b28e52be0032, type: 3}
       propertyPath: patrolPoints.Array.size
