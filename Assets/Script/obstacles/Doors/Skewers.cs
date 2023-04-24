@@ -10,8 +10,9 @@ public class Skewers : MonoBehaviour,IObstacles
 
     public float VelDoor;
 
-   float max;
-   private float min;
+   [SerializeField]float maxUp;
+   [SerializeField]private float minDown;
+   [SerializeField] private GameObject SkewerObject;
    
    [Header("floats")]
 
@@ -25,8 +26,6 @@ public class Skewers : MonoBehaviour,IObstacles
 
    private void Awake()
    {
-       max = transform.position.y;
-       min = transform.position.y - 1;
    }
 
    private void Update()
@@ -48,10 +47,10 @@ public class Skewers : MonoBehaviour,IObstacles
 
    private void OpenSkewers()
     {
-        if (transform.position.y < max )
+        if (SkewerObject.transform.position.y < maxUp )
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + VelDoor * Time.deltaTime,
-                transform.position.z);
+            SkewerObject.transform.position = new Vector3(SkewerObject.transform.position.x, SkewerObject.transform.position.y + VelDoor * Time.deltaTime,
+                SkewerObject.transform.position.z);
 
             if (SkewersActiveSound != null) SkewersActiveSound.Play();
 
@@ -61,10 +60,10 @@ public class Skewers : MonoBehaviour,IObstacles
 
     private void CloseSkewers()
     {
-        if (transform.position.y >= min)
+        if (SkewerObject.transform.position.y >= minDown)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - VelDoor * Time.deltaTime,
-                transform.position.z);
+            SkewerObject.transform.position = new Vector3(SkewerObject.transform.position.x, SkewerObject.transform.position.y - VelDoor * Time.deltaTime,
+                SkewerObject.transform.position.z);
             
         }
     }
