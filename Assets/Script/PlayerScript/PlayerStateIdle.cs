@@ -12,7 +12,7 @@ public class PlayerStateIdle<T> : PlayerStateBase<T>
     public override void Awake()
     {
         base.Awake();
-        Debug.Log("IDLE");
+     
     }
     public override void Execute()
     {
@@ -24,5 +24,6 @@ public class PlayerStateIdle<T> : PlayerStateBase<T>
         {
             _fsm.Transitions(_inputRunning);
         }
+        _model.MouseRotation();
     }
 }

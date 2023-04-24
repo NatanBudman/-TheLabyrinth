@@ -9,12 +9,14 @@ public class EnemeyStateBase<T> : State<T>
     protected EnemyController _controller;
     protected Patrol _patrol;
     protected Seek _seek;
-    public void InitializedState(EntityBase model, FSM<T> fsm, EnemyController controller, Patrol patrol, Seek seek)
+    protected ObstacleAvoidance _obstacleAvoidance;
+    public void InitializedState(EntityBase model, FSM<T> fsm, EnemyController controller, Patrol patrol, Seek seek, ObstacleAvoidance obstacleAvoidance)
     {
         _controller = controller;
         _model = model;
         _fsm = fsm;
         _patrol = patrol;
         _seek = seek;
+        _obstacleAvoidance = obstacleAvoidance;
     }
 }

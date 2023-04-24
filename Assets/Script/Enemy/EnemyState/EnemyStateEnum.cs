@@ -8,7 +8,8 @@ public enum EnemyStateEnum
     Idle,
     Patrol,
     Chase,
-    Attack
+    Attack,
+    Avoidance,
 
 
 }

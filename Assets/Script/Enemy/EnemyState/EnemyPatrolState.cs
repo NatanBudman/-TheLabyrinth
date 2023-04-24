@@ -17,5 +17,6 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         _controller.InicializateSeek();
         Debug.Log(_patrol);
         _model.Move(_patrol.Patrullaje());
+        //_model.LookRotate(_patrol.Patrullaje());
     }
 }

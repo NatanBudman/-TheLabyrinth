@@ -9,7 +9,7 @@ public class EnemyController : MonoBehaviour
      Patrol _patrol;
     EnemyController _controller;
     Seek _seek;
-
+    ObstacleAvoidance _obstacleAvoidance;
     ITreeNode _root;
     [SerializeField]Transform target;
     
@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         InicializateSeek();
-
+        _obstacleAvoidance = new ObstacleAvoidance(target, layerObstacle, 20, detectionRadius, detectionAngle);
         _seek = new Seek(transform, target); 
         _model = GetComponent<EntityBase>();
         
@@ -46,15 +46,18 @@ public class EnemyController : MonoBehaviour
         var chase = new EnemyChaseState<EnemyStateEnum>();
         var patrol = new EnemyPatrolState<EnemyStateEnum>();
         var attack = new EnemyAttackState<EnemyStateEnum>();
+        var avoidance = new EnemyAvoidanceState<EnemyStateEnum>();
 
         list.Add(idle);
         list.Add(chase);
         list.Add(patrol);
         list.Add(attack);
+        list.Add(avoidance);
+
 
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].InitializedState(_model, _fsm, _controller, _patrol, _seek);
+            list[i].InitializedState(_model, _fsm, _controller, _patrol, _seek, _obstacleAvoidance);
         }
 
         idle.AddTransition(EnemyStateEnum.Chase, chase);
@@ -63,9 +66,13 @@ public class EnemyController : MonoBehaviour
 
         chase.AddTransition(EnemyStateEnum.Patrol, patrol);
         chase.AddTransition(EnemyStateEnum.Attack, attack);
+        chase.AddTransition(EnemyStateEnum.Avoidance, avoidance);
+        chase.AddTransition(EnemyStateEnum.Idle, idle);
 
         patrol.AddTransition(EnemyStateEnum.Chase, chase);
         patrol.AddTransition(EnemyStateEnum.Idle, idle);
+        patrol.AddTransition(EnemyStateEnum.Avoidance, avoidance);
+
 
         _fsm.SetInit(idle);
     }
@@ -77,8 +84,10 @@ public class EnemyController : MonoBehaviour
         var patrol = new TreeAction(ActionPatrol);
         var chase = new TreeAction(ActionChase);
         var attack = new TreeAction(ActionAttack);
+        var avoidance = new TreeAction(ActionAvoidance);
 
         //questions
+        var isObstacle = new TreeQuestion(IsObstacle, avoidance, chase);
         var isTimeOver = new TreeQuestion(IsTimeOver, patrol, idle);
         var isTouching = new TreeQuestion(IsTouching, attack, chase);
         var sawPlayer = new TreeQuestion(SawPlayer, isTouching, isTimeOver);          
@@ -91,15 +100,34 @@ public class EnemyController : MonoBehaviour
     {
         return _model.IsTouchPlayer;
     }
+    bool IsObstacle()
+    {
+        bool isSeePlayer = false;
+
+       
+        
+            Vector3 diff = (target.position - transform.position);
+            Vector3 dirToTarget = diff.normalized;
+            float distTarget = diff.magnitude;
+
+            RaycastHit hit;
+
+            isSeePlayer = !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, layerObstacle);
+        
+
+
+        return isSeePlayer;
+
+    }
 
     bool SawPlayer()
     {
-        bool isSeePlayer ;
+        bool isSeePlayer = false ;
 
         Vector3 diffPoint = target.transform.position - transform.position;
 
         float angleToPoint = Vector3.Angle(transform.forward, diffPoint);
-        if(angleToPoint > detectionAngle/2)
+        if(angleToPoint < detectionAngle/2)
         {
             Vector3 diff = (target.position - transform.position);
             Vector3 dirToTarget = diff.normalized;
@@ -109,10 +137,7 @@ public class EnemyController : MonoBehaviour
 
            isSeePlayer= !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, layerObstacle);
         }
-        else
-        {
-            isSeePlayer = false;
-        }
+
 
         return isSeePlayer;
     }
@@ -129,6 +154,10 @@ public class EnemyController : MonoBehaviour
         _fsm.Transitions(EnemyStateEnum.Idle);
     }
     void ActionPatrol()
+    {
+        _fsm.Transitions(EnemyStateEnum.Patrol);
+    }
+    void ActionAvoidance()
     {
         _fsm.Transitions(EnemyStateEnum.Patrol);
     }

@@ -18,10 +18,7 @@ public class EnemyIdleState<T> : EnemeyStateBase<T>
         {
             _model.RunTimer();
         }
-        else
-        {
-            //transition
-        }
+       
     }
     public override void Sleep()
     {

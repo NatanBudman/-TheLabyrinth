@@ -10,7 +10,7 @@ public class EntityBase : MonoBehaviour
     PlayerModel _lastPlayerTouch;
 
     public float _speed;
-    public float _speedRotate;
+    public float _speedRotate = 100;
 
     public float jumpforce = 10f;
 
@@ -31,6 +31,8 @@ public class EntityBase : MonoBehaviour
         _rb.velocity = dirrection;
         //agregar Obstacle avoidance
     }
+
+   
 
     public float GetRandomTime()
     {

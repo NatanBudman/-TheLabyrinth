@@ -14,6 +14,8 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
     {
         base.Execute();              
         _model.Move(_seek.GetDir());
+        Debug.Log("Chase");
+
     }
 
 }
