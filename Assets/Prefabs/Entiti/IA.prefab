@@ -45,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7187653942841800401}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 0}
 --- !u!23 &7187653942841800365
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -160,6 +160,7 @@ MonoBehaviour:
     m_Bits: 256
   detectionRadius: 84.5
   detectionAngle: 120
+  PlayerdetectionAngle: 120
 --- !u!1001 &1964213721
 PrefabInstance:
   m_ObjectHideFlags: 0
