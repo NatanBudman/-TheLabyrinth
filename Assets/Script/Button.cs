@@ -9,8 +9,11 @@ public class Button : MonoBehaviour
     public void ChangeScene(string SceneName)
     {
         SceneManager.LoadScene($"Scenes/{SceneName}");
+    }
 
-
+    public void AddSoundButton(AudioSource audio)
+    {
+        audio.Play();
     }
 
     public void ExitGame()

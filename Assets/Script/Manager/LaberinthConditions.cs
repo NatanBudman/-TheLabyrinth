@@ -19,10 +19,9 @@ public class LaberinthConditions : MonoBehaviour, IConditions
 
     void IConditions.Lose()
     {
-        if(player == null)
+        if(player == null || !player.activeSelf)
         {
             SceneManager.LoadScene("Scenes/Lose");
-
         }
     }
 
