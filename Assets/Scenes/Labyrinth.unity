@@ -48588,6 +48588,10 @@ PrefabInstance:
       value: 20.59
       objectReference: {fileID: 0}
     - target: {fileID: 1462795116, guid: 0f7e760fc4b6df340a39b28e52be0032, type: 3}
+      propertyPath: PlayerdetectionAngle
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 1462795116, guid: 0f7e760fc4b6df340a39b28e52be0032, type: 3}
       propertyPath: patrolPoints.Array.size
       value: 7
       objectReference: {fileID: 0}

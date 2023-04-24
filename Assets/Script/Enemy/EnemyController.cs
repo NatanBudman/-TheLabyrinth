@@ -25,6 +25,7 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private LayerMask layerObstacle;
     public float detectionRadius;
     public float detectionAngle;
+    public float PlayerdetectionAngle;
     private void Awake()
     {
         InicializateSeek();
@@ -127,7 +128,7 @@ public class EnemyController : MonoBehaviour
         Vector3 diffPoint = target.transform.position - transform.position;
 
         float angleToPoint = Vector3.Angle(transform.forward, diffPoint);
-        if(angleToPoint < detectionAngle/2)
+        if(angleToPoint < PlayerdetectionAngle/2)
         {
             Vector3 diff = (target.position - transform.position);
             Vector3 dirToTarget = diff.normalized;
@@ -193,5 +194,10 @@ public class EnemyController : MonoBehaviour
 
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, detectionAngle / 2, 0) * transform.forward * detectionRadius);
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, - detectionAngle / 2, 0) * transform.forward * detectionRadius);
+        
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, PlayerdetectionAngle / 2, 0) * transform.forward * detectionRadius);
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, - PlayerdetectionAngle / 2, 0) * transform.forward * detectionRadius);
     }
 }
