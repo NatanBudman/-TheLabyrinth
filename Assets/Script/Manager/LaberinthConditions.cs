@@ -11,12 +11,7 @@ public class LaberinthConditions : MonoBehaviour, IConditions
     {
         GameManager.conditions = this;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        }
-
+    
     void IConditions.Lose()
     {
         if(player == null || !player.activeSelf)
