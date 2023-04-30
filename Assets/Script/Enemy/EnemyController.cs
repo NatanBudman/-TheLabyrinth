@@ -143,7 +143,7 @@ public class EnemyController : MonoBehaviour
     }
     bool IsTimeOver()
     {
-        return _model.CurrentTimer < 0;
+        return _model.CurrentTimer > 0 && _model.CurrentTimer < 5;
     }
     bool IsAlive()
     {
