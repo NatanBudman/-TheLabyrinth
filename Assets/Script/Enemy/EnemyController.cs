@@ -127,7 +127,7 @@ public class EnemyController : MonoBehaviour
         Vector3 diffPoint = target.transform.position - transform.position;
 
         float angleToPoint = Vector3.Angle(transform.forward, diffPoint);
-        if(angleToPoint < detectionAngle/2)
+        if(angleToPoint > detectionAngle/2)
         {
             Vector3 diff = (target.position - transform.position);
             Vector3 dirToTarget = diff.normalized;
@@ -143,7 +143,10 @@ public class EnemyController : MonoBehaviour
     }
     bool IsTimeOver()
     {
+
         return _model.CurrentTimer > 0 && _model.CurrentTimer < 5;
+
+
     }
     bool IsAlive()
     {

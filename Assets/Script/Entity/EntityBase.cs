@@ -40,7 +40,7 @@ public class EntityBase : MonoBehaviour
     }
     public void RunTimer()
     {
-        _timer -= Time.deltaTime;
+        _timer += Time.deltaTime;
     }
     public void LookDir(Vector3 dir)
     {
