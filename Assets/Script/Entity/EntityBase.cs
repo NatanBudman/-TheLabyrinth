@@ -40,7 +40,7 @@ public class EntityBase : MonoBehaviour
     }
     public void RunTimer()
     {
-        _timer -= Time.deltaTime;
+        _timer += Time.deltaTime;
     }
     public void LookDir(Vector3 dir)
     {
@@ -48,8 +48,8 @@ public class EntityBase : MonoBehaviour
         dir.y = 0;
         transform.forward = dir;
     }
-    
-        
+
+    public Transform getPosition => transform;
 
     public void LookRotate(Vector3 dir)
     {

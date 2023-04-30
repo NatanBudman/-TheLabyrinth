@@ -8,21 +8,25 @@ public class EnemyIdleState<T> : EnemeyStateBase<T>
     public override void Awake()
     {
         base.Awake();
-        var timer = _model.GetRandomTime();
-        _model.CurrentTimer = timer;
+    
     }
     public override void Execute()
     {
+        Debug.Log("idle");
         base.Execute();
-        if (_model.CurrentTimer > 0)
+        if (_model.CurrentTimer >= 0)
         {
             _model.RunTimer();
         }
-       
+        if (_model.CurrentTimer > 10)
+        {
+            _model.CurrentTimer = 0;
+
+        }
     }
     public override void Sleep()
     {
         base.Sleep();
-        _model.CurrentTimer = 0;
+       
     }
 }
