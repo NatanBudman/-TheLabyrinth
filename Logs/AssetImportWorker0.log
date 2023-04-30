@@ -309,3 +309,69 @@ Received Import Request.
   path: Assets/Script/Enemy/EnemyController.cs
   artifactKey: Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Script/Enemy/EnemyController.cs using Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c277560c8eadf856a1795bb33179606') in 0.004341 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 21.241020 seconds.
+  path: Assets/Script/Enemy/EnemyController.cs
+  artifactKey: Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Enemy/EnemyController.cs using Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c19ac9d723231bd65122e39ff49524') in 0.001628 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001953 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.693 seconds
+Domain Reload Profiling:
+	ReloadAssembly (694ms)
+		BeginReloadAssembly (99ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (501ms)
+			LoadAssemblies (57ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (152ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (30ms)
+			SetupLoadedEditorAssemblies (231ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (37ms)
+				ProcessInitializeOnLoadAttributes (158ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1382 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1885.
+Memory consumption went from 65.1 MB to 65.1 MB.
+Total: 1.920500 ms (FindLiveObjects: 0.133200 ms CreateObjectMapping: 0.062600 ms MarkObjects: 1.713600 ms  DeleteObjects: 0.010400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19.401243 seconds.
+  path: Assets/Script/Enemy/EnemyController.cs
+  artifactKey: Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/Enemy/EnemyController.cs using Guid(20f971b4185a5804fba4c71866ba15d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f73d38a424ce0a99506849b3de03e9fc') in 0.003899 seconds 

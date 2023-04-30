@@ -143,10 +143,14 @@ public class EnemyController : MonoBehaviour
     }
     bool IsTimeOver()
     {
+<<<<<<< Updated upstream
 
         return _model.CurrentTimer > 0 && _model.CurrentTimer < 5;
 
 
+=======
+        return _model.CurrentTimer > 0 && _model.CurrentTimer < 5 ;
+>>>>>>> Stashed changes
     }
     bool IsAlive()
     {
