@@ -45,5 +45,6 @@ public class ObstacleAvoidance : ISteering
         }
         return dirToAvoid.normalized;
         
+        
     }
 }

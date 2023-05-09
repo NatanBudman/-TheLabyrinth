@@ -48,8 +48,8 @@ public class EntityBase : MonoBehaviour
         dir.y = 0;
         transform.forward = dir;
     }
-    
-        
+
+    public Transform getPosition => transform;
 
     public void LookRotate(Vector3 dir)
     {

@@ -10,8 +10,10 @@ public class Skewers : MonoBehaviour,IObstacles
 
     public float VelDoor;
 
-   float max;
-   private float min;
+   [SerializeField]float maxUp;
+   [SerializeField]private float minDown;
+   [SerializeField] private GameObject SkewerObject;
+   [SerializeField] private Collider SkewerCol;
    
    [Header("floats")]
 
@@ -25,8 +27,6 @@ public class Skewers : MonoBehaviour,IObstacles
 
    private void Awake()
    {
-       max = transform.position.y;
-       min = transform.position.y - 1;
    }
 
    private void Update()
@@ -48,12 +48,14 @@ public class Skewers : MonoBehaviour,IObstacles
 
    private void OpenSkewers()
     {
-        if (transform.position.y < max )
+        if (SkewerObject.transform.position.y < maxUp )
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y + VelDoor * Time.deltaTime,
-                transform.position.z);
+            SkewerObject.transform.position = new Vector3(SkewerObject.transform.position.x, SkewerObject.transform.position.y + VelDoor * Time.deltaTime,
+                SkewerObject.transform.position.z);
 
             if (SkewersActiveSound != null) SkewersActiveSound.Play();
+
+            if (SkewerCol.isTrigger)  SkewerCol.isTrigger = false;
 
         }
         
@@ -61,11 +63,16 @@ public class Skewers : MonoBehaviour,IObstacles
 
     private void CloseSkewers()
     {
-        if (transform.position.y >= min)
+        if (SkewerObject.transform.position.y >= minDown)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y - VelDoor * Time.deltaTime,
-                transform.position.z);
-            
+            SkewerObject.transform.position = new Vector3(SkewerObject.transform.position.x, SkewerObject.transform.position.y - VelDoor * Time.deltaTime,
+                SkewerObject.transform.position.z);
+
+            if (!SkewerCol.isTrigger)   SkewerCol.isTrigger = true;
+
+          
+
+
         }
     }
 
@@ -83,5 +90,12 @@ public class Skewers : MonoBehaviour,IObstacles
             CoolwdownToActive = RandomSystem.Range(minCoolwdownToActive, MaxCoolwdownToActive);
         }
        
+    }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.tag == "Player")
+        {
+           Destroy(collision.gameObject); 
+        }
     }
 }

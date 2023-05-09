@@ -9,9 +9,9 @@ public class EnemyController : MonoBehaviour
      Patrol _patrol;
     EnemyController _controller;
     Seek _seek;
-    ObstacleAvoidance _obstacleAvoidance;
+    public ObstacleAvoidance _obstacleAvoidance;
     ITreeNode _root;
-    [SerializeField]Transform target;
+    public Transform target;
     
     private ISteering _steering;
 
@@ -22,13 +22,16 @@ public class EnemyController : MonoBehaviour
     [SerializeField] Transform[] patrolPoints;
 
     [Header("Detection Parameters")]
-    [SerializeField] private LayerMask layerObstacle;
+    [SerializeField] public LayerMask layerObstacle;
+    [SerializeField] public LayerMask obstruirVision;
     public float detectionRadius;
     public float detectionAngle;
+    public float PlayerdetectionAngle;
+    public float obstacleDetectionRadius;
+    public float obstacleDetectionAngle;
     private void Awake()
     {
         InicializateSeek();
-        _obstacleAvoidance = new ObstacleAvoidance(target, layerObstacle, 20, detectionRadius, detectionAngle);
         _seek = new Seek(transform, target); 
         _model = GetComponent<EntityBase>();
         
@@ -46,13 +49,12 @@ public class EnemyController : MonoBehaviour
         var chase = new EnemyChaseState<EnemyStateEnum>();
         var patrol = new EnemyPatrolState<EnemyStateEnum>();
         var attack = new EnemyAttackState<EnemyStateEnum>();
-        var avoidance = new EnemyAvoidanceState<EnemyStateEnum>();
 
         list.Add(idle);
         list.Add(chase);
         list.Add(patrol);
         list.Add(attack);
-        list.Add(avoidance);
+      
 
 
         for (int i = 0; i < list.Count; i++)
@@ -66,12 +68,11 @@ public class EnemyController : MonoBehaviour
 
         chase.AddTransition(EnemyStateEnum.Patrol, patrol);
         chase.AddTransition(EnemyStateEnum.Attack, attack);
-        chase.AddTransition(EnemyStateEnum.Avoidance, avoidance);
         chase.AddTransition(EnemyStateEnum.Idle, idle);
 
         patrol.AddTransition(EnemyStateEnum.Chase, chase);
         patrol.AddTransition(EnemyStateEnum.Idle, idle);
-        patrol.AddTransition(EnemyStateEnum.Avoidance, avoidance);
+
 
 
         _fsm.SetInit(idle);
@@ -84,13 +85,13 @@ public class EnemyController : MonoBehaviour
         var patrol = new TreeAction(ActionPatrol);
         var chase = new TreeAction(ActionChase);
         var attack = new TreeAction(ActionAttack);
-        var avoidance = new TreeAction(ActionAvoidance);
+       
 
         //questions
-        var isObstacle = new TreeQuestion(IsObstacle, avoidance, chase);
+        
         var isTimeOver = new TreeQuestion(IsTimeOver, patrol, idle);
         var isTouching = new TreeQuestion(IsTouching, attack, chase);
-        var sawPlayer = new TreeQuestion(SawPlayer, isTouching, isTimeOver);          
+        var sawPlayer = new TreeQuestion(Ischaseing, isTouching, isTimeOver);          
         var isAlive = new TreeQuestion(IsAlive, sawPlayer, null);
 
         _root = isAlive;
@@ -100,24 +101,31 @@ public class EnemyController : MonoBehaviour
     {
         return _model.IsTouchPlayer;
     }
-    bool IsObstacle()
+
+    float timer = 0;
+    bool isChaseingPlayer = false;
+    bool Ischaseing()
     {
-        bool isSeePlayer = false;
 
        
         
-            Vector3 diff = (target.position - transform.position);
-            Vector3 dirToTarget = diff.normalized;
-            float distTarget = diff.magnitude;
+        if (SawPlayer())
+        {
+            timer = 5;
+            isChaseingPlayer = true;
+        }
+        if (!SawPlayer() )
+        {
+            timer -= Time.deltaTime;
 
-            RaycastHit hit;
 
-            isSeePlayer = !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, layerObstacle);
-        
-
-
-        return isSeePlayer;
-
+            if (timer <= 0)
+            {
+                isChaseingPlayer = false;
+            }
+            
+        }
+        return isChaseingPlayer;
     }
 
     bool SawPlayer()
@@ -127,7 +135,7 @@ public class EnemyController : MonoBehaviour
         Vector3 diffPoint = target.transform.position - transform.position;
 
         float angleToPoint = Vector3.Angle(transform.forward, diffPoint);
-        if(angleToPoint > detectionAngle/2)
+        if(angleToPoint < PlayerdetectionAngle/2)
         {
             Vector3 diff = (target.position - transform.position);
             Vector3 dirToTarget = diff.normalized;
@@ -135,22 +143,14 @@ public class EnemyController : MonoBehaviour
 
             RaycastHit hit;
 
-           isSeePlayer= !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, layerObstacle);
+           isSeePlayer= !Physics.Raycast(transform.position, dirToTarget, out hit, distTarget, obstruirVision);
         }
-
-
+         
         return isSeePlayer;
     }
     bool IsTimeOver()
     {
-<<<<<<< Updated upstream
-
         return _model.CurrentTimer > 0 && _model.CurrentTimer < 5;
-
-
-=======
-        return _model.CurrentTimer > 0 && _model.CurrentTimer < 5 ;
->>>>>>> Stashed changes
     }
     bool IsAlive()
     {
@@ -161,10 +161,6 @@ public class EnemyController : MonoBehaviour
         _fsm.Transitions(EnemyStateEnum.Idle);
     }
     void ActionPatrol()
-    {
-        _fsm.Transitions(EnemyStateEnum.Patrol);
-    }
-    void ActionAvoidance()
     {
         _fsm.Transitions(EnemyStateEnum.Patrol);
     }
@@ -200,5 +196,18 @@ public class EnemyController : MonoBehaviour
 
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, detectionAngle / 2, 0) * transform.forward * detectionRadius);
         Gizmos.DrawRay(transform.position, Quaternion.Euler(0, - detectionAngle / 2, 0) * transform.forward * detectionRadius);
+        
+        Gizmos.color = Color.green;
+
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, PlayerdetectionAngle / 2, 0) * transform.forward * detectionRadius);
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, - PlayerdetectionAngle / 2, 0) * transform.forward * detectionRadius);
+        
+        Gizmos.color = Color.yellow;
+
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, obstacleDetectionAngle / 2, 0) * transform.forward * obstacleDetectionRadius);
+        Gizmos.DrawRay(transform.position, Quaternion.Euler(0, -obstacleDetectionAngle / 2, 0) * transform.forward * obstacleDetectionRadius);
+
+        Gizmos.color = Color.white;
+        Gizmos.DrawWireSphere(transform.position, obstacleDetectionRadius);
     }
 }
