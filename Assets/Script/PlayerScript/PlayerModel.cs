@@ -66,4 +66,7 @@ public class PlayerModel : MonoBehaviour
         if (dir == Vector3.zero) return;
         transform.forward = dir;
     }
+
+    public Vector3 GetFarword => transform.forward;
+    public float GetVelocity => _rb.velocity.magnitude;
 }
