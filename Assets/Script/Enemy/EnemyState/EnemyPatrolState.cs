@@ -15,9 +15,8 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
     {
         base.Execute();
        
-        Debug.Log(_patrol);
         _model.Move(_patrol.Patrullaje());
-        _model.LookRotate(_patrol.Patrullaje());
+      //  _model.LookRotate(_patrol.Patrullaje());
         if (_model.CurrentTimer >= 0)
         {
             _model.RunTimer();

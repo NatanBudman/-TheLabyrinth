@@ -12,7 +12,6 @@ public class EnemyIdleState<T> : EnemeyStateBase<T>
     }
     public override void Execute()
     {
-        Debug.Log("idle");
         base.Execute();
         if (_model.CurrentTimer >= 0)
         {
