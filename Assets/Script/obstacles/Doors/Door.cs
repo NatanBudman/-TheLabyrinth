@@ -37,7 +37,7 @@ public class Door : MonoBehaviour,IObstacles
        }
    }
 
-   private void Doors()
+   private void _Door()
    {
        isOpen = !isOpen;
    }
@@ -70,7 +70,7 @@ public class Door : MonoBehaviour,IObstacles
         
         if (_currentToActive > CoolwdownToActive)
         {
-            OnExecuted += Doors;
+            OnExecuted += _Door;
             
             OnExecuted.Invoke();
 
