@@ -15,7 +15,6 @@ public class NODOSLINKE_EDITOR : Editor
         if (GUILayout.Button("NODOLINK"))
         {
             nodos.GetNeighboard();
-            nodos.getObjectc
         }
 
     }
