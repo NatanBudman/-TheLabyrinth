@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2494985732495726742}
   - component: {fileID: 1636530192150426961}
+  - component: {fileID: 4580116350009314054}
   m_Layer: 0
   m_Name: jail
   m_TagString: Untagged
@@ -135,6 +136,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 9.279501, y: 11.478645, z: 5.873947}
   m_Center: {x: -0.7367815, y: 0.56757927, z: 9.0379715}
+--- !u!95 &4580116350009314054
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3014079004356575788}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67477e5155017da4db2a0188bea789d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &3357753202965220633
 GameObject:
   m_ObjectHideFlags: 0
