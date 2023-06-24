@@ -58,7 +58,7 @@ public class AStar<T>
         if (path.Count <= 2) return path;
         var list = new List<T>();
         list.Add(path[0]);
-        for (int i = 2; i < path.Count - 1; i++)
+        for (int i = 2; i < path.Count; i++)
         {
             var gp = list[list.Count - 1];
             if (!inView(gp, path[i]))
