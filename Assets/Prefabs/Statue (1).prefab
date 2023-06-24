@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8904992637294876201}
   - component: {fileID: 7413874502124486776}
   - component: {fileID: 109757830612820028}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Blaetter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 898770454046267465}
   - component: {fileID: 6002430768584469997}
   - component: {fileID: 4237028783079609365}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Statue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -189,7 +189,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7302223293248307738}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Statue (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
