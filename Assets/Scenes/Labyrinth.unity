@@ -266,6 +266,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1694573735}
+  - {fileID: 26255578}
+  - {fileID: 521942904}
+  - {fileID: 665700528}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &3632446
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -455,6 +466,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1499019491}
+  - {fileID: 1180659330}
+  - {fileID: 1165031195}
+  - {fileID: 1944920296}
+  - {fileID: 1042365266}
+  - {fileID: 1975022194}
+  - {fileID: 271352358}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &12615069
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -567,6 +592,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1123425176}
+  - {fileID: 26255578}
+  - {fileID: 521942904}
+  - {fileID: 665700528}
+  - {fileID: 2135527453}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &14671756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -807,6 +844,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 1957632282}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &24847369
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -919,6 +969,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 14671755}
+  - {fileID: 1123425176}
+  - {fileID: 3632445}
+  - {fileID: 521942904}
+  - {fileID: 665700528}
+  - {fileID: 2135527453}
+  - {fileID: 741299748}
+  - {fileID: 1219623386}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &26255579
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1532,6 +1597,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 797946267}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1725870040}
+  - {fileID: 1386971502}
+  - {fileID: 459615637}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &54795573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1888,6 +1974,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1506963714}
+  - {fileID: 191769037}
+  - {fileID: 2139289691}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &65830519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2795,6 +2891,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 627571568}
+  - {fileID: 1530558198}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 459951760}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &111055898
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2907,6 +3019,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &111242923
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3273,6 +3409,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1870735658}
+  - {fileID: 1913913725}
+  - {fileID: 1627212225}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &124635045
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3419,6 +3565,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1593982150}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 818535480}
+  - {fileID: 571342519}
+  - {fileID: 617075470}
+  - {fileID: 1913913725}
+  - {fileID: 920119242}
+  - {fileID: 2078430809}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &134430769
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3562,6 +3728,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 2044592235}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &135075398
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3772,6 +3950,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 1953021683}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 735166946}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &136715389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4126,6 +4328,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 1582727686}
+  - {fileID: 797946267}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &148077291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4403,6 +4624,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1165031195}
+  - {fileID: 1944920296}
+  - {fileID: 1042365266}
+  - {fileID: 1123297991}
+  - {fileID: 429992871}
+  - {fileID: 135075397}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 1699586077}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &154109012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4515,6 +4752,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1870735658}
+  - {fileID: 818535480}
+  - {fileID: 571342519}
+  - {fileID: 1913913725}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 24847368}
+  - {fileID: 1627212225}
+  - {fileID: 2078430809}
+  - {fileID: 1957632282}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &159614262
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4724,6 +4979,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1219623386}
+  - {fileID: 1499019491}
+  - {fileID: 1551856193}
+  - {fileID: 434654426}
+  - {fileID: 1165031195}
+  - {fileID: 1805059400}
+  - {fileID: 271352358}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &171422167
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5057,6 +5326,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 406497518}
+  - {fileID: 1683679787}
+  - {fileID: 541565535}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &191117838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5169,6 +5448,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 1506963714}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 65830518}
+  - {fileID: 2139289691}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &191769038
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5378,6 +5681,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 307392611}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &192618752
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5678,6 +6004,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1627212225}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 627571568}
+  - {fileID: 328101759}
+  - {fileID: 1530558198}
+  - {fileID: 2017184641}
+  - {fileID: 1261391287}
+  - {fileID: 1403031376}
+  - {fileID: 459951760}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &204953637
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5790,6 +6135,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 1961764162}
+  - {fileID: 1529832645}
+  - {fileID: 433124382}
+  - {fileID: 1403031376}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &207461467
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6238,6 +6603,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 135075397}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &234274975
 GameObject:
   m_ObjectHideFlags: 0
@@ -6727,6 +7107,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1997101421}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &256542779
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7225,6 +7627,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 171422166}
+  - {fileID: 1180659330}
+  - {fileID: 434654426}
+  - {fileID: 1165031195}
+  - {fileID: 1944920296}
+  - {fileID: 12615068}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &271352359
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8193,6 +8608,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 602697676}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 617075470}
+  - {fileID: 920119242}
+  - {fileID: 192618751}
+  - {fileID: 2078430809}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &307392612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8581,6 +9012,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 627571568}
+  - {fileID: 1261391287}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &328101760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8693,6 +9137,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1785521989}
+  - {fileID: 1923215763}
+  - {fileID: 493153282}
+  - {fileID: 1344848036}
+  - {fileID: 689682583}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &337191438
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8887,6 +9345,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 625339446}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 617075470}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &342583671
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9081,6 +9553,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1283713895}
+  - {fileID: 1506963714}
+  - {fileID: 512916675}
+  - {fileID: 2139289691}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &359104435
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9745,6 +10228,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1593982150}
+  - {fileID: 735166946}
+  - {fileID: 1601522315}
+  - {fileID: 957710784}
+  - {fileID: 1961764162}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &385591653
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9857,6 +10359,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 707583888}
+  - {fileID: 556667398}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 1404594968}
+  - {fileID: 54795572}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &387415559
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10032,6 +10551,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 707583888}
+  - {fileID: 556667398}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1582727686}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &406497516
 GameObject:
   m_ObjectHideFlags: 0
@@ -10081,6 +10630,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 191117837}
+  - {fileID: 1683679787}
+  - {fileID: 707583888}
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 957710784}
+  - {fileID: 541565535}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &406497519
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10693,6 +11256,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1944920296}
+  - {fileID: 1042365266}
+  - {fileID: 1975022194}
+  - {fileID: 1123297991}
+  - {fileID: 154109011}
+  - {fileID: 228464725}
+  - {fileID: 135075397}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &429992872
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10805,6 +11386,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 1961764162}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 1403031376}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &433124383
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11011,6 +11610,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 171422166}
+  - {fileID: 1499019491}
+  - {fileID: 1165031195}
+  - {fileID: 1944920296}
+  - {fileID: 840362447}
+  - {fileID: 1785521989}
+  - {fileID: 686163323}
+  - {fileID: 1042365266}
+  - {fileID: 271352358}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &434654427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11653,6 +12268,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1822600173}
+  - {fileID: 145789497}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1336705699}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 1706627267}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &452321386
 GameObject:
   m_ObjectHideFlags: 0
@@ -11702,6 +12335,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 24847368}
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 957710784}
+  - {fileID: 523502315}
+  - {fileID: 1957632282}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &452321389
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11908,6 +12558,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1318613427}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 1330649408}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &459951758
 GameObject:
   m_ObjectHideFlags: 0
@@ -11957,6 +12628,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 111055897}
+  - {fileID: 1261616157}
+  - {fileID: 1530558198}
+  - {fileID: 385591652}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 754491279}
+  - {fileID: 2031559374}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &459951761
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12345,6 +13034,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1180659330}
+  - {fileID: 840362447}
+  - {fileID: 1785521989}
+  - {fileID: 686163323}
+  - {fileID: 1923215763}
+  - {fileID: 337191437}
+  - {fileID: 1344848036}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &493153283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12457,6 +13160,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1336705699}
+  - {fileID: 1386971502}
+  - {fileID: 459615637}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &494791665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12749,6 +13466,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1997076935}
+  - {fileID: 359104434}
+  - {fileID: 1283713895}
+  - {fileID: 1506963714}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &512916676
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13074,6 +13802,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 14671755}
+  - {fileID: 1123425176}
+  - {fileID: 3632445}
+  - {fileID: 26255578}
+  - {fileID: 665700528}
+  - {fileID: 2135527453}
+  - {fileID: 1805059400}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &521942905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13186,6 +13928,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 957710784}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &523502316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13681,6 +14434,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 545907380}
+  - {fileID: 191117837}
+  - {fileID: 406497518}
+  - {fileID: 1683679787}
+  - {fileID: 735166946}
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &541565536
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13793,6 +14560,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 192618751}
+  - {fileID: 735166946}
+  - {fileID: 1328830615}
+  - {fileID: 541565535}
+  - {fileID: 1689761745}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &545907381
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14096,6 +14883,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 337191437}
+  - {fileID: 884116154}
+  - {fileID: 729335523}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &556667396
 GameObject:
   m_ObjectHideFlags: 0
@@ -14145,6 +14957,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 707583888}
+  - {fileID: 387415558}
+  - {fileID: 954495824}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &556667399
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14354,6 +15179,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &567571329
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14466,6 +15314,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 818535480}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 134430768}
+  - {fileID: 2078430809}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &571342520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14931,6 +15792,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 818535480}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 1055346060}
+  - {fileID: 24847368}
+  - {fileID: 1957632282}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &589120109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15222,6 +16097,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 342583670}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 307392611}
+  - {fileID: 617075470}
+  - {fileID: 920119242}
+  - {fileID: 134430768}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &602697677
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15399,6 +16300,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 342583670}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 307392611}
+  - {fileID: 920119242}
+  - {fileID: 134430768}
+  - {fileID: 2078430809}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &617075471
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15511,6 +16435,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 342583670}
+  - {fileID: 1439885117}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &625339447
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15623,6 +16557,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 328101759}
+  - {fileID: 1261391287}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &627571569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16163,6 +17111,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 14671755}
+  - {fileID: 1123425176}
+  - {fileID: 1694573735}
+  - {fileID: 3632445}
+  - {fileID: 26255578}
+  - {fileID: 521942904}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &665700529
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16597,6 +17558,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1180659330}
+  - {fileID: 434654426}
+  - {fileID: 840362447}
+  - {fileID: 1785521989}
+  - {fileID: 493153282}
+  - {fileID: 1344848036}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &686163324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17099,6 +18073,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1923215763}
+  - {fileID: 337191437}
+  - {fileID: 884116154}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &694622175
 GameObject:
   m_ObjectHideFlags: 0
@@ -17517,6 +18521,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 406497518}
+  - {fileID: 1683679787}
+  - {fileID: 556667398}
+  - {fileID: 387415558}
+  - {fileID: 954495824}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &707583889
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17692,6 +18710,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1923215763}
+  - {fileID: 884116154}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &719589057
 GameObject:
   m_ObjectHideFlags: 0
@@ -17932,6 +18978,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 884116154}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 554995304}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &733271681
 GameObject:
   m_ObjectHideFlags: 0
@@ -18112,6 +19177,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1247135803}
+  - {fileID: 567571328}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 1683679787}
+  - {fileID: 1328830615}
+  - {fileID: 541565535}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &735166947
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18224,6 +19310,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 26255578}
+  - {fileID: 2135527453}
+  - {fileID: 1219623386}
+  - {fileID: 1499019491}
+  - {fileID: 1551856193}
+  - {fileID: 1805059400}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &741299749
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18646,6 +19745,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 385591652}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 1997076935}
+  - {fileID: 459951760}
+  - {fileID: 1283713895}
+  - {fileID: 2031559374}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &754491280
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19381,6 +20496,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 54795572}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &797946268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19769,6 +20896,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 571342519}
+  - {fileID: 159614261}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 134430768}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &818535481
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -19997,6 +21137,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1180659330}
+  - {fileID: 434654426}
+  - {fileID: 1165031195}
+  - {fileID: 1785521989}
+  - {fileID: 686163323}
+  - {fileID: 493153282}
+  - {fileID: 1344848036}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &840362448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20287,6 +21441,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 1961764162}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &856102871
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20629,6 +21802,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 342583670}
+  - {fileID: 1593982150}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  - {fileID: 1073750312}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &872590695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21077,6 +22275,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1120954146}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 54795572}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &880740932
 GameObject:
   m_ObjectHideFlags: 0
@@ -21220,6 +22437,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 2143963768}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &893732374
 GameObject:
   m_ObjectHideFlags: 0
@@ -21915,6 +23149,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 307392611}
+  - {fileID: 617075470}
+  - {fileID: 134430768}
+  - {fileID: 2078430809}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &920119243
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22550,6 +23798,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 707583888}
+  - {fileID: 556667398}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1582727686}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &945477116
 GameObject:
   m_ObjectHideFlags: 0
@@ -22662,6 +23934,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1120954146}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 1582727686}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &948179976
 GameObject:
   m_ObjectHideFlags: 0
@@ -22742,6 +24030,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 1953021683}
+  - {fileID: 192618751}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &948929284
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23137,6 +24447,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1120954146}
+  - {fileID: 707583888}
+  - {fileID: 556667398}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &955369844
 GameObject:
   m_ObjectHideFlags: 0
@@ -23220,6 +24549,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 406497518}
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 1961764162}
+  - {fileID: 1689761745}
+  - {fileID: 523502315}
+  - {fileID: 452321388}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &957710785
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23460,6 +24807,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 307392611}
+  - {fileID: 617075470}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &965255823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24092,6 +25462,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1042365266}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 2044592235}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &985811108
 GameObject:
   m_ObjectHideFlags: 0
@@ -24141,6 +25530,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 998719550}
+  - {fileID: 1953021683}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &985811111
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24253,6 +25663,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1934887998}
+  - {fileID: 1219623386}
+  - {fileID: 1953021683}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &998719551
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24792,6 +26213,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1785521989}
+  - {fileID: 337191437}
+  - {fileID: 884116154}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 554995304}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1027138889
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24904,6 +26351,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1409434788}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 134430768}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 1328830615}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1027327091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25238,6 +26708,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 434654426}
+  - {fileID: 1165031195}
+  - {fileID: 1944920296}
+  - {fileID: 12615068}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 1699586077}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1042365267
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25448,6 +26934,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 818535480}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 589120108}
+  - {fileID: 24847368}
+  - {fileID: 1957632282}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1055346061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25883,6 +27383,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 872590694}
+  - {fileID: 1601522315}
+  - {fileID: 957710784}
+  - {fileID: 385591652}
+  - {fileID: 1961764162}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 1403031376}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1073750313
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26655,6 +28173,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1785521989}
+  - {fileID: 884116154}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1582727686}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1120954147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26767,6 +28314,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1975022194}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1123297992
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26879,6 +28436,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 14671755}
+  - {fileID: 26255578}
+  - {fileID: 521942904}
+  - {fileID: 665700528}
+  - {fileID: 2135527453}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1123425177
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27078,6 +28647,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 171422166}
+  - {fileID: 1180659330}
+  - {fileID: 434654426}
+  - {fileID: 1944920296}
+  - {fileID: 840362447}
+  - {fileID: 1042365266}
+  - {fileID: 12615068}
+  - {fileID: 1975022194}
+  - {fileID: 271352358}
+  - {fileID: 154109011}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1165031196
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27434,6 +29020,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1261616157}
+  - {fileID: 627571568}
+  - {fileID: 328101759}
+  - {fileID: 1530558198}
+  - {fileID: 1261391287}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1173555211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27628,6 +29229,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1165031195}
+  - {fileID: 840362447}
+  - {fileID: 1785521989}
+  - {fileID: 686163323}
+  - {fileID: 12615068}
+  - {fileID: 1975022194}
+  - {fileID: 271352358}
+  - {fileID: 493153282}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1180659331
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27969,6 +29585,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1694573735}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1186903211
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28521,6 +30145,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 26255578}
+  - {fileID: 2135527453}
+  - {fileID: 741299748}
+  - {fileID: 1934887998}
+  - {fileID: 1222146994}
+  - {fileID: 171422166}
+  - {fileID: 1862663822}
+  - {fileID: 1551856193}
+  - {fileID: 998719550}
+  - {fileID: 1805059400}
+  - {fileID: 1953021683}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1219623387
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28633,6 +30275,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1219623386}
+  - {fileID: 1862663822}
+  - {fileID: 1805059400}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1222146995
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29291,6 +30943,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 342583670}
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 134430768}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  - {fileID: 1413963364}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1247135804
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29747,6 +31425,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 1173555210}
+  - {fileID: 627571568}
+  - {fileID: 328101759}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1261391288
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29859,6 +31549,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1173555210}
+  - {fileID: 627571568}
+  - {fileID: 328101759}
+  - {fileID: 1530558198}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 459951760}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1261616158
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30518,6 +32225,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 754491279}
+  - {fileID: 1997076935}
+  - {fileID: 359104434}
+  - {fileID: 512916675}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1283713896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31121,6 +32839,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1923215763}
+  - {fileID: 884116154}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 1906347017}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1001 &1322293447
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31320,6 +33067,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1027327090}
+  - {fileID: 545907380}
+  - {fileID: 406497518}
+  - {fileID: 1683679787}
+  - {fileID: 735166946}
+  - {fileID: 1601522315}
+  - {fileID: 957710784}
+  - {fileID: 541565535}
+  - {fileID: 1961764162}
+  - {fileID: 523502315}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 452321388}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1328830616
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31526,6 +33294,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 797946267}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1330649409
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31770,6 +33560,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 451743039}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1336705700
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32076,6 +33889,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 840362447}
+  - {fileID: 1785521989}
+  - {fileID: 686163323}
+  - {fileID: 1923215763}
+  - {fileID: 337191437}
+  - {fileID: 493153282}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1344848037
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32465,6 +34291,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1725870040}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1386971503
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33046,6 +34891,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 111055897}
+  - {fileID: 1261616157}
+  - {fileID: 1530558198}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 2017184641}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1403031377
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33315,6 +35180,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 797946267}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1725870040}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &1409434786
 GameObject:
   m_ObjectHideFlags: 0
@@ -33364,6 +35251,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 965255822}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1409434789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33476,6 +35378,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1247135803}
+  - {fileID: 735166946}
+  - {fileID: 1601522315}
+  - {fileID: 957710784}
+  - {fileID: 1961764162}
+  - {fileID: 1689761745}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1413963365
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33622,6 +35540,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 342583670}
+  - {fileID: 625339446}
+  - {fileID: 1439885117}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 567571328}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 134430768}
+  - {fileID: 735166946}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1421467161
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33959,6 +35897,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1944920296}
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 884116154}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &1439885115
 GameObject:
   m_ObjectHideFlags: 0
@@ -34008,6 +35964,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 625339446}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1439885118
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35097,6 +37062,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 741299748}
+  - {fileID: 171422166}
+  - {fileID: 1862663822}
+  - {fileID: 1551856193}
+  - {fileID: 434654426}
+  - {fileID: 12615068}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1499019492
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35194,6 +37172,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 359104434}
+  - {fileID: 512916675}
+  - {fileID: 65830518}
+  - {fileID: 191769037}
+  - {fileID: 2139289691}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1506963715
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37368,6 +39358,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 602697676}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 920119242}
+  - {fileID: 134430768}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1528135254
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37480,6 +39487,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 1403031376}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1529832646
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37592,6 +39614,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 2017184641}
+  - {fileID: 1403031376}
+  - {fileID: 459951760}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1530558199
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37868,6 +39905,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 741299748}
+  - {fileID: 1219623386}
+  - {fileID: 171422166}
+  - {fileID: 1499019491}
+  - {fileID: 1862663822}
+  - {fileID: 1805059400}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1551856194
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38511,6 +40561,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1120954146}
+  - {fileID: 1330649408}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 145789497}
+  - {fileID: 797946267}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 1706627267}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1582727687
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38785,6 +40858,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 342583670}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 617075470}
+  - {fileID: 134430768}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  - {fileID: 385591652}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1593982151
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38897,6 +40995,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 406497518}
+  - {fileID: 1683679787}
+  - {fileID: 1328830615}
+  - {fileID: 957710784}
+  - {fileID: 541565535}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 1961764162}
+  - {fileID: 1689761745}
+  - {fileID: 523502315}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 452321388}
+  - {fileID: 1073750312}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1601522316
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39189,6 +41309,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 124635044}
+  - {fileID: 1870735658}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 204953636}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1627212226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39797,7 +41929,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648374436}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 266.356, y: 6.9758425, z: -202.98274}
+  m_LocalPosition: {x: 88.9, y: 6.9758425, z: -113.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40355,6 +42487,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 191117837}
+  - {fileID: 406497518}
+  - {fileID: 707583888}
+  - {fileID: 735166946}
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 541565535}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1683679788
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40467,6 +42613,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 545907380}
+  - {fileID: 1601522315}
+  - {fileID: 957710784}
+  - {fileID: 1413963364}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1689761746
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40755,6 +42912,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1186903210}
+  - {fileID: 3632445}
+  - {fileID: 665700528}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1694573736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41109,6 +43276,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1042365266}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 884116154}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1438982763}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &1703854300
 GameObject:
   m_ObjectHideFlags: 0
@@ -41397,6 +43585,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1330649408}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 451743039}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &1712648171
 GameObject:
   m_ObjectHideFlags: 0
@@ -41477,6 +43685,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1934887998}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1714167764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41736,6 +43952,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1997101421}
+  - {fileID: 1336705699}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1725870041
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43100,6 +45342,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1180659330}
+  - {fileID: 434654426}
+  - {fileID: 840362447}
+  - {fileID: 686163323}
+  - {fileID: 1923215763}
+  - {fileID: 337191437}
+  - {fileID: 493153282}
+  - {fileID: 1344848036}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 2143963768}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1785521990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43712,6 +45972,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1421467160}
+  - {fileID: 1409434788}
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 1967832060}
+  - {fileID: 545907380}
+  - {fileID: 136715388}
+  - {fileID: 307392611}
+  - {fileID: 617075470}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1797575321
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44131,6 +46417,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 521942904}
+  - {fileID: 741299748}
+  - {fileID: 1934887998}
+  - {fileID: 1219623386}
+  - {fileID: 1222146994}
+  - {fileID: 171422166}
+  - {fileID: 1862663822}
+  - {fileID: 1551856193}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1805059401
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44759,6 +47060,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 451743039}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1822600174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46134,6 +48458,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1219623386}
+  - {fileID: 1222146994}
+  - {fileID: 1499019491}
+  - {fileID: 1551856193}
+  - {fileID: 1805059400}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1862663823
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46197,6 +48533,211 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862663820}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1865701936
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1865701938}
+  - component: {fileID: 1865701937}
+  m_Layer: 0
+  m_Name: NODOSLINKEDS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1865701937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865701936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa8c914566227345b549026587fbe4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 3632445}
+  - {fileID: 12615068}
+  - {fileID: 14671755}
+  - {fileID: 24847368}
+  - {fileID: 26255578}
+  - {fileID: 54795572}
+  - {fileID: 65830518}
+  - {fileID: 111055897}
+  - {fileID: 111242922}
+  - {fileID: 124635044}
+  - {fileID: 134430768}
+  - {fileID: 135075397}
+  - {fileID: 136715388}
+  - {fileID: 145789497}
+  - {fileID: 154109011}
+  - {fileID: 159614261}
+  - {fileID: 171422166}
+  - {fileID: 191117837}
+  - {fileID: 191769037}
+  - {fileID: 192618751}
+  - {fileID: 204953636}
+  - {fileID: 207461466}
+  - {fileID: 228464725}
+  - {fileID: 256542778}
+  - {fileID: 271352358}
+  - {fileID: 307392611}
+  - {fileID: 328101759}
+  - {fileID: 337191437}
+  - {fileID: 342583670}
+  - {fileID: 359104434}
+  - {fileID: 385591652}
+  - {fileID: 387415558}
+  - {fileID: 387686115}
+  - {fileID: 406497518}
+  - {fileID: 429992871}
+  - {fileID: 433124382}
+  - {fileID: 434654426}
+  - {fileID: 451743039}
+  - {fileID: 452321388}
+  - {fileID: 459615637}
+  - {fileID: 459951760}
+  - {fileID: 493153282}
+  - {fileID: 494791664}
+  - {fileID: 512916675}
+  - {fileID: 521942904}
+  - {fileID: 523502315}
+  - {fileID: 541565535}
+  - {fileID: 545907380}
+  - {fileID: 554995304}
+  - {fileID: 556667398}
+  - {fileID: 567571328}
+  - {fileID: 571342519}
+  - {fileID: 589120108}
+  - {fileID: 602697676}
+  - {fileID: 617075470}
+  - {fileID: 625339446}
+  - {fileID: 627571568}
+  - {fileID: 665700528}
+  - {fileID: 686163323}
+  - {fileID: 689682583}
+  - {fileID: 707583888}
+  - {fileID: 719078371}
+  - {fileID: 729335523}
+  - {fileID: 735166946}
+  - {fileID: 741299748}
+  - {fileID: 754491279}
+  - {fileID: 797946267}
+  - {fileID: 818535480}
+  - {fileID: 840362447}
+  - {fileID: 856102870}
+  - {fileID: 872590694}
+  - {fileID: 880263670}
+  - {fileID: 884116154}
+  - {fileID: 920119242}
+  - {fileID: 943242023}
+  - {fileID: 945477121}
+  - {fileID: 948929283}
+  - {fileID: 954495824}
+  - {fileID: 957710784}
+  - {fileID: 965255822}
+  - {fileID: 985627501}
+  - {fileID: 985811110}
+  - {fileID: 998719550}
+  - {fileID: 1027138888}
+  - {fileID: 1027327090}
+  - {fileID: 1042365266}
+  - {fileID: 1055346060}
+  - {fileID: 1073750312}
+  - {fileID: 1120954146}
+  - {fileID: 1123297991}
+  - {fileID: 1123425176}
+  - {fileID: 1165031195}
+  - {fileID: 1173555210}
+  - {fileID: 1180659330}
+  - {fileID: 1186903210}
+  - {fileID: 1219623386}
+  - {fileID: 1222146994}
+  - {fileID: 1247135803}
+  - {fileID: 1261391287}
+  - {fileID: 1261616157}
+  - {fileID: 1283713895}
+  - {fileID: 1318613427}
+  - {fileID: 1328830615}
+  - {fileID: 1330649408}
+  - {fileID: 1336705699}
+  - {fileID: 1344848036}
+  - {fileID: 1386971502}
+  - {fileID: 1403031376}
+  - {fileID: 1404594968}
+  - {fileID: 1409434788}
+  - {fileID: 1413963364}
+  - {fileID: 1421467160}
+  - {fileID: 1438982763}
+  - {fileID: 1439885117}
+  - {fileID: 1499019491}
+  - {fileID: 1506963714}
+  - {fileID: 1528135253}
+  - {fileID: 1529832645}
+  - {fileID: 1530558198}
+  - {fileID: 1551856193}
+  - {fileID: 1582727686}
+  - {fileID: 1593982150}
+  - {fileID: 1601522315}
+  - {fileID: 1627212225}
+  - {fileID: 1683679787}
+  - {fileID: 1689761745}
+  - {fileID: 1694573735}
+  - {fileID: 1699586077}
+  - {fileID: 1706627267}
+  - {fileID: 1714167763}
+  - {fileID: 1725870040}
+  - {fileID: 1785521989}
+  - {fileID: 1797575320}
+  - {fileID: 1805059400}
+  - {fileID: 1822600173}
+  - {fileID: 1862663822}
+  - {fileID: 1870735658}
+  - {fileID: 1906347017}
+  - {fileID: 1913913725}
+  - {fileID: 1923215763}
+  - {fileID: 1934887998}
+  - {fileID: 1944920296}
+  - {fileID: 1953021683}
+  - {fileID: 1954592744}
+  - {fileID: 1957632282}
+  - {fileID: 1961764162}
+  - {fileID: 1967832060}
+  - {fileID: 1975022194}
+  - {fileID: 1997076935}
+  - {fileID: 1997101421}
+  - {fileID: 2017184641}
+  - {fileID: 2031559374}
+  - {fileID: 2044592235}
+  - {fileID: 2078430809}
+  - {fileID: 2079366649}
+  - {fileID: 2127868133}
+  - {fileID: 2128745424}
+  - {fileID: 2135527453}
+  - {fileID: 2139289691}
+  - {fileID: 2143963768}
+--- !u!4 &1865701938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865701936}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 88.9, y: 7.3599176, z: -117.386154}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1870735656
 GameObject:
   m_ObjectHideFlags: 0
@@ -46246,6 +48787,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 124635044}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 1627212225}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1870735659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47197,6 +49749,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1923215763}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 2143963768}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &1906701257
 GameObject:
   m_ObjectHideFlags: 0
@@ -47475,6 +50052,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 124635044}
+  - {fileID: 1870735658}
+  - {fileID: 571342519}
+  - {fileID: 159614261}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 134430768}
+  - {fileID: 24847368}
+  - {fileID: 1627212225}
+  - {fileID: 2078430809}
+  - {fileID: 1957632282}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1913913726
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47720,6 +50316,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1785521989}
+  - {fileID: 337191437}
+  - {fileID: 493153282}
+  - {fileID: 1344848036}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1923215764
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47866,6 +50477,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1714167763}
+  - {fileID: 1219623386}
+  - {fileID: 998719550}
+  - {fileID: 1805059400}
+  - {fileID: 1953021683}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1934887999
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48268,6 +50891,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 434654426}
+  - {fileID: 1165031195}
+  - {fileID: 1042365266}
+  - {fileID: 12615068}
+  - {fileID: 271352358}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 1438982763}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1944920297
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48641,6 +51279,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1934887998}
+  - {fileID: 1219623386}
+  - {fileID: 136715388}
+  - {fileID: 998719550}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1953021684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48753,6 +51404,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 111055897}
+  - {fileID: 1173555210}
+  - {fileID: 1261616157}
+  - {fileID: 627571568}
+  - {fileID: 328101759}
+  - {fileID: 1530558198}
+  - {fileID: 2017184641}
+  - {fileID: 1261391287}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1954592745
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -48947,6 +51614,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 589120108}
+  - {fileID: 1055346060}
+  - {fileID: 24847368}
+  - {fileID: 452321388}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1957632283
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49059,6 +51739,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1601522315}
+  - {fileID: 1328830615}
+  - {fileID: 957710784}
+  - {fileID: 385591652}
+  - {fileID: 1413963364}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 1073750312}
+  - {fileID: 2031559374}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1961764163
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49268,6 +51965,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1593982150}
+  - {fileID: 872590694}
+  - {fileID: 602697676}
+  - {fileID: 1247135803}
+  - {fileID: 1027327090}
+  - {fileID: 567571328}
+  - {fileID: 965255822}
+  - {fileID: 545907380}
+  - {fileID: 1797575320}
+  - {fileID: 136715388}
+  - {fileID: 307392611}
+  - {fileID: 617075470}
+  - {fileID: 192618751}
+  - {fileID: 948929283}
+  - {fileID: 985811110}
+  - {fileID: 735166946}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1967832061
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49414,6 +52134,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1180659330}
+  - {fileID: 1165031195}
+  - {fileID: 12615068}
+  - {fileID: 1123297991}
+  - {fileID: 429992871}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1975022195
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49931,6 +52663,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 754491279}
+  - {fileID: 1283713895}
+  - {fileID: 512916675}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &1997076936
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50106,6 +52848,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1404594968}
+  - {fileID: 2127868133}
+  - {fileID: 1725870040}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 451743039}
+  - {fileID: 256542778}
+  - {fileID: 1706627267}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1001 &1998849252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50411,6 +53171,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 204953636}
+  - {fileID: 1954592744}
+  - {fileID: 111055897}
+  - {fileID: 1261616157}
+  - {fileID: 1530558198}
+  - {fileID: 1403031376}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2017184642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50557,6 +53333,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 957710784}
+  - {fileID: 385591652}
+  - {fileID: 1961764162}
+  - {fileID: 1529832645}
+  - {fileID: 207461466}
+  - {fileID: 433124382}
+  - {fileID: 1403031376}
+  - {fileID: 754491279}
+  - {fileID: 459951760}
+  - {fileID: 1073750312}
+  - {fileID: 856102870}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2031559375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51267,6 +54061,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1042365266}
+  - {fileID: 154109011}
+  - {fileID: 429992871}
+  - {fileID: 2079366649}
+  - {fileID: 228464725}
+  - {fileID: 135075397}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  - {fileID: 689682583}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &2052575052
 GameObject:
   m_ObjectHideFlags: 0
@@ -51449,6 +54261,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 307392611}
+  - {fileID: 571342519}
+  - {fileID: 617075470}
+  - {fileID: 159614261}
+  - {fileID: 1913913725}
+  - {fileID: 920119242}
+  - {fileID: 134430768}
+  - {fileID: 2128745424}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2078430810
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -51561,6 +54388,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 228464725}
+  - {fileID: 135075397}
+  - {fileID: 2044592235}
+  - {fileID: 985627501}
+  - {fileID: 729335523}
+  - {fileID: 1699586077}
+  - {fileID: 1438982763}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2079366650
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52665,6 +55506,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1330649408}
+  - {fileID: 145789497}
+  - {fileID: 1582727686}
+  - {fileID: 1404594968}
+  - {fileID: 1997101421}
+  - {fileID: 1725870040}
+  - {fileID: 1386971502}
+  - {fileID: 54795572}
+  - {fileID: 459615637}
+  - {fileID: 111242922}
+  - {fileID: 451743039}
+  - {fileID: 1706627267}
+  - {fileID: 494791664}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1 &2128329681
 GameObject:
   m_ObjectHideFlags: 0
@@ -52745,6 +55606,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1528135253}
+  - {fileID: 602697676}
+  - {fileID: 1027327090}
+  - {fileID: 307392611}
+  - {fileID: 818535480}
+  - {fileID: 571342519}
+  - {fileID: 617075470}
+  - {fileID: 920119242}
+  - {fileID: 134430768}
+  - {fileID: 2078430809}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2128745425
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52888,6 +55766,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 14671755}
+  - {fileID: 1123425176}
+  - {fileID: 26255578}
+  - {fileID: 521942904}
+  - {fileID: 741299748}
+  - {fileID: 1219623386}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2135527454
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52985,6 +55876,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 359104434}
+  - {fileID: 1506963714}
+  - {fileID: 65830518}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!65 &2139289692
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -53369,6 +56271,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkable: 1
   CooldownWalkable: 10
+  NeighboardNodes:
+  - {fileID: 1785521989}
+  - {fileID: 884116154}
+  - {fileID: 1906347017}
+  - {fileID: 1318613427}
+  - {fileID: 689682583}
+  - {fileID: 719078371}
+  - {fileID: 1120954146}
+  - {fileID: 1027138888}
+  - {fileID: 554995304}
+  - {fileID: 556667398}
+  - {fileID: 1330649408}
+  - {fileID: 387415558}
+  - {fileID: 880263670}
+  - {fileID: 954495824}
+  - {fileID: 945477121}
+  - {fileID: 943242023}
+  - {fileID: 387686115}
+  - {fileID: 1822600173}
+  - {fileID: 1582727686}
+  - {fileID: 1336705699}
+  - {fileID: 1725870040}
+  - {fileID: 111242922}
+  - {fileID: 256542778}
+  - {fileID: 191769037}
+  NodeLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  IgnoreLayer:
+    serializedVersion: 2
+    m_Bits: 2304
 --- !u!1001 &5913912657292938369
 PrefabInstance:
   m_ObjectHideFlags: 0
