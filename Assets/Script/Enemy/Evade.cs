@@ -5,7 +5,7 @@ using UnityEngine;
 public class Evade : Persuit
 {
    
-    public Evade(Transform origin, PlayerModel target, float time) : base(origin, target, time)
+    public Evade(Transform origin, EntityBase target, float time) : base(origin, target, time)
     {
     }
 
