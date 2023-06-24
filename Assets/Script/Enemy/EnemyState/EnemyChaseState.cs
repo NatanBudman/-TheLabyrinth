@@ -6,11 +6,13 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
 {
     ObstacleAvoidance _obstacleAvoidance;
     Seek seek;
+    Persuit persuit;
     public override void Awake()
     {
         base.Awake();
         _obstacleAvoidance = new ObstacleAvoidance(_controller.target, _controller.layerObstacle, 20, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
         seek = new Seek(_model.transform, _controller.target);
+        persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(),1);
     }
     public override void Execute()
     {
@@ -19,22 +21,24 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
         if (!seeObstacle())
         {
            
-              Vector3 pepe = (_obstacleAvoidance.GetDir() + _model.transform.position * 1f).normalized;
+            Vector3 pepe = (_obstacleAvoidance.GetDir() + persuit.GetDir() * 2f).normalized;
             
             _model.Move(pepe);
             _model.LookRotate(pepe);
-            Debug.Log(_obstacleAvoidance.GetDir());
+            Debug.Log("obstaculovisto");
+
+            
 
         }
         else
         {
-            _model.Move(seek.GetDir());
-            _model.LookRotate(seek.GetDir());
+            _model.Move(persuit.GetDir());
+            _model.LookRotate(persuit.GetDir());
 
         }
         
 
-        Debug.Log("Chase");
+        //Debug.Log("Chase");
 
     }
     bool seeObstacle()
@@ -43,8 +47,10 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
 
         Vector3 diffPoint = _controller.target.transform.position - _model.transform.position;
 
+        float distDetect = Vector3.Distance(_controller.target.transform.position, _model.transform.position);
+
         float angleToPoint = Vector3.Angle(_model.transform.forward, diffPoint);
-        if (angleToPoint < _controller.obstacleDetectionAngle / 2)
+        if (angleToPoint < _controller.obstacleDetectionAngle / 2 && distDetect < _controller.obstacleDetectionRadius)
         {
             Vector3 diff = (_controller.target.position - _model.transform.position);
             Vector3 dirToTarget = diff.normalized;
