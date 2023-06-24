@@ -9045,6 +9045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1136835153}
   JailDoor: {fileID: 766924661}
+  Handler: {fileID: 23270923}
   heightOpen: 12
   velocity: 1.5
   Interactue: 101
@@ -16741,6 +16742,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1136835153}
   JailDoor: {fileID: 1179705703}
+  Handler: {fileID: 285036210}
   heightOpen: 12
   velocity: 1.5
   Interactue: 101
@@ -32572,6 +32574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1136835153}
   JailDoor: {fileID: 805661306}
+  Handler: {fileID: 1437264920}
   heightOpen: 12
   velocity: 1.5
   Interactue: 101
@@ -54063,6 +54066,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1136835153}
   JailDoor: {fileID: 1790365528}
+  Handler: {fileID: 778211289}
   heightOpen: 12
   velocity: 1.5
   Interactue: 101
@@ -55264,6 +55268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1136835153}
   JailDoor: {fileID: 1631948268}
+  Handler: {fileID: 510692449}
   heightOpen: 12
   velocity: 1.5
   Interactue: 101
