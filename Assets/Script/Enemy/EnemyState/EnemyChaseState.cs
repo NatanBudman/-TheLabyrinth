@@ -5,35 +5,42 @@ using UnityEngine;
 public class EnemyChaseState<T> : EnemeyStateBase<T>
 {
     ObstacleAvoidance _obstacleAvoidance;
-    Seek seek;
     Persuit persuit;
+    EnemyController enemyController;
+    ISteering _steering;
+
     public override void Awake()
     {
         base.Awake();
-        _obstacleAvoidance = new ObstacleAvoidance(_controller.target, _controller.layerObstacle, 20, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
-        seek = new Seek(_model.transform, _controller.target);
+        _obstacleAvoidance = new ObstacleAvoidance(_controller.target, _controller.layerObstacle, 5, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
         persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(),1);
+        enemyController = new EnemyController();
+        _steering = persuit;
     }
     public override void Execute()
     {
         base.Execute();
-        Debug.Log(_obstacleAvoidance);
-        if (!seeObstacle())
+        if (seeObstacle())
         {
-           
+              Debug.Log(_obstacleAvoidance);
+
             Vector3 pepe = (_obstacleAvoidance.GetDir() + persuit.GetDir() * 2f).normalized;
-            
+
             _model.Move(pepe);
             _model.LookRotate(pepe);
-            Debug.Log("obstaculovisto");
 
-            
+            Debug.Log("obstaculovisto");
+          
+
 
         }
         else
         {
-            _model.Move(persuit.GetDir());
-            _model.LookRotate(persuit.GetDir());
+            Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
+            Vector3 dir = (_steering.GetDir() + dirAvoidance * 1).normalized;
+
+            _model.Move(dir);
+            _model.LookDir(dir);
 
         }
         

@@ -13,6 +13,7 @@ public class EntityBase : MonoBehaviour
     public float _speedRotate = 100;
 
     public float jumpforce = 10f;
+    public float rotSpeed = 5;
 
     float _timer;
     public float maxTime;
@@ -44,9 +45,9 @@ public class EntityBase : MonoBehaviour
     }
     public void LookDir(Vector3 dir)
     {
-        if (dir == Vector3.zero) return; 
+        if (dir == Vector3.zero) return;
         dir.y = 0;
-        transform.forward = dir;
+        transform.forward = Vector3.Lerp(transform.forward, dir, Time.deltaTime * rotSpeed);
     }
 
     public Transform getPosition => transform;

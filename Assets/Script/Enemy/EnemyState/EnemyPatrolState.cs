@@ -14,13 +14,17 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
     public override void Execute()
     {
         base.Execute();
-       
+
         _model.Move(_patrol.Patrullaje());
-      //  _model.LookRotate(_patrol.Patrullaje());
+
+        //  _model.LookRotate(_patrol.Patrullaje());
         if (_model.CurrentTimer >= 0)
         {
+            Debug.Log("Patrol");
             _model.RunTimer();
+
+            
         }
-        
+
     }
 }
