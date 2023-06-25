@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AgentController : MonoBehaviour
 {
-    public CI_Model crash;
+    public EntityBase crash;
     public Box box;
     public diffNode goalNode;
     public diffNode startNode;

@@ -10,7 +10,11 @@ public class diffNode : MonoBehaviour
     private void Start()
     {
         mat = GetComponent<Renderer>().material;
-       
+        GetNeightbourd(Vector3.right);
+        GetNeightbourd(Vector3.left);
+        GetNeightbourd(Vector3.forward);
+        GetNeightbourd(Vector3.back);
+
     }
     private void Update()
     {
@@ -18,5 +22,15 @@ public class diffNode : MonoBehaviour
             mat.color = Color.red;
         else
             mat.color = Color.white;
+    }
+    void GetNeightbourd(Vector3 dir)
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, dir, out hit, 2.2f))
+        {
+            var node = hit.collider.GetComponent<diffNode>();
+            if (node != null)
+                neightbourds.Add(node);
+        }
     }
 }

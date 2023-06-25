@@ -8,19 +8,21 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
     Persuit persuit;
     EnemyController enemyController;
     ISteering _steering;
+    EntityBase _entity;
 
     public override void Awake()
     {
         base.Awake();
         _obstacleAvoidance = new ObstacleAvoidance(_controller.target, _controller.layerObstacle, 5, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
-        persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(),1);
+        persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(),3);
         enemyController = new EnemyController();
         _steering = persuit;
+
     }
     public override void Execute()
     {
         base.Execute();
-        if (seeObstacle())
+     /*   if (seeObstacle())
         {
               Debug.Log(_obstacleAvoidance);
 
@@ -35,14 +37,14 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
 
         }
         else
-        {
+        {*/
             Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
             Vector3 dir = (_steering.GetDir() + dirAvoidance * 1).normalized;
 
             _model.Move(dir);
             _model.LookDir(dir);
 
-        }
+       // }
         
 
         //Debug.Log("Chase");
