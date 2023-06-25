@@ -19,12 +19,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1366
     height: 635
+=======
+    width: 1920
+    height: 947
+>>>>>>> SantiRamon
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: -1
+  controlID: 62
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -45,10 +50,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 264
     y: 73
     width: 758
     height: 366
+=======
+    x: 350
+    y: 73
+    width: 1087
+    height: 530
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -95,16 +107,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 758
       height: 345
     m_Scale: {x: 0.31944445, y: 0.31944445}
     m_Translation: {x: 379, y: 172.5}
+=======
+      width: 1087
+      height: 509
+    m_Scale: {x: 0.47129634, y: 0.4712963}
+    m_Translation: {x: 543.5, y: 254.5}
+>>>>>>> SantiRamon
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -1186.4348
       y: -540
       width: 2372.8696
@@ -112,6 +132,15 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 0.31944445
   m_LastWindowPixelSize: {x: 758, y: 366}
+=======
+      x: -1153.2023
+      y: -540
+      width: 2306.4045
+      height: 1080
+    m_MinimalGUI: 1
+  m_defaultScale: 0.4712963
+  m_LastWindowPixelSize: {x: 1087, y: 530}
+>>>>>>> SantiRamon
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -136,12 +165,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1024
     height: 635
+=======
+    width: 1439
+    height: 947
+>>>>>>> SantiRamon
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: -1
+  controlID: 63
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -161,12 +195,17 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 1024
     height: 387
+=======
+    width: 1439
+    height: 551
+>>>>>>> SantiRamon
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: -1
+  controlID: 64
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -184,8 +223,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 264
     height: 387
+=======
+    width: 350
+    height: 551
+>>>>>>> SantiRamon
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 6}
@@ -215,32 +259,44 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
+<<<<<<< HEAD
     width: 263
     height: 366
+=======
+    width: 349
+    height: 530
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 343}
       m_SelectedIDs: f8faffff
       m_LastClickedID: -1288
       m_ExpandedIDs: d0e3ffff22f7ffff36fbffff224f0000b65300008a540000905c0000
+=======
+      scrollPos: {x: 0, y: 67}
+      m_SelectedIDs: b8e9ffff
+      m_LastClickedID: -5704
+      m_ExpandedIDs: aae9ffffb8e9ffff94f2ffffc05b00006c600000
+>>>>>>> SantiRamon
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: IA
+        m_OriginalName: IA
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: -5704
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 5}
       m_SearchString: 
@@ -265,19 +321,33 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 264
     y: 0
     width: 760
     height: 387
+=======
+    x: 350
+    y: 0
+    width: 1089
+    height: 551
+>>>>>>> SantiRamon
   m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
   - {fileID: 8}
+<<<<<<< HEAD
   - {fileID: 9}
   m_Selected: 0
   m_LastSelected: 1
+=======
+  - {fileID: 2}
+  - {fileID: 9}
+  m_Selected: 1
+  m_LastSelected: 0
+>>>>>>> SantiRamon
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -298,10 +368,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 264
     y: 73
     width: 758
     height: 366
+=======
+    x: 350
+    y: 73
+    width: 1087
+    height: 530
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -536,9 +613,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: -10.700235, y: 88.700935, z: -88.19771}
     speed: 2
     m_Value: {x: -10.700235, y: 88.700935, z: -88.19771}
+=======
+    m_Target: {x: -102.47733, y: 3.78723, z: 91.62882}
+    speed: 2
+    m_Value: {x: -102.47733, y: 3.78723, z: 91.62882}
+>>>>>>> SantiRamon
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,6 +668,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.33458817, y: 0.19658393, z: -0.07176814, w: -0.91896623}
     speed: 2
     m_Value: {x: -0.3344393, y: 0.19793798, z: -0.072261125, w: -0.91855824}
@@ -592,6 +676,15 @@ MonoBehaviour:
     m_Target: 11.037229
     speed: 2
     m_Value: 11.037229
+=======
+    m_Target: {x: 0.11319577, y: -0.71903175, z: 0.0945872, w: 0.68233454}
+    speed: 2
+    m_Value: {x: 0.11295053, y: -0.717474, z: 0.09438228, w: 0.6808563}
+  m_Size:
+    m_Target: 8.366843
+    speed: 2
+    m_Value: 8.366843
+>>>>>>> SantiRamon
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -636,10 +729,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 264
     y: 73
     width: 758
     height: 366
+=======
+    x: 250
+    y: 73
+    width: 772
+    height: 514
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -707,24 +807,33 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 387
     width: 1024
     height: 248
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 11}
+=======
+    y: 551
+    width: 1439
+    height: 396
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 12}
+>>>>>>> SantiRamon
   m_Panes:
   - {fileID: 11}
   - {fileID: 12}
   - {fileID: 13}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -746,9 +855,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 460
     width: 1023
     height: 227
+=======
+    y: 624
+    width: 1438
+    height: 375
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -766,12 +881,17 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
+<<<<<<< HEAD
     - Assets/Assets/Minimap
+=======
+    - Assets/Script/Enemy/EnemyState
+>>>>>>> SantiRamon
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
+<<<<<<< HEAD
   - Assets/Assets/Minimap
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\BACK UP 2023\Proyectos\TheLockedRoom
@@ -782,6 +902,18 @@ MonoBehaviour:
     m_SelectedIDs: c8630000
     m_LastClickedID: 25544
     m_ExpandedIDs: 000000006c6300006e63000070630000726300007463000076630000786300007a6300007c63000000ca9a3b
+=======
+  - Assets/Script/Enemy/EnemyState
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\Santi\Documents\GitHub\BackRoom
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 120}
+    m_SelectedIDs: a6690000
+    m_LastClickedID: 27046
+    m_ExpandedIDs: 000000000c6900000e69000010690000126900001469000016690000186900001a6900007469000000ca9a3bffffff7f
+>>>>>>> SantiRamon
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -809,7 +941,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000006c6300006e63000070630000726300007463000076630000786300007a6300007c63000000ca9a3b
+=======
+    m_ExpandedIDs: 000000000c6900000e69000010690000126900001469000016690000186900001a690000
+>>>>>>> SantiRamon
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -834,9 +970,15 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
+<<<<<<< HEAD
     m_SelectedInstanceIDs: f8faffff
     m_LastClickedInstanceID: -1288
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_SelectedInstanceIDs: b8e9ffff
+    m_LastClickedInstanceID: -5704
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> SantiRamon
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -886,9 +1028,15 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
     y: 463
     width: 1023
     height: 224
+=======
+    y: 624
+    width: 1438
+    height: 375
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -923,7 +1071,11 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
   m_LastSelectedObjectID: -9396
+=======
+  m_LastSelectedObjectID: -5704
+>>>>>>> SantiRamon
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -939,12 +1091,21 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1024
     y: 0
     width: 342
     height: 635
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
+=======
+    x: 1439
+    y: 0
+    width: 481
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+>>>>>>> SantiRamon
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -966,15 +1127,26 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
     m_Text: Inspector
+=======
+    m_Text: Debug
+>>>>>>> SantiRamon
     m_Image: {fileID: -2667387946076563598, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1024
     y: 73
     width: 341
     height: 614
+=======
+    x: 1439
+    y: 73
+    width: 480
+    height: 926
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -988,7 +1160,7 @@ MonoBehaviour:
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
-  m_InspectorMode: 0
+  m_InspectorMode: 1
   m_LockTracker:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
@@ -1012,10 +1184,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1024
     y: 73
     width: 341
     height: 614
+=======
+    x: 1259
+    y: 73
+    width: 420
+    height: 896
+>>>>>>> SantiRamon
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

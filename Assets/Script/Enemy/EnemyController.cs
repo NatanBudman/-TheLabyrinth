@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     FSM<EnemyStateEnum> _fsm;
      Patrol _patrol;
     EnemyController _controller;
-    Seek _seek;
+    Persuit _seek;
     public ObstacleAvoidance _obstacleAvoidance;
     ITreeNode _root;
     public Transform target;
@@ -32,7 +32,6 @@ public class EnemyController : MonoBehaviour
     private void Awake()
     {
         InicializateSeek();
-        _seek = new Seek(transform, target); 
         _model = GetComponent<EntityBase>();
         
         _controller = GetComponent<EnemyController>();
@@ -150,7 +149,7 @@ public class EnemyController : MonoBehaviour
     }
     bool IsTimeOver()
     {
-        return _model.CurrentTimer > 0 && _model.CurrentTimer < 5;
+        return _model.CurrentTimer > 0 && _model.CurrentTimer < 16;
     }
     bool IsAlive()
     {

@@ -5,9 +5,9 @@ using UnityEngine;
 public class Persuit : ISteering
 {
     private Transform _origin;
-    private EntityBase _target;
+    private PlayerModel _target;
     private float _time;
-    public Persuit(Transform origin,EntityBase target, float time)
+    public Persuit(Transform origin,PlayerModel target, float time)
     {
         _origin = origin;
         _target = target;
@@ -17,7 +17,7 @@ public class Persuit : ISteering
     {
         float distance = Vector3.Distance(_origin.position, _target.transform.position);
         
-        Vector3 point = _target.transform.position + _target.GetForward * 
+        Vector3 point = _target.transform.position + _target.GetFarword * 
             Mathf.Clamp(_target.GetVelocity * _time,0,distance);
         return (point - _origin.position).normalized;
     }
