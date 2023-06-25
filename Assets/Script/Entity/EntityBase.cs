@@ -45,8 +45,20 @@ public class EntityBase : MonoBehaviour, IPoints
         transform.position += Time.deltaTime * dir * speedP; ;
         transform.forward = Vector3.Lerp(transform.forward, dir, speedRot * Time.deltaTime);
     }
+    public void RotateTowardsMovement()
+    {
+        Vector3 forward = GetForward;
+        forward.y = 0f; 
+
+        if (forward != Vector3.zero)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(forward);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, _speedRotate * Time.deltaTime);
+        }
+    }
     public void SetWayPoints(List<diffNode> newPoints)
     {
+        Debug.Log("seteados");
         var list = new List<Vector3>();
         for (int i = 0; i < newPoints.Count; i++)
         {
@@ -66,6 +78,8 @@ public class EntityBase : MonoBehaviour, IPoints
     }
     public void Run()
     {
+        Debug.Log("RunASTAR");
+
         var point = waypoints[_nextPoint];
         var posPoint = point;
         posPoint.y = transform.position.y;
@@ -81,7 +95,7 @@ public class EntityBase : MonoBehaviour, IPoints
                 return;
             }
         }
-        Move(dir.normalized);
+        MoveP(dir.normalized);
     }
 
     public float GetRandomTime()

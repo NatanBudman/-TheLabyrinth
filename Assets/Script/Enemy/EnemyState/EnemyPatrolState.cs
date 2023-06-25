@@ -22,11 +22,9 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         {
             Debug.Log("Patrol");
             _model.RunTimer();
-            if (_model.readyToMove)
-            {
+            
                 _model.Run();
-            }
-
+            _model.RotateTowardsMovement();
 
         }
 

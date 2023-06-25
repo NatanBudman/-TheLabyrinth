@@ -17,7 +17,7 @@ public class EnemyIdleState<T> : EnemeyStateBase<T>
         {
             _model.RunTimer();
             Debug.Log("Idle");
-           // _model._rb.velocity = Vector3.zero;
+            _model._rb.velocity = Vector3.zero;
 
         }
         if (_model.CurrentTimer > 20)

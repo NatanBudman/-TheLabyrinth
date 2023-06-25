@@ -4732,7 +4732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 1704229370}
+  crash: {fileID: 0}
   box: {fileID: 377471781}
   goalNode: {fileID: 769711211}
   startNode: {fileID: 987540043}
