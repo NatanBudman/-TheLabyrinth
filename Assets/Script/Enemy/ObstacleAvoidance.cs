@@ -38,9 +38,9 @@ public class ObstacleAvoidance : ISteering
             dirToAvoid += -(diffPoint).normalized * (_radius - dist);
         }
 
-        if (countObstacle > 0)
+        if (detectedObs > 0)
         {
-            dirToAvoid /= countObstacle;
+            dirToAvoid /= detectedObs;
 
         }
         return dirToAvoid.normalized;
