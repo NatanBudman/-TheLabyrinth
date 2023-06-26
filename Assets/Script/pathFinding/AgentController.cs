@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class AgentController : MonoBehaviour
 {
+    private Dictionary<diffNode, float> dicNodos = new Dictionary<diffNode, float>();
     public EntityBase crash;
     public Box box;
     public diffNode goalNode;
@@ -13,7 +15,8 @@ public class AgentController : MonoBehaviour
     public LayerMask maskNodes;
     public LayerMask maskObs;
     List<Vector3> lastPathTest;
-
+    private diffNode[] listaNodos;
+    public PlayerModel _player;
     [Header("Vector")]
     public float range;
 
@@ -23,16 +26,25 @@ public class AgentController : MonoBehaviour
 
     private void Awake()
     {
-       
-        _ast = new AStar<diffNode>();
+        listaNodos = FindObjectsOfType<diffNode>();
+         _ast = new AStar<diffNode>();
         _colliders = new Collider[10];
     }
 
     public void Start()
     {
-        AStarPlusRun();
-    }
+        newRoute();
 
+    }
+    public void Update()
+    {
+        if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 1)
+        {
+            Debug.Log("Cambio de ruta");
+            newRoute();
+
+        }
+    }
     public void AStarPlusRun()
     {
         var start = startNode;
@@ -41,8 +53,36 @@ public class AgentController : MonoBehaviour
         path = _ast.CleanPath(path, InView);
         crash.SetWayPoints(path);
         box.SetWayPoints(path);
+
     }
 
+    public void buildingDictionary()
+    {
+        
+            for (int i = 0; i < listaNodos.Length; i++)
+            {
+             float dist = Vector2.Distance(listaNodos[i].transform.position, _player.transform.position);
+            if (!dicNodos.ContainsKey(listaNodos[i]))
+             {
+               
+                dicNodos.Add(listaNodos[i], dist);
+            }
+             else
+             {
+                dicNodos[listaNodos[i]] = dist;
+ 
+             }
+            }
+        
+    }
+    public void newRoute()
+    {
+        buildingDictionary();
+        startNode = goalNode;
+        goalNode = RandomSystem.Roulette(dicNodos);
+        AStarPlusRun();
+
+    }
     bool InView(diffNode from, diffNode to)
     {
         Debug.Log("CLEAN");

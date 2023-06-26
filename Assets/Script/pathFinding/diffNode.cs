@@ -9,21 +9,26 @@ public class diffNode : MonoBehaviour
     Material mat;
     private void Start()
     {
-        mat = GetComponent<Renderer>().material;
+        if(neightbourds.Count == 0)
+        {
+            Debug.Log(this.gameObject.name);
+        }
+       /* mat = GetComponent<Renderer>().material;
         GetNeightbourd(Vector3.right);
         GetNeightbourd(Vector3.left);
         GetNeightbourd(Vector3.forward);
         GetNeightbourd(Vector3.back);
-
+       */
     }
     private void Update()
     {
-        if (hasTrap)
+       /* if (hasTrap)
             mat.color = Color.red;
         else
             mat.color = Color.white;
+       */
     }
-    void GetNeightbourd(Vector3 dir)
+   /* void GetNeightbourd(Vector3 dir)
     {
         RaycastHit hit;
         if (Physics.Raycast(transform.position, dir, out hit, 60f))
@@ -36,4 +41,5 @@ public class diffNode : MonoBehaviour
             }
         }
     }
+   */
 }
