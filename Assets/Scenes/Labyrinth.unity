@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3757701, g: 0.6143082, b: 0.86705744, a: 1}
+  m_IndirectSpecularColor: {r: 0.37577042, g: 0.6143065, b: 0.86705476, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10533,7 +10533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 370802855}
-  box: {fileID: 1305843096}
+  box: {fileID: 2065680272}
   goalNode: {fileID: 296486903}
   startNode: {fileID: 296486903}
   radius: 30
@@ -13205,7 +13205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 480855144}
-  box: {fileID: 1274215607}
+  box: {fileID: 1305843096}
   goalNode: {fileID: 463732634}
   startNode: {fileID: 463732634}
   radius: 30
@@ -24713,7 +24713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 996993704}
-  box: {fileID: 687251431}
+  box: {fileID: 757766214}
   goalNode: {fileID: 1642236886}
   startNode: {fileID: 1642236886}
   radius: 30
@@ -42266,7 +42266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crash: {fileID: 1582263399}
-  box: {fileID: 757766214}
+  box: {fileID: 1274215607}
   goalNode: {fileID: 1943270902}
   startNode: {fileID: 1943270902}
   radius: 30
@@ -45712,8 +45712,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 1694785165}
   box: {fileID: 687251431}
-  goalNode: {fileID: 1642236886}
-  startNode: {fileID: 1642236886}
+  goalNode: {fileID: 691391931}
+  startNode: {fileID: 691391931}
   radius: 30
   maskNodes:
     serializedVersion: 2
