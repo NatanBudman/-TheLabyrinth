@@ -7,8 +7,9 @@ public class FlockingPrueba : MonoBehaviour,IBoid
 {
     public float radius;
     public float speed;
-    private Rigidbody _rb;
-    private void Awake()
+    public float speedRot;
+    public Rigidbody _rb;
+    private void Start()
     {
         _rb.GetComponent<Rigidbody>();
     }
@@ -23,7 +24,7 @@ public class FlockingPrueba : MonoBehaviour,IBoid
     public void LookDir(Vector3 dir)
     {
         dir.y = 0;
-        transform.forward = dir;
+        transform.forward = Vector3.Lerp(transform.forward,dir,speedRot * Time.deltaTime);
     }
 
     public Vector3 Position => transform.position;

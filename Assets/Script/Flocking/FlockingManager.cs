@@ -11,10 +11,10 @@ public class FlockingManager : MonoBehaviour
     private IFlocking[] _flockings;
     private Collider[] _collider;
     private List<IBoid> _boids;
-    private void Awake()
+    private void Start()
     {
        _flockings = GetComponents<IFlocking>();
-       _selft = GetComponent<IBoid>();
+       _selft = this.GetComponent<IBoid>();
        _boids = new List<IBoid>();
        _collider = new Collider[maxBoids];
     }
@@ -33,7 +33,7 @@ public class FlockingManager : MonoBehaviour
         {
             var curr = _collider[i];
             IBoid boid = curr.GetComponent<IBoid>();
-            if (boid == null) continue;
+            if (boid == null || boid == _selft) continue;
             
             _boids.Add(boid);
         }
@@ -45,9 +45,8 @@ public class FlockingManager : MonoBehaviour
             dir += currFlocking.GetDir(_boids, _selft);
         }
 
-        dir = dir.normalized;
-        _selft.Move(dir);
-        _selft.LookDir(dir);
+        _selft.LookDir(dir.normalized);
+        _selft.Move(_selft.Front);
         
     }
     public Vector3 FlockingDir()

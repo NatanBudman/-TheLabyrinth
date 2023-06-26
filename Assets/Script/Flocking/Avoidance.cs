@@ -12,7 +12,7 @@ public class Avoidance : MonoBehaviour,IFlocking
         ;
         for (int i = 0; i < boids.Count; i++)
         {
-            Vector3 diff = boids[i].Position - selft.Position;
+            Vector3 diff = selft.Position - boids[i].Position;
             float distance = diff.magnitude;
             if (distance > personalRange) continue;
             dir = diff.normalized * (personalRange - distance);

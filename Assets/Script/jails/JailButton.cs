@@ -8,7 +8,7 @@ public class JailButton : MonoBehaviour,IObstacles
 {
     public GameObject player;
     public GameObject JailDoor;
-    public GameObject Handler;
+    public GameObject MiniMap;
 
     public float heightOpen;
     private float checkHeight;
@@ -19,7 +19,7 @@ public class JailButton : MonoBehaviour,IObstacles
     private delegate void OpenJail();
 
     private event OpenJail OnOpenJail;
-    private event OpenJail OnHandlerAnim;
+    private event OpenJail OnSeeMiniMap;
 
 
     private bool isOpenJail = false;
@@ -27,22 +27,24 @@ public class JailButton : MonoBehaviour,IObstacles
     {
         checkHeight = JailDoor.transform.position.y + heightOpen;
         OnOpenJail += Open;
-        OnHandlerAnim += HandlerAnimated;
+        OnSeeMiniMap += SeeMiniMap;
     }
 
     public void Execute()
     {
-        if (Vector2.Distance(player.transform.position, transform.position) < 5)
+            Debug.Log("entre");
+        if (Vector2.Distance(player.transform.position, transform.position) < 6)
         {
             if (Input.GetKeyDown(Interactue))
             {
+                
                 isOpenJail = true;
             }
         }
 
         if (isOpenJail)
         {
-            if (OnHandlerAnim != null) HandlerAnimated();
+            if (OnSeeMiniMap != null) SeeMiniMap();
             if (OnOpenJail != null) OnOpenJail();
             else
             {
@@ -51,19 +53,14 @@ public class JailButton : MonoBehaviour,IObstacles
         }
     }
 
-    void HandlerAnimated()
+    void SeeMiniMap()
     {
-        Handler.transform.Rotate(-Mathf.Abs(Handler.transform.rotation.x),
-            0, 0);
-        Debug.Log("entre");
-        OnHandlerAnim -= HandlerAnimated;
+        MiniMap.gameObject.SetActive(false);
+        OnSeeMiniMap -= SeeMiniMap;
     }
 
     void Open()
     {
-       
-        
-        
         if (JailDoor.transform.position.y < checkHeight)
         {
             var position = JailDoor.transform.position;
