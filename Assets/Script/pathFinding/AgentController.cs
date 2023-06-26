@@ -78,7 +78,7 @@ public class AgentController : MonoBehaviour
     public void newRoute()
     {
         buildingDictionary();
-        startNode = goalNode;
+      //  startNode = goalNode;
         goalNode = RandomSystem.Roulette(dicNodos);
         AStarPlusRun();
 

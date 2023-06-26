@@ -136,7 +136,7 @@ public class EntityBase : MonoBehaviour, IPoints
     public void Attack(PlayerModel player)
     {
         if (player != null)
-            Destroy(player.gameObject);
+            player.gameObject.SetActive(false);
     }
 
     private void OnCollisionEnter(Collision collision)
