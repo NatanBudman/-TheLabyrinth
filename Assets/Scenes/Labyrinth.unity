@@ -45712,8 +45712,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   crash: {fileID: 1694785165}
   box: {fileID: 687251431}
-  goalNode: {fileID: 691391931}
-  startNode: {fileID: 691391931}
+  goalNode: {fileID: 1021154813}
+  startNode: {fileID: 1021154813}
   radius: 30
   maskNodes:
     serializedVersion: 2
