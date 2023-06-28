@@ -36,6 +36,7 @@ public class AgentController : MonoBehaviour
         newRoute();
 
     }
+    /*
     public void Update()
     {
         if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 1)
@@ -45,11 +46,13 @@ public class AgentController : MonoBehaviour
 
         }
     }
+    */
     public void AStarPlusRun()
     {
         var start = startNode;
         if (start == null) return;
         var path = _ast.Run(start, Satisfies, GetConections, GetCost, Heuristic, 500);
+        // mover el run al estado
         path = _ast.CleanPath(path, InView);
         crash.SetWayPoints(path);
         box.SetWayPoints(path);
@@ -58,20 +61,20 @@ public class AgentController : MonoBehaviour
 
     public void buildingDictionary()
     {
-        
+        // Tomar el Ancho y larggo del mapa y que busque los nodos
             for (int i = 0; i < listaNodos.Length; i++)
             {
-             float dist = Vector2.Distance(listaNodos[i].transform.position, _player.transform.position);
-            if (!dicNodos.ContainsKey(listaNodos[i]))
-             {
+                float dist = Vector2.Distance(listaNodos[i].transform.position, _player.transform.position);
+                if (!dicNodos.ContainsKey(listaNodos[i]))
+                {
                
-                dicNodos.Add(listaNodos[i], dist);
-            }
-             else
-             {
-                dicNodos[listaNodos[i]] = dist;
+                    dicNodos.Add(listaNodos[i], dist);
+                }
+                else
+                {
+                    dicNodos[listaNodos[i]] = dist;
  
-             }
+                }
             }
         
     }
@@ -119,15 +122,16 @@ public class AgentController : MonoBehaviour
     {
         return curr == goalNode;
     }
-    diffNode GetStartNode()
+    diffNode GetPosNode(Vector3 pos)
     {
-        int count = Physics.OverlapSphereNonAlloc(crash.transform.position, radius, _colliders, maskNodes);
+        int count = Physics.OverlapSphereNonAlloc(pos, radius, _colliders, maskNodes);
         float bestDistance = 0;
         Collider bestCollider = null;
         for (int i = 0; i < count; i++)
         {
             Collider currColl = _colliders[i];
-            float currDistance = Vector3.Distance(crash.transform.position, currColl.transform.position);
+            float currDistance = Vector3.Distance(pos, currColl.transform.position);
+            //InView-- SI no continue
             if (bestCollider == null || bestDistance > currDistance)
             {
                 bestDistance = currDistance;

@@ -105,9 +105,6 @@ public class EnemyController : MonoBehaviour
     bool isChaseingPlayer = false;
     bool Ischaseing()
     {
-
-       
-        
         if (SawPlayer())
         {
             timer = 5;
