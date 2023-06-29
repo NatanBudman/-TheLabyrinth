@@ -20,7 +20,11 @@ public class AgentController : MonoBehaviour
     [Header("Vector")]
     public float range;
 
- 
+    [Header("Map")] 
+    public GameManager map;
+    private Collider[] CollNodes;
+    private List<diffNode> setDiffNodes = new List<diffNode>();
+    public float LimitRange;
     AStar<diffNode> _ast;
     
 
@@ -29,6 +33,7 @@ public class AgentController : MonoBehaviour
         listaNodos = FindObjectsOfType<diffNode>();
          _ast = new AStar<diffNode>();
         _colliders = new Collider[10];
+        CollNodes = new Collider[15];
     }
 
     public void Start()
@@ -59,21 +64,62 @@ public class AgentController : MonoBehaviour
 
     }
 
-    public void buildingDictionary()
+    private Vector3 RandomGeneratePos(int zone)
     {
+        Vector3 pos = Vector3.zero;
         // Tomar el Ancho y larggo del mapa y que busque los nodos
-            for (int i = 0; i < listaNodos.Length; i++)
+        Vector3 _map = map.transform.position;
+        float randomX = 0;
+        float randomZ = 0;
+        switch (zone)
+        {
+            case 0:
+                 randomX = Random.Range(-(map.transform.localScale.x / 2) ,0);
+                 randomZ = Random.Range(-( map.transform.localScale.z / 2)  , 0);
+                break;
+            case 1:
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(0 ,(map.transform.localScale.z / 2));
+                break;
+            case 2:
+                randomX = Random.Range((map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                break;
+            case 3 :
+                randomX = Random.Range((map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(0 , ( map.transform.localScale.z / 2));
+                break;
+            case 4 :
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                break;
+        }            
+        
+        pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+
+        return pos;
+    }
+    
+    private void buildingDictionary()
+    {
+        dicNodos.Clear();
+        setDiffNodes.Clear();
+        
+        int random = Random.Range(0, 4);
+        _player.transform.position = RandomGeneratePos(random);
+        startNode = GetPosNode(transform.position);
+        setDiffNodes = GetPosNodes( RandomGeneratePos(random));
+        
+            for (int i = 0; i < setDiffNodes.Count; i++)
             {
-                float dist = Vector2.Distance(listaNodos[i].transform.position, _player.transform.position);
-                if (!dicNodos.ContainsKey(listaNodos[i]))
+                float dist = Vector2.Distance(setDiffNodes[i].transform.position, _player.transform.position);
+                if (!dicNodos.ContainsKey(setDiffNodes[i]))
                 {
-               
-                    dicNodos.Add(listaNodos[i], dist);
+                    dicNodos.Add(setDiffNodes[i], dist);
                 }
                 else
                 {
-                    dicNodos[listaNodos[i]] = dist;
- 
+                    dicNodos[setDiffNodes[i]] = dist;
                 }
             }
         
@@ -81,7 +127,6 @@ public class AgentController : MonoBehaviour
     public void newRoute()
     {
         buildingDictionary();
-      //  startNode = goalNode;
         goalNode = RandomSystem.Roulette(dicNodos);
         AStarPlusRun();
 
@@ -122,6 +167,25 @@ public class AgentController : MonoBehaviour
     {
         return curr == goalNode;
     }
+    
+    List<diffNode> SetNodes = new List<diffNode>();
+    List<diffNode> GetPosNodes(Vector3 pos)
+    {
+        SetNodes.Clear();
+        
+        int count = Physics.OverlapSphereNonAlloc(pos, radius, CollNodes, maskNodes);
+        for (int i = 0; i < count; i++)
+        {
+            Collider currColl = _colliders[i];
+            //InView-- SI no continue
+            if (Physics.Linecast(pos,currColl.transform.position,maskObs)) continue;
+            
+            SetNodes.Add(currColl.GetComponent<diffNode>());
+        }
+
+        return SetNodes;
+    }
+
     diffNode GetPosNode(Vector3 pos)
     {
         int count = Physics.OverlapSphereNonAlloc(pos, radius, _colliders, maskNodes);
@@ -132,6 +196,8 @@ public class AgentController : MonoBehaviour
             Collider currColl = _colliders[i];
             float currDistance = Vector3.Distance(pos, currColl.transform.position);
             //InView-- SI no continue
+            if (Physics.Linecast(pos,currColl.transform.position,maskObs)) continue;
+                
             if (bestCollider == null || bestDistance > currDistance)
             {
                 bestDistance = currDistance;
