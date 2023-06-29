@@ -13,7 +13,6 @@ public class PlayerModel : MonoBehaviour
     [Header("Camera")]
     public float MinRotateCameraY;
     public float MaxRotateCameraY;
-    float _rotationY = 0;
     public Camera Camera;
     private void Awake()
     {
