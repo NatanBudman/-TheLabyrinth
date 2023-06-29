@@ -15,22 +15,20 @@ public class AgentController : MonoBehaviour
     public LayerMask maskNodes;
     public LayerMask maskObs;
     List<Vector3> lastPathTest;
-    private diffNode[] listaNodos;
     public PlayerModel _player;
     [Header("Vector")]
     public float range;
 
     [Header("Map")] 
-    public GameManager map;
+    public GameObject map;
     private Collider[] CollNodes;
-    private List<diffNode> setDiffNodes = new List<diffNode>();
-    public float LimitRange;
+    public List<diffNode> setDiffNodes;
     AStar<diffNode> _ast;
     
 
     private void Awake()
     {
-        listaNodos = FindObjectsOfType<diffNode>();
+        setDiffNodes = new List<diffNode>();
          _ast = new AStar<diffNode>();
         _colliders = new Collider[10];
         CollNodes = new Collider[15];
@@ -41,17 +39,17 @@ public class AgentController : MonoBehaviour
         newRoute();
 
     }
-    /*
+    
     public void Update()
     {
-        if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 1)
+        if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 3)
         {
             Debug.Log("Cambio de ruta");
             newRoute();
 
         }
     }
-    */
+    
     public void AStarPlusRun()
     {
         var start = startNode;
@@ -71,31 +69,52 @@ public class AgentController : MonoBehaviour
         Vector3 _map = map.transform.position;
         float randomX = 0;
         float randomZ = 0;
+        
         switch (zone)
         {
             case 0:
                  randomX = Random.Range(-(map.transform.localScale.x / 2) ,0);
                  randomZ = Random.Range(-( map.transform.localScale.z / 2)  , 0);
+                 
+                 pos = new Vector3(_map.x - (randomX * randomZ),_map.y, _map.z - (randomX * randomZ));
                 break;
             case 1:
                 randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
                 randomZ = Random.Range(0 ,(map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
             case 2:
-                randomX = Random.Range((map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
-                randomZ = Random.Range(( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
             case 3 :
-                randomX = Random.Range((map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
                 randomZ = Random.Range(0 , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+
                 break;
             case 4 :
                 randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
-                randomZ = Random.Range(( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+                break;
+            case 5:
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , 0);
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z - (randomX * randomZ));
+                break;
+            case 6:
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,0);
+                randomZ = Random.Range(0 , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x - (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+                break;
+            default:
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
         }            
         
-        pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+      
 
         return pos;
     }
@@ -103,12 +122,14 @@ public class AgentController : MonoBehaviour
     private void buildingDictionary()
     {
         dicNodos.Clear();
-        setDiffNodes.Clear();
+       // setDiffNodes.Clear();
         
-        int random = Random.Range(0, 4);
-        _player.transform.position = RandomGeneratePos(random);
+        int random = Random.Range(0, 6);
+        
         startNode = GetPosNode(transform.position);
-        setDiffNodes = GetPosNodes( RandomGeneratePos(random));
+        Debug.Log(GetPosNodes( RandomGeneratePos(random).normalized));
+        setDiffNodes = GetPosNodes( RandomGeneratePos(random).normalized);
+        Debug.Log(setDiffNodes.Count);
         
             for (int i = 0; i < setDiffNodes.Count; i++)
             {
@@ -116,6 +137,7 @@ public class AgentController : MonoBehaviour
                 if (!dicNodos.ContainsKey(setDiffNodes[i]))
                 {
                     dicNodos.Add(setDiffNodes[i], dist);
+                    continue;
                 }
                 else
                 {
@@ -137,6 +159,12 @@ public class AgentController : MonoBehaviour
         if (Physics.Linecast(from.transform.position, to.transform.position, maskObs)) return false;
         //Distance
         //Angle
+        return true;
+    }
+    bool InView(Vector3 from, Vector3 to)
+    {
+        Debug.Log("CLEAN");
+        if (Physics.Linecast(from, to, maskObs)) return false;
         return true;
     }
     float Heuristic(diffNode curr)
@@ -168,22 +196,19 @@ public class AgentController : MonoBehaviour
         return curr == goalNode;
     }
     
-    List<diffNode> SetNodes = new List<diffNode>();
     List<diffNode> GetPosNodes(Vector3 pos)
     {
-        SetNodes.Clear();
+        List<diffNode> patrolNodes = new List<diffNode>();
         
-        int count = Physics.OverlapSphereNonAlloc(pos, radius, CollNodes, maskNodes);
+        int count = Physics.OverlapSphereNonAlloc(pos, radius * 3, CollNodes, maskNodes);
         for (int i = 0; i < count; i++)
         {
-            Collider currColl = _colliders[i];
-            //InView-- SI no continue
-            if (Physics.Linecast(pos,currColl.transform.position,maskObs)) continue;
+            Collider currColl = CollNodes[i];
             
-            SetNodes.Add(currColl.GetComponent<diffNode>());
+            patrolNodes.Add(currColl.GetComponent<diffNode>());
         }
 
-        return SetNodes;
+        return patrolNodes;
     }
 
     diffNode GetPosNode(Vector3 pos)
@@ -196,7 +221,7 @@ public class AgentController : MonoBehaviour
             Collider currColl = _colliders[i];
             float currDistance = Vector3.Distance(pos, currColl.transform.position);
             //InView-- SI no continue
-            if (Physics.Linecast(pos,currColl.transform.position,maskObs)) continue;
+            if (!InView(pos,currColl.transform.position))continue;
                 
             if (bestCollider == null || bestDistance > currDistance)
             {
