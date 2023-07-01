@@ -22,10 +22,7 @@ public class AgentController : MonoBehaviour
     [Header("Map")] 
     public GameObject map;
     private Collider[] CollNodes;
-    List<diffNode> setDiffNodes;
-    [Range(1,8)] public int minZonePatrol;
-    [Range(1,8)] public int maxZonePatrol;
-    public GameObject PruebaObjs;
+    public List<diffNode> setDiffNodes;
     AStar<diffNode> _ast;
     
 
@@ -70,78 +67,69 @@ public class AgentController : MonoBehaviour
         Vector3 pos = Vector3.zero;
         // Tomar el Ancho y larggo del mapa y que busque los nodos
         Vector3 _map = map.transform.position;
-        int randomX = 0;
-        int randomZ = 0;
-        int scaleX = (int)map.transform.localScale.x;
-        int scaleZ = (int)map.transform.localScale.z;
+        float randomX = 0;
+        float randomZ = 0;
+        
         switch (zone)
         {
+            case 0:
+                 randomX = Random.Range(-(map.transform.localScale.x / 2) ,0);
+                 randomZ = Random.Range(-( map.transform.localScale.z / 2)  , 0);
+                 
+                 pos = new Vector3(_map.x - (randomX * randomZ),_map.y, _map.z - (randomX * randomZ));
+                break;
             case 1:
-                randomX = Random.Range(0 ,scaleX/2);
-                randomZ = Random.Range(0 ,scaleZ/2);
-
-                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(0 ,(map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
             case 2:
-                randomX =Random.Range(-Mathf.Abs(scaleX/2),0);
-                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
-
-                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
-            case 3:
-                randomX = Random.Range(-Mathf.Abs(scaleX/2),scaleX/2);
-                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
+            case 3 :
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(0 , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
 
-                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
                 break;
-            case 4:
-                randomX = Random.Range(-Mathf.Abs( scaleX/2),0);
-                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),scaleZ/2);
-
-                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+            case 4 :
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
             case 5:
-                randomX = Random.Range(0 ,scaleX - scaleX/2);
-                randomZ = Random.Range(0 ,scaleZ - scaleZ/2);
-
-                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                randomX = Random.Range(0 ,(map.transform.localScale.x / 2));
+                randomZ = Random.Range(-( map.transform.localScale.z / 2) , 0);
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z - (randomX * randomZ));
                 break;
             case 6:
-                randomX = Random.Range(-Mathf.Abs(scaleX/2),0);
-                randomZ = Random.Range(-Mathf.Abs( scaleZ/2),0);
-
-                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
-                break;
-            case 7:
-                randomX = Random.Range(-Mathf.Abs(scaleX/2),scaleX - scaleX/2);
-                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
-
-                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
-                break;
-            case 8:
-                randomX = Random.Range(-Mathf.Abs( scaleX/2),0);
-                randomZ = Random.Range(-Mathf.Abs( scaleZ/2),scaleZ - scaleZ/2);
-
-                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                randomX = Random.Range(-(map.transform.localScale.x / 2) ,0);
+                randomZ = Random.Range(0 , ( map.transform.localScale.z / 2));
+                pos = new Vector3(_map.x - (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
             default:
                 pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
                 break;
         }            
         
+      
+
         return pos;
     }
     
     private void buildingDictionary()
     {
         dicNodos.Clear();
-        int random = Random.Range(minZonePatrol, maxZonePatrol);
+       // setDiffNodes.Clear();
+        
+        int random = Random.Range(0, 6);
         
         startNode = GetPosNode(transform.position);
-        Vector3 pos = RandomGeneratePos(random);
-        
-        PruebaObjs.transform.position = pos;
-        setDiffNodes = GetPosNodes( pos);
+        Debug.Log(GetPosNodes( RandomGeneratePos(random).normalized));
+        setDiffNodes = GetPosNodes( RandomGeneratePos(random).normalized);
+        Debug.Log(setDiffNodes.Count);
         
             for (int i = 0; i < setDiffNodes.Count; i++)
             {
@@ -212,7 +200,7 @@ public class AgentController : MonoBehaviour
     {
         List<diffNode> patrolNodes = new List<diffNode>();
         
-        int count = Physics.OverlapSphereNonAlloc(pos, radius * 1.5f, CollNodes, maskNodes);
+        int count = Physics.OverlapSphereNonAlloc(pos, radius * 3, CollNodes, maskNodes);
         for (int i = 0; i < count; i++)
         {
             Collider currColl = CollNodes[i];
