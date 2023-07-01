@@ -80,6 +80,17 @@ public class EntityBase : MonoBehaviour, IPoints
     {
         Debug.Log("RunASTAR");
         var point = waypoints[_nextPoint];
+        foreach (var next in waypoints)
+        {
+            if (point == null)
+            {
+                if (next != null )
+                {
+                    point = waypoints[_nextPoint];
+                }
+                
+            }
+        }
 
         var posPoint = point;
         posPoint.y = transform.position.y;

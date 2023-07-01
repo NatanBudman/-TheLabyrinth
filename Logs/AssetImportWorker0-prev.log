@@ -15,7 +15,11 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< HEAD
 55317
+=======
+63418
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 Successfully changed project path to: D:/BACK UP 2023/Proyectos/TheLockedRoom
 D:/BACK UP 2023/Proyectos/TheLockedRoom
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +51,19 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< HEAD
 Player connection [13336] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 1061629711 [EditorId] 1061629711 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [13336] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 1061629711 [EditorId] 1061629711 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 37.94 ms, found 2 plugins.
+=======
+Player connection [6076] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 2688503223 [EditorId] 2688503223 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6076] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 2688503223 [EditorId] 2688503223 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 38.91 ms, found 2 plugins.
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Resources/UnitySubsystems
@@ -67,6 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56992
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -80,11 +93,27 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (13004ms)
 		BeginReloadAssembly (124ms)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56252
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007524 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.700 seconds
+Domain Reload Profiling:
+	ReloadAssembly (701ms)
+		BeginReloadAssembly (92ms)
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 		EndReloadAssembly (12721ms)
 			LoadAssemblies (121ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -99,10 +128,113 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (7ms)
 				ProcessInitializeOnLoadAttributes (2945ms)
 				ProcessInitializeOnLoadMethodAttributes (6473ms)
+=======
+		EndReloadAssembly (486ms)
+			LoadAssemblies (89ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (251ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (39ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (148ms)
+				ProcessInitializeOnLoadMethodAttributes (52ms)
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 Registered in 0.040292 seconds.
+=======
+Registered in 0.002305 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.922 seconds
+Domain Reload Profiling:
+	ReloadAssembly (922ms)
+		BeginReloadAssembly (132ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (659ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (186ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (51ms)
+			SetupLoadedEditorAssemblies (306ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (62ms)
+				ProcessInitializeOnLoadAttributes (209ms)
+				ProcessInitializeOnLoadMethodAttributes (20ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1460 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 16 unused Assets / (56.7 KB). Loaded Objects now: 1936.
+Memory consumption went from 70.1 MB to 70.1 MB.
+Total: 2.505900 ms (FindLiveObjects: 0.166600 ms CreateObjectMapping: 0.079000 ms MarkObjects: 2.168600 ms  DeleteObjects: 0.090000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1164639.474571 seconds.
+  path: Assets/Script/pathFinding/CI_Model.cs
+  artifactKey: Guid(855a8a97ea5c52e43b497f169e34984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/pathFinding/CI_Model.cs using Guid(855a8a97ea5c52e43b497f169e34984c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8586841c27d1d761a6236e26e32af8ba') in 0.072669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 47.192568 seconds.
+  path: Assets/Script/pathFinding/diffNode.cs
+  artifactKey: Guid(0613fa94f9dba0746bac7050cbbcc9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/pathFinding/diffNode.cs using Guid(0613fa94f9dba0746bac7050cbbcc9d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf1875bb9f7ba2b1b91e444de487afd') in 0.017354 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.283864 seconds.
+  path: Assets/Script/pathFinding/IPoints.cs
+  artifactKey: Guid(4b232de17c8056248b708d3e567201fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/pathFinding/IPoints.cs using Guid(4b232de17c8056248b708d3e567201fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfbf10b34dccbd2af72442d394d8e234') in 0.016344 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.314055 seconds.
+  path: Assets/Script/pathFinding/Node.cs
+  artifactKey: Guid(c9d553f99b45b2f43a4a81fc8fb9d14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/pathFinding/Node.cs using Guid(c9d553f99b45b2f43a4a81fc8fb9d14d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '486d4aa6db05156a160adca8441844b9') in 0.012484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2591.683143 seconds.
+  path: Assets/Script/pathFinding/AgentController.cs
+  artifactKey: Guid(716019f8d83198a45828e87978c38537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/pathFinding/AgentController.cs using Guid(716019f8d83198a45828e87978c38537) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d203037927645b4acea3fc9ba00e855') in 0.009335 seconds 
+>>>>>>> parent of 8e61f99 (fixpathfinding)

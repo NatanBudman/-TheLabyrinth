@@ -9,6 +9,7 @@ public class FloorPuzzleModel : MonoBehaviour
     public bool isCorreIsFloorGood = false;
     public bool isHasUsed = false;
 
+    private int index = 0;
 
     private Material _material;
 
