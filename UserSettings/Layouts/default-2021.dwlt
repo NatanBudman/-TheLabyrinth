@@ -21,7 +21,11 @@ MonoBehaviour:
   m_ShowMode: 4
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
+=======
+  m_Title: Scene
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
 =======
@@ -160,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 17
+  controlID: 51388
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,11 +222,15 @@ MonoBehaviour:
     width: 1366
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 413
+=======
+    height: 374
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 18
+  controlID: 51389
 --- !u!114 &7
 =======
 =======
@@ -283,7 +291,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
     width: 187
-    height: 413
+    height: 374
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 12}
@@ -309,9 +317,10 @@ MonoBehaviour:
     x: 187
     y: 0
     width: 687
-    height: 413
+    height: 374
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
+<<<<<<< HEAD
   m_ActualView: {fileID: 13}
 =======
     width: 186
@@ -320,9 +329,12 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+  m_ActualView: {fileID: 11}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_Panes:
-  - {fileID: 13}
   - {fileID: 11}
+  - {fileID: 13}
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &9
@@ -404,9 +416,9 @@ MonoBehaviour:
     x: 874
     y: 0
     width: 492
-    height: 413
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 374
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -453,7 +465,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -461,17 +473,21 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 413
+=======
+    y: 374
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     width: 1366
-    height: 222
-  m_MinSize: {x: 230, y: 271}
-  m_MaxSize: {x: 10000, y: 10021}
-  m_ActualView: {fileID: 16}
+    height: 261
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 16}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 =======
 =======
@@ -500,6 +516,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -742,6 +759,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -758,6 +777,7 @@ MonoBehaviour:
     x: 187
     y: 73
     width: 685
+<<<<<<< HEAD
     height: 392
 =======
 =======
@@ -770,6 +790,9 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    height: 353
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1006,6 +1029,7 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -9.281578, y: 451.1043, z: 190.85979}
     speed: 2
     m_Value: {x: -9.281578, y: 451.1043, z: 190.85979}
@@ -1019,6 +1043,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -91.3924, y: 14.452809, z: 37.003548}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_Target: {x: -52.90473, y: 41.295235, z: 21.408356}
+    speed: 2
+    m_Value: {x: -52.90473, y: 41.295235, z: 21.408356}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1067,12 +1096,17 @@ MonoBehaviour:
   m_Rotation:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.0065927394, y: -0.8206043, z: 0.5704978, w: 0.010638054}
+=======
+    m_Target: {x: 0.3402353, y: 0.61909074, z: -0.33901525, w: 0.6213184}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     speed: 2
-    m_Value: {x: 0.006579982, y: -0.8218637, z: 0.5695466, w: 0.010653194}
+    m_Value: {x: 0.34023508, y: 0.6190904, z: -0.33901504, w: 0.62131804}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 68.638565
     speed: 2
+<<<<<<< HEAD
     m_Value: 0.866028
 =======
     m_Target: {x: -0.31523037, y: -0.6029497, z: 0.27939564, w: -0.67778045}
@@ -1092,6 +1126,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 28.820534
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_Value: 68.638565
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1118,6 +1155,158 @@ MonoBehaviour:
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 73
+    width: 186
+    height: 353
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 264}
+      m_SelectedIDs: a04e0000a84f0000305a00002e5400005c5b0000
+      m_LastClickedID: 23388
+      m_ExpandedIDs: bc1dffff2eddffffccebffff36fbffff6054000058570000a65a0000
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: Player
+        m_OriginalName: Player
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 21926
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 0
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 7}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 4c969a2b90040154d917609493e03593
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: -6423792434712278376, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 187
+    y: 73
+    width: 685
+    height: 353
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames: []
+  m_SerializedViewValues: []
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1920, y: 1080}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 03000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -960
+    m_HBaseRangeMax: 960
+    m_VBaseRangeMin: -540
+    m_VBaseRangeMax: 540
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 0
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 685
+      height: 332
+    m_Scale: {x: 0.3074074, y: 0.3074074}
+    m_Translation: {x: 342.5, y: 166}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -1114.1566
+      y: -540
+      width: 2228.3132
+      height: 1080
+    m_MinimalGUI: 1
+  m_defaultScale: 0.3074074
+  m_LastWindowPixelSize: {x: 685, y: 353}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &14
 =======
 --- !u!114 &16
@@ -1149,6 +1338,7 @@ MonoBehaviour:
     x: 874
     y: 73
     width: 491
+<<<<<<< HEAD
     height: 392
 =======
 =======
@@ -1161,6 +1351,9 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    height: 353
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1172,7 +1365,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 1599
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -1272,6 +1465,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 486
     width: 1366
     height: 201
@@ -1285,6 +1479,11 @@ MonoBehaviour:
     width: 1366
     height: 109
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    y: 416
+    width: 1366
+    height: 271
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default
@@ -1310,13 +1509,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: 53
-  m_LastProjectPath: D:\GitHub\BackRoom
+  m_LastProjectPath: D:\BACK UP 2023\Proyectos\TheLockedRoom
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
+<<<<<<< HEAD
     m_SelectedIDs: ea700000
     m_LastClickedID: 28906
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e710000107100001271000000ca9a3b
@@ -1331,6 +1531,11 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_SelectedIDs: 946a0000
+    m_LastClickedID: 27284
+    m_ExpandedIDs: 00000000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a000000ca9a3b
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1368,6 +1573,7 @@ MonoBehaviour:
     m_LastClickedID: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e7100001071000012710000
 =======
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
@@ -1375,6 +1581,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_ExpandedIDs: 00000000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a000000ca9a3b
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1401,6 +1610,7 @@ MonoBehaviour:
   m_ListAreaState:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 =======
@@ -1412,6 +1622,11 @@ MonoBehaviour:
     m_LastClickedInstanceID: 67958
 >>>>>>> parent of 8e61f99 (fixpathfinding)
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: acd8ffff
+    m_LastClickedInstanceID: -10068
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1479,6 +1694,7 @@ MonoBehaviour:
     x: 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 422
     width: 1366
     height: 265
@@ -1492,6 +1708,11 @@ MonoBehaviour:
     width: 1366
     height: 253
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    y: 447
+    width: 1366
+    height: 240
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
     m_LastAppliedPresetName: Default

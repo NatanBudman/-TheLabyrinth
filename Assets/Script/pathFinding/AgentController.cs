@@ -23,8 +23,15 @@ public class AgentController : MonoBehaviour
     [Header("Map")] 
     public GameManager map;
     private Collider[] CollNodes;
+<<<<<<< HEAD
     private List<diffNode> setDiffNodes = new List<diffNode>();
     public float LimitRange;
+=======
+    List<diffNode> setDiffNodes;
+    [Range(1,8)] public int minZonePatrol;
+    [Range(1,8)] public int maxZonePatrol;
+    public GameObject PruebaObjs;
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     AStar<diffNode> _ast;
     
 
@@ -69,6 +76,7 @@ public class AgentController : MonoBehaviour
         Vector3 pos = Vector3.zero;
         // Tomar el Ancho y larggo del mapa y que busque los nodos
         Vector3 _map = map.transform.position;
+<<<<<<< HEAD
         float randomX = 0;
         float randomZ = 0;
         switch (zone)
@@ -97,18 +105,90 @@ public class AgentController : MonoBehaviour
         
         pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
 
+=======
+        int randomX = 0;
+        int randomZ = 0;
+        int scaleX = (int)map.transform.localScale.x;
+        int scaleZ = (int)map.transform.localScale.z;
+        switch (zone)
+        {
+            case 1:
+                randomX = Random.Range(0 ,scaleX/2);
+                randomZ = Random.Range(0 ,scaleZ/2);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+            case 2:
+                randomX =Random.Range(-Mathf.Abs(scaleX/2),0);
+                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+            case 3:
+                randomX = Random.Range(-Mathf.Abs(scaleX/2),scaleX/2);
+                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+            case 4:
+                randomX = Random.Range(-Mathf.Abs( scaleX/2),0);
+                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),scaleZ/2);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+            case 5:
+                randomX = Random.Range(0 ,scaleX - scaleX/2);
+                randomZ = Random.Range(0 ,scaleZ - scaleZ/2);
+
+                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                break;
+            case 6:
+                randomX = Random.Range(-Mathf.Abs(scaleX/2),0);
+                randomZ = Random.Range(-Mathf.Abs( scaleZ/2),0);
+
+                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                break;
+            case 7:
+                randomX = Random.Range(-Mathf.Abs(scaleX/2),scaleX - scaleX/2);
+                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
+
+                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                break;
+            case 8:
+                randomX = Random.Range(-Mathf.Abs( scaleX/2),0);
+                randomZ = Random.Range(-Mathf.Abs( scaleZ/2),scaleZ - scaleZ/2);
+
+                pos = new Vector3(_map.x + randomX ,_map.y, _map.z + randomZ );
+                break;
+            default:
+                pos = new Vector3(_map.x + (randomX * randomZ),_map.y, _map.z + (randomX * randomZ));
+                break;
+        }            
+        
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         return pos;
     }
     
     private void buildingDictionary()
     {
         dicNodos.Clear();
+<<<<<<< HEAD
         setDiffNodes.Clear();
+=======
+        int random = Random.Range(minZonePatrol, maxZonePatrol);
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         
         int random = Random.Range(0, 4);
         _player.transform.position = RandomGeneratePos(random);
         startNode = GetPosNode(transform.position);
+<<<<<<< HEAD
         setDiffNodes = GetPosNodes( RandomGeneratePos(random));
+=======
+        Vector3 pos = RandomGeneratePos(random);
+        
+        PruebaObjs.transform.position = pos;
+        setDiffNodes = GetPosNodes( pos);
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         
             for (int i = 0; i < setDiffNodes.Count; i++)
             {
@@ -173,7 +253,11 @@ public class AgentController : MonoBehaviour
     {
         SetNodes.Clear();
         
+<<<<<<< HEAD
         int count = Physics.OverlapSphereNonAlloc(pos, radius, CollNodes, maskNodes);
+=======
+        int count = Physics.OverlapSphereNonAlloc(pos, radius * 1.5f, CollNodes, maskNodes);
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         for (int i = 0; i < count; i++)
         {
             Collider currColl = _colliders[i];
