@@ -20,9 +20,15 @@ MonoBehaviour:
     height: 685
   m_ShowMode: 4
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
+=======
+  m_Title: Game
+  m_RootView: {fileID: 3}
+  m_MinSize: {x: 875, y: 350}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
   m_Title: Game
   m_RootView: {fileID: 3}
@@ -170,9 +176,12 @@ MonoBehaviour:
   m_Children:
   - {fileID: 7}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 8}
   - {fileID: 9}
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
   m_Position:
     serializedVersion: 2
     x: 0
@@ -198,12 +207,16 @@ MonoBehaviour:
   m_Children:
   - {fileID: 8}
   - {fileID: 12}
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
     width: 1366
+<<<<<<< HEAD
 <<<<<<< HEAD
     height: 413
   m_MinSize: {x: 300, y: 100}
@@ -212,6 +225,8 @@ MonoBehaviour:
   controlID: 18
 --- !u!114 &7
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     height: 635
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
@@ -245,6 +260,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 11747
 --- !u!114 &9
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -262,6 +280,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 187
     height: 413
@@ -328,6 +347,39 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    width: 186
+    height: 361
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 186
+    y: 0
+    width: 482
+    height: 361
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -348,6 +400,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 874
     y: 0
     width: 492
@@ -361,6 +414,21 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
+=======
+    x: 909
+    y: 0
+    width: 457
+    height: 361
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 16}
+  m_Panes:
+  - {fileID: 16}
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 1
+--- !u!114 &12
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     x: 909
     y: 0
@@ -392,6 +460,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 413
     width: 1366
     height: 222
@@ -405,6 +474,8 @@ MonoBehaviour:
   m_LastSelected: 1
 --- !u!114 &11
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     y: 361
     width: 1366
     height: 274
@@ -417,6 +488,9 @@ MonoBehaviour:
   m_Selected: 1
   m_LastSelected: 0
 --- !u!114 &13
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -438,15 +512,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 156
     y: 73
     width: 716
     height: 392
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     x: 668
     y: 73
     width: 239
     height: 340
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -495,15 +575,21 @@ MonoBehaviour:
       x: 0
       y: 21
 <<<<<<< HEAD
+<<<<<<< HEAD
       width: 716
       height: 371
     m_Scale: {x: 0.3435185, y: 0.34351853}
     m_Translation: {x: 358, y: 185.5}
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
       width: 239
       height: 319
     m_Scale: {x: 0.13205993, y: 0.13205993}
     m_Translation: {x: 118.11896, y: 159.5}
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -511,6 +597,7 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
       x: -1042.1564
       y: -540
@@ -528,13 +615,26 @@ MonoBehaviour:
   m_defaultScale: 0.12447917
   m_LastWindowPixelSize: {x: 239, y: 340}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+      x: -894.4345
+      y: -1207.7849
+      width: 1809.7844
+      height: 2415.5698
+    m_MinimalGUI: 1
+  m_defaultScale: 0.12447917
+  m_LastWindowPixelSize: {x: 239, y: 340}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &12
+=======
+--- !u!114 &14
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &14
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -560,8 +660,13 @@ MonoBehaviour:
     x: 0
     y: 73
 <<<<<<< HEAD
+<<<<<<< HEAD
     width: 186
     height: 392
+=======
+    width: 185
+    height: 340
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     width: 185
     height: 340
@@ -573,15 +678,21 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
 <<<<<<< HEAD
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 472}
       m_SelectedIDs: 1c580000
       m_LastClickedID: 22556
       m_ExpandedIDs: e8ecffff14fbffffe655000094580000fa580000205b0000525b0000265e0000b4600000e6600000506100009e650000
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 28100100
       m_LastClickedID: 69672
       m_ExpandedIDs: 9ec7ffffeac7ffff86c8ffffd2c8ffff38c9ffff36fbffffb04b00005a550000ce590000c206010028100100fe110100e0140100
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -599,7 +710,11 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 7}
+=======
+        m_ClientGUIView: {fileID: 9}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
         m_ClientGUIView: {fileID: 9}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -611,7 +726,11 @@ MonoBehaviour:
     m_CurrentSortingName: TransformSorting
   m_WindowGUID: 4c969a2b90040154d917609493e03593
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &13
+=======
+--- !u!114 &15
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &15
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -635,15 +754,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 187
     y: 73
     width: 685
     height: 392
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     x: 186
     y: 73
     width: 480
     height: 340
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -880,9 +1005,15 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_Position:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -9.281578, y: 451.1043, z: 190.85979}
     speed: 2
     m_Value: {x: -9.281578, y: 451.1043, z: 190.85979}
+=======
+    m_Target: {x: -91.3924, y: 14.452809, z: 37.003548}
+    speed: 2
+    m_Value: {x: -91.3924, y: 14.452809, z: 37.003548}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     m_Target: {x: -91.3924, y: 14.452809, z: 37.003548}
     speed: 2
@@ -935,6 +1066,7 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.0065927394, y: -0.8206043, z: 0.5704978, w: 0.010638054}
     speed: 2
     m_Value: {x: 0.006579982, y: -0.8218637, z: 0.5695466, w: 0.010653194}
@@ -942,6 +1074,15 @@ MonoBehaviour:
     m_Target: 0.8660254
     speed: 2
     m_Value: 0.866028
+=======
+    m_Target: {x: -0.31523037, y: -0.6029497, z: 0.27939564, w: -0.67778045}
+    speed: 2
+    m_Value: {x: -0.31517258, y: -0.6028392, z: 0.2793444, w: -0.67765623}
+  m_Size:
+    m_Target: 28.820534
+    speed: 2
+    m_Value: 28.820534
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     m_Target: {x: -0.31523037, y: -0.6029497, z: 0.27939564, w: -0.67778045}
     speed: 2
@@ -976,7 +1117,11 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &14
+=======
+--- !u!114 &16
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &16
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1000,15 +1145,21 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 874
     y: 73
     width: 491
     height: 392
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     x: 909
     y: 73
     width: 456
     height: 340
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
   m_ViewDataDictionary: {fileID: 0}
   m_OverlayCanvas:
@@ -1028,7 +1179,11 @@ MonoBehaviour:
     m_IsLocked: 0
   m_PreviewWindow: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &15
+=======
+--- !u!114 &17
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &17
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1087,7 +1242,11 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 0}
     m_SearchString: 
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &16
+=======
+--- !u!114 &18
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &18
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1112,9 +1271,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 486
     width: 1366
     height: 201
+=======
+    y: 578
+    width: 1366
+    height: 109
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     y: 578
     width: 1366
@@ -1150,15 +1315,21 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
     m_SelectedIDs: ea700000
     m_LastClickedID: 28906
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e710000107100001271000000ca9a3b
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
     scrollPos: {x: 0, y: 503}
     m_SelectedIDs: 0c6a0000
     m_LastClickedID: 27148
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1176,7 +1347,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 10}
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
       m_ClientGUIView: {fileID: 12}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1192,7 +1367,11 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e7100001071000012710000
+=======
+    m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1221,8 +1400,13 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+=======
+    m_SelectedInstanceIDs: 76090100720a010076140100b00e010096150100
+    m_LastClickedInstanceID: 67958
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     m_SelectedInstanceIDs: 76090100720a010076140100b00e010096150100
     m_LastClickedInstanceID: 67958
@@ -1245,7 +1429,11 @@ MonoBehaviour:
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 10}
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
       m_ClientGUIView: {fileID: 12}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1261,7 +1449,11 @@ MonoBehaviour:
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &17
+=======
+--- !u!114 &19
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 --- !u!114 &19
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -1286,9 +1478,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 422
     width: 1366
     height: 265
+=======
+    y: 434
+    width: 1366
+    height: 253
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
     y: 434
     width: 1366
