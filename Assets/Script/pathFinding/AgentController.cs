@@ -24,13 +24,19 @@ public class AgentController : MonoBehaviour
     public GameManager map;
     private Collider[] CollNodes;
 <<<<<<< HEAD
+<<<<<<< HEAD
     private List<diffNode> setDiffNodes = new List<diffNode>();
     public float LimitRange;
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     List<diffNode> setDiffNodes;
     [Range(1,8)] public int minZonePatrol;
     [Range(1,8)] public int maxZonePatrol;
     public GameObject PruebaObjs;
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
     AStar<diffNode> _ast;
     
@@ -76,6 +82,7 @@ public class AgentController : MonoBehaviour
         Vector3 pos = Vector3.zero;
         // Tomar el Ancho y larggo del mapa y que busque los nodos
         Vector3 _map = map.transform.position;
+<<<<<<< HEAD
 <<<<<<< HEAD
         float randomX = 0;
         float randomZ = 0;
@@ -124,6 +131,26 @@ public class AgentController : MonoBehaviour
 
                 pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
                 break;
+=======
+        int randomX = 0;
+        int randomZ = 0;
+        int scaleX = (int)map.transform.localScale.x;
+        int scaleZ = (int)map.transform.localScale.z;
+        switch (zone)
+        {
+            case 1:
+                randomX = Random.Range(0 ,scaleX/2);
+                randomZ = Random.Range(0 ,scaleZ/2);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+            case 2:
+                randomX =Random.Range(-Mathf.Abs(scaleX/2),0);
+                randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
+
+                pos = new Vector3(_map.x - randomX ,_map.y, _map.z - randomZ );
+                break;
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
             case 3:
                 randomX = Random.Range(-Mathf.Abs(scaleX/2),scaleX/2);
                 randomZ = Random.Range(-Mathf.Abs(scaleZ/2),0);
@@ -165,6 +192,9 @@ public class AgentController : MonoBehaviour
                 break;
         }            
         
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         return pos;
     }
@@ -173,7 +203,11 @@ public class AgentController : MonoBehaviour
     {
         dicNodos.Clear();
 <<<<<<< HEAD
+<<<<<<< HEAD
         setDiffNodes.Clear();
+=======
+        int random = Random.Range(minZonePatrol, maxZonePatrol);
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
         int random = Random.Range(minZonePatrol, maxZonePatrol);
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -182,12 +216,18 @@ public class AgentController : MonoBehaviour
         _player.transform.position = RandomGeneratePos(random);
         startNode = GetPosNode(transform.position);
 <<<<<<< HEAD
+<<<<<<< HEAD
         setDiffNodes = GetPosNodes( RandomGeneratePos(random));
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         Vector3 pos = RandomGeneratePos(random);
         
         PruebaObjs.transform.position = pos;
         setDiffNodes = GetPosNodes( pos);
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
         
             for (int i = 0; i < setDiffNodes.Count; i++)
@@ -254,7 +294,11 @@ public class AgentController : MonoBehaviour
         SetNodes.Clear();
         
 <<<<<<< HEAD
+<<<<<<< HEAD
         int count = Physics.OverlapSphereNonAlloc(pos, radius, CollNodes, maskNodes);
+=======
+        int count = Physics.OverlapSphereNonAlloc(pos, radius * 1.5f, CollNodes, maskNodes);
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
         int count = Physics.OverlapSphereNonAlloc(pos, radius * 1.5f, CollNodes, maskNodes);
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")

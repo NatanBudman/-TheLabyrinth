@@ -16,7 +16,11 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
 Logs/AssetImportWorker1.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 49361
+=======
+50374
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
 50374
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -52,17 +56,23 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< HEAD
+<<<<<<< HEAD
 Player connection [14020] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 1140665311 [EditorId] 1140665311 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [14020] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 1140665311 [EditorId] 1140665311 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 46.64 ms, found 2 plugins.
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Player connection [16088] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 3940318663 [EditorId] 3940318663 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [16088] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 3940318663 [EditorId] 3940318663 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 40.17 ms, found 2 plugins.
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
@@ -80,6 +90,7 @@ Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Manage
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
 <<<<<<< HEAD
+<<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56784
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -94,6 +105,8 @@ Domain Reload Profiling:
 	ReloadAssembly (684ms)
 		BeginReloadAssembly (98ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56840
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
@@ -107,12 +120,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (953ms)
 		BeginReloadAssembly (122ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (456ms)
 			LoadAssemblies (95ms)
@@ -129,6 +146,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (140ms)
 				ProcessInitializeOnLoadMethodAttributes (62ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 		EndReloadAssembly (691ms)
 			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -143,6 +162,9 @@ Domain Reload Profiling:
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (242ms)
 				ProcessInitializeOnLoadMethodAttributes (79ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -150,6 +172,7 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
+<<<<<<< HEAD
 <<<<<<< HEAD
 Registered in 0.002833 seconds.
 Begin MonoManager ReloadAssembly
@@ -482,11 +505,15 @@ Registered in 0.003207 seconds.
 =======
 Registered in 0.002380 seconds.
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
+Registered in 0.002380 seconds.
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Completed reload, in  1.396 seconds
 Domain Reload Profiling:
@@ -523,6 +550,8 @@ Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1954.
 Memory consumption went from 68.4 MB to 68.3 MB.
 Total: 2.736300 ms (FindLiveObjects: 0.137100 ms CreateObjectMapping: 0.059500 ms MarkObjects: 2.519200 ms  DeleteObjects: 0.019500 ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 - Completed reload, in  1.649 seconds
 Domain Reload Profiling:
 	ReloadAssembly (1700ms)
@@ -560,6 +589,9 @@ Unloading 1460 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 16 unused Assets / (56.7 KB). Loaded Objects now: 1936.
 Memory consumption went from 70.3 MB to 70.2 MB.
 Total: 4.124800 ms (FindLiveObjects: 0.146700 ms CreateObjectMapping: 0.078500 ms MarkObjects: 3.785100 ms  DeleteObjects: 0.112800 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -573,6 +605,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 Received Prepare
 Registering precompiled user dll's ...
@@ -617,6 +650,8 @@ Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1957.
 Memory consumption went from 68.4 MB to 68.3 MB.
 Total: 2.456700 ms (FindLiveObjects: 0.179000 ms CreateObjectMapping: 0.064500 ms MarkObjects: 2.185700 ms  DeleteObjects: 0.026100 ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Received Import Request.
   Time since last request: 1341191.160255 seconds.
   path: Assets/Animations/Civil/Materials/Ch21_1001_Diffuse.mat
@@ -683,6 +718,9 @@ Unloading 1441 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1983.
 Memory consumption went from 72.8 MB to 72.7 MB.
 Total: 7.340300 ms (FindLiveObjects: 0.272200 ms CreateObjectMapping: 0.325700 ms MarkObjects: 6.673200 ms  DeleteObjects: 0.068100 ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -699,6 +737,7 @@ AssetImportParameters requested are different than current active one (requested
 Received Prepare
 Registering precompiled user dll's ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.002235 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -710,6 +749,8 @@ Domain Reload Profiling:
 	ReloadAssembly (1163ms)
 		BeginReloadAssembly (177ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Registered in 0.001814 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -720,12 +761,16 @@ Mono: successfully reloaded assembly
 Domain Reload Profiling:
 	ReloadAssembly (2388ms)
 		BeginReloadAssembly (190ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (49ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 		EndReloadAssembly (829ms)
 			LoadAssemblies (100ms)
@@ -743,6 +788,8 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (11ms)
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 		EndReloadAssembly (2052ms)
 			LoadAssemblies (127ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
@@ -812,6 +859,9 @@ Domain Reload Profiling:
 				ProcessInitializeOnLoadAttributes (212ms)
 				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (12ms)
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -821,9 +871,15 @@ Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1441 Unused Serialized files (Serialized files now loaded: 0)
 <<<<<<< HEAD
+<<<<<<< HEAD
 Unloading 9 unused Assets / (24.7 KB). Loaded Objects now: 1960.
 Memory consumption went from 68.4 MB to 68.3 MB.
 Total: 2.428600 ms (FindLiveObjects: 0.136100 ms CreateObjectMapping: 0.051400 ms MarkObjects: 2.199900 ms  DeleteObjects: 0.040000 ms)
+=======
+Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1989.
+Memory consumption went from 72.8 MB to 72.7 MB.
+Total: 2.490400 ms (FindLiveObjects: 0.135800 ms CreateObjectMapping: 0.053800 ms MarkObjects: 2.280300 ms  DeleteObjects: 0.019000 ms)
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
 Unloading 9 unused Assets / (24.6 KB). Loaded Objects now: 1989.
 Memory consumption went from 72.8 MB to 72.7 MB.
@@ -841,6 +897,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+<<<<<<< HEAD
 <<<<<<< HEAD
 Received Import Request.
   Time since last request: 1172986.079903 seconds.
@@ -912,6 +969,8 @@ AssetImportWorker is now disconnected from the server
 Process exiting
 Exiting without the bug reporter. Application will terminate with return code 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 Received Prepare
 Registering precompiled user dll's ...
 Registered in 0.002129 seconds.
@@ -1397,4 +1456,7 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")

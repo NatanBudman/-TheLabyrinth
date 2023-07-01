@@ -22,7 +22,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Title: Hierarchy
+=======
+  m_Title: Scene
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
   m_Title: Scene
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -223,7 +227,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 413
+=======
+    height: 374
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     height: 374
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -321,6 +329,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_ActualView: {fileID: 13}
 =======
     width: 186
@@ -329,6 +338,9 @@ MonoBehaviour:
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+  m_ActualView: {fileID: 11}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
   m_ActualView: {fileID: 11}
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -474,7 +486,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 413
+=======
+    y: 374
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     y: 374
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -516,6 +532,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
@@ -761,6 +778,8 @@ MonoBehaviour:
   m_EditorHideFlags: 1
 =======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -778,6 +797,7 @@ MonoBehaviour:
     y: 73
     width: 685
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 392
 =======
 =======
@@ -790,6 +810,9 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    height: 353
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     height: 353
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -1030,6 +1053,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -9.281578, y: 451.1043, z: 190.85979}
     speed: 2
     m_Value: {x: -9.281578, y: 451.1043, z: 190.85979}
@@ -1043,6 +1067,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -91.3924, y: 14.452809, z: 37.003548}
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_Target: {x: -52.90473, y: 41.295235, z: 21.408356}
+    speed: 2
+    m_Value: {x: -52.90473, y: 41.295235, z: 21.408356}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_Target: {x: -52.90473, y: 41.295235, z: 21.408356}
     speed: 2
@@ -1097,7 +1126,11 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0.0065927394, y: -0.8206043, z: 0.5704978, w: 0.010638054}
+=======
+    m_Target: {x: 0.3402353, y: 0.61909074, z: -0.33901525, w: 0.6213184}
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_Target: {x: 0.3402353, y: 0.61909074, z: -0.33901525, w: 0.6213184}
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -1106,6 +1139,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 68.638565
     speed: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Value: 0.866028
 =======
@@ -1126,6 +1160,9 @@ MonoBehaviour:
     speed: 2
     m_Value: 28.820534
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_Value: 68.638565
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_Value: 68.638565
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -1156,7 +1193,10 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1306,6 +1346,9 @@ MonoBehaviour:
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &14
 =======
@@ -1339,6 +1382,7 @@ MonoBehaviour:
     y: 73
     width: 491
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 392
 =======
 =======
@@ -1351,6 +1395,9 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    height: 353
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     height: 353
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -1466,6 +1513,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 486
     width: 1366
     height: 201
@@ -1479,6 +1527,11 @@ MonoBehaviour:
     width: 1366
     height: 109
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    y: 416
+    width: 1366
+    height: 271
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     y: 416
     width: 1366
@@ -1517,6 +1570,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 79}
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedIDs: ea700000
     m_LastClickedID: 28906
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e710000107100001271000000ca9a3b
@@ -1531,6 +1585,11 @@ MonoBehaviour:
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_SelectedIDs: 946a0000
+    m_LastClickedID: 27284
+    m_ExpandedIDs: 00000000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a000000ca9a3b
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_SelectedIDs: 946a0000
     m_LastClickedID: 27284
@@ -1574,6 +1633,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000ea700000ec700000ee700000f0700000f2700000f4700000f6700000f8700000fa700000fc700000fe70000000710000027100000471000006710000087100000a7100000c7100000e7100001071000012710000
 =======
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
@@ -1581,6 +1641,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 000000006a6900006c6900006e69000070690000726900007469000076690000786900007a69000000ca9a3b
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    m_ExpandedIDs: 00000000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a000000ca9a3b
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_ExpandedIDs: 00000000946a0000966a0000986a00009a6a00009c6a00009e6a0000a06a0000a26a0000a46a000000ca9a3b
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
@@ -1611,6 +1674,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
 =======
@@ -1622,6 +1686,11 @@ MonoBehaviour:
     m_LastClickedInstanceID: 67958
 >>>>>>> parent of 8e61f99 (fixpathfinding)
     m_HadKeyboardFocusLastEvent: 1
+=======
+    m_SelectedInstanceIDs: acd8ffff
+    m_LastClickedInstanceID: -10068
+    m_HadKeyboardFocusLastEvent: 0
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     m_SelectedInstanceIDs: acd8ffff
     m_LastClickedInstanceID: -10068
@@ -1695,6 +1764,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     y: 422
     width: 1366
     height: 265
@@ -1708,6 +1778,11 @@ MonoBehaviour:
     width: 1366
     height: 253
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+    y: 447
+    width: 1366
+    height: 240
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 =======
     y: 447
     width: 1366

@@ -11378,13 +11378,19 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   map: {fileID: 1855274842}
   LimitRange: 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   map: {fileID: 1784090923}
   minZonePatrol: 1
   maxZonePatrol: 3
   PruebaObjs: {fileID: 2073319113}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &370802855 stripped
 MonoBehaviour:
@@ -14175,13 +14181,19 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   map: {fileID: 1855274842}
   LimitRange: 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   map: {fileID: 1784090923}
   minZonePatrol: 3
   maxZonePatrol: 6
   PruebaObjs: {fileID: 1479877799}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &480855144 stripped
 MonoBehaviour:
@@ -26213,13 +26225,19 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   map: {fileID: 1855274842}
   LimitRange: 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   map: {fileID: 1784090923}
   minZonePatrol: 5
   maxZonePatrol: 8
   PruebaObjs: {fileID: 135633863}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &996993704 stripped
 MonoBehaviour:
@@ -44641,13 +44659,19 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   map: {fileID: 1855274842}
   LimitRange: 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   map: {fileID: 1784090923}
   minZonePatrol: 1
   maxZonePatrol: 8
   PruebaObjs: {fileID: 1555234270}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!114 &1582263399 stripped
 MonoBehaviour:
@@ -48257,13 +48281,19 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
 <<<<<<< HEAD
+<<<<<<< HEAD
   map: {fileID: 1855274842}
   LimitRange: 0
 =======
+=======
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
   map: {fileID: 1784090923}
   minZonePatrol: 4
   maxZonePatrol: 8
   PruebaObjs: {fileID: 1352557459}
+<<<<<<< HEAD
+>>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
+=======
 >>>>>>> parent of 2f05d60 (Revert "FIX_BNUGS")
 --- !u!1 &1697032153
 GameObject:
