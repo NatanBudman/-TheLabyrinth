@@ -16,7 +16,11 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
 Logs/AssetImportWorker1.log
 -srvPort
 <<<<<<< HEAD
+<<<<<<< HEAD
 55317
+=======
+63418
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 63418
 >>>>>>> parent of 8e61f99 (fixpathfinding)
@@ -52,11 +56,19 @@ D:/BACK UP 2023/Proyectos/TheLockedRoom
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
 <<<<<<< HEAD
+<<<<<<< HEAD
 Player connection [14900] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 2573946605 [EditorId] 2573946605 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [14900] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 2573946605 [EditorId] 2573946605 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 Refreshing native plugins compatible for Editor in 38.53 ms, found 2 plugins.
+=======
+Player connection [3416] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 3912867285 [EditorId] 3912867285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [3416] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 3912867285 [EditorId] 3912867285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 39.14 ms, found 2 plugins.
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 =======
 Player connection [3416] Host "[IP] 192.168.0.129 [Port] 0 [Flags] 2 [Guid] 3912867285 [EditorId] 3912867285 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-1CIJ789) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
@@ -79,6 +91,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< HEAD
 <<<<<<< HEAD
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
@@ -108,10 +121,26 @@ Domain Reload Profiling:
 	ReloadAssembly (698ms)
 		BeginReloadAssembly (90ms)
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007761 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 39.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.698 seconds
+Domain Reload Profiling:
+	ReloadAssembly (698ms)
+		BeginReloadAssembly (90ms)
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 			CreateAndSetChildDomain (2ms)
 		EndReloadAssembly (12752ms)
@@ -131,19 +160,35 @@ Domain Reload Profiling:
 			RebuildScriptCaches (36ms)
 			SetupLoadedEditorAssemblies (251ms)
 >>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (485ms)
+			LoadAssemblies (87ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (135ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (251ms)
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (40ms)
 				SetLoadedEditorAssemblies (0ms)
+<<<<<<< HEAD
 <<<<<<< HEAD
 				RefreshPlugins (1859ms)
 				BeforeProcessingInitializeOnLoad (6ms)
 				ProcessInitializeOnLoadAttributes (1148ms)
 				ProcessInitializeOnLoadMethodAttributes (7098ms)
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 				RefreshPlugins (39ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (148ms)
 				ProcessInitializeOnLoadMethodAttributes (52ms)
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -152,8 +197,11 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
 <<<<<<< HEAD
+<<<<<<< HEAD
 Registered in 0.004104 seconds.
 =======
+=======
+>>>>>>> parent of 8e61f99 (fixpathfinding)
 Registered in 0.002237 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
@@ -220,4 +268,7 @@ Received Import Request.
   path: Assets/Script/pathFinding/Box.cs
   artifactKey: Guid(8bcd50ba6774c0647aee7cdb4e2cbd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Script/pathFinding/Box.cs using Guid(8bcd50ba6774c0647aee7cdb4e2cbd74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c58461781248394fb1365c5be66736') in 0.015012 seconds 
+<<<<<<< HEAD
+>>>>>>> parent of 8e61f99 (fixpathfinding)
+=======
 >>>>>>> parent of 8e61f99 (fixpathfinding)
