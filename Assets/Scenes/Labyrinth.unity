@@ -11376,7 +11376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 370802855}
+  IA: {fileID: 370802855}
   box: {fileID: 2065680272}
   goalNode: {fileID: 296486903}
   startNode: {fileID: 296486903}
@@ -14172,7 +14172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 480855144}
+  IA: {fileID: 480855144}
   box: {fileID: 1305843096}
   goalNode: {fileID: 463732634}
   startNode: {fileID: 463732634}
@@ -26213,7 +26213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 996993704}
+  IA: {fileID: 996993704}
   box: {fileID: 757766214}
   goalNode: {fileID: 1642236886}
   startNode: {fileID: 1642236886}
@@ -40795,6 +40795,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.4768262
       objectReference: {fileID: 0}
+    - target: {fileID: 1389169784, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 287149136012721391, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -44664,7 +44668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 1582263399}
+  IA: {fileID: 1582263399}
   box: {fileID: 1274215607}
   goalNode: {fileID: 1943270902}
   startNode: {fileID: 1943270902}
@@ -45477,6 +45481,14 @@ PrefabInstance:
       propertyPath: maskBoids.m_Bits
       value: 8192
       objectReference: {fileID: 0}
+    - target: {fileID: 2008181494492133335, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
+      propertyPath: multiplier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2008181494492133335, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
+      propertyPath: personalRange
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2008181494492133355, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: speed
       value: 5
@@ -45493,6 +45505,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1514370598}
+    - target: {fileID: 2008181494492133357, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
+      propertyPath: Multiplier
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2008181494492133358, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -45551,7 +45567,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7601433313085705534, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: multiplaire
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7601433313085705534, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: MaxPredators
@@ -45559,7 +45575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7601433313085705534, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: predatorRange
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7601433313085705534, guid: 41384ffb0e0b4d84db78a5f7edd5edc6, type: 3}
       propertyPath: predatorMask.m_Bits
@@ -48287,7 +48303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716019f8d83198a45828e87978c38537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crash: {fileID: 1694785165}
+  IA: {fileID: 1694785165}
   box: {fileID: 687251431}
   goalNode: {fileID: 1021154813}
   startNode: {fileID: 1021154813}
@@ -50494,7 +50510,12 @@ MonoBehaviour:
   obstruirVision:
     serializedVersion: 2
     m_Bits: 256
-  PlayerdetectionAngle: 180
+  layerObstacle:
+    serializedVersion: 2
+    m_Bits: 2048
+  PlayerdetectionAngle: 239.06
+  obstacleDetectionRadius: 10
+  obstacleDetectionAngle: 80
 --- !u!1 &1768707470
 GameObject:
   m_ObjectHideFlags: 0
@@ -62414,7 +62435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cd4d3c6e9d42c64ab999e5c0cd36176, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  multiplier: 1
+  multiplier: 10
   personalRange: 12
 --- !u!1 &2008181494626595276
 GameObject:
@@ -62664,7 +62685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   predatorRange: 6
-  multiplaire: 1
+  multiplaire: 6
   MaxPredators: 1
   predatorMask:
     serializedVersion: 2
@@ -62685,7 +62706,12 @@ MonoBehaviour:
   obstruirVision:
     serializedVersion: 2
     m_Bits: 256
-  PlayerdetectionAngle: 180
+  layerObstacle:
+    serializedVersion: 2
+    m_Bits: 2048
+  PlayerdetectionAngle: 239.06
+  obstacleDetectionRadius: 10
+  obstacleDetectionAngle: 80
 --- !u!4 &8110288537971233815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2494985732495726742, guid: 2e6465bf9fcba034097ac2d98f1acc80, type: 3}

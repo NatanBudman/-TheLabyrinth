@@ -9,9 +9,13 @@ public class FlockingController : MonoBehaviour
     ITreeNode _root;
     public Transform target;
     [SerializeField] public LayerMask obstruirVision;
+    [SerializeField] public LayerMask layerObstacle;
     public float PlayerdetectionAngle;
     FlockingController _controller;
     FlockingManager _manager;
+    ObstacleAvoidance _obstacleAvoidance;
+    public float obstacleDetectionRadius;
+    public float obstacleDetectionAngle;
     void Awake()
     {
         _model = GetComponent<FlockingPrueba>();
@@ -39,7 +43,7 @@ public class FlockingController : MonoBehaviour
 
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].InitializedState(_model, _fsm, _controller, _manager);
+            list[i].InitializedState(_model, _fsm, _controller, _manager, _obstacleAvoidance);
         }
 
         idle.AddTransition(CivilStateEnum.Chase, chase);
