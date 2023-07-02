@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAvoidanceState<T> : EnemeyStateBase<T>
+public class CiivilChaseState<T> : CivilStateBase<T>
 {
-
     public override void Awake()
     {
         base.Awake();
@@ -13,10 +12,9 @@ public class EnemyAvoidanceState<T> : EnemeyStateBase<T>
     public override void Execute()
     {
         base.Execute();
-        _model.Move(_obstacleAvoidance.GetDir());
-        _model.LookRotate(_obstacleAvoidance.GetDir());
-       // Debug.Log("avoid");
-
+        Debug.Log("CivilSigue");
+        _model.Move(_manager.FlockingDir());
+        
     }
-
+   
 }

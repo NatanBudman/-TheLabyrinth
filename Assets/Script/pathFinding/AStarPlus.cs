@@ -26,7 +26,7 @@ public class AStar<T>
         {
             watchdog--;
             var curr = pending.Dequeue();
-            Debug.Log("ASTAR");
+            //Debug.Log("ASTAR");
             if (satiesfies(curr))
             {
                 var path = new List<T>();

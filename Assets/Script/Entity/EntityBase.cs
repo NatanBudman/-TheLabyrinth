@@ -58,7 +58,7 @@ public class EntityBase : MonoBehaviour, IPoints
     }
     public void SetWayPoints(List<diffNode> newPoints)
     {
-        Debug.Log("seteados");
+       // Debug.Log("seteados");
         var list = new List<Vector3>();
         for (int i = 0; i < newPoints.Count; i++)
         {
@@ -78,7 +78,7 @@ public class EntityBase : MonoBehaviour, IPoints
     }
     public void Run()
     {
-        Debug.Log("RunASTAR");
+       // Debug.Log("RunASTAR");
         var point = waypoints[_nextPoint];
 
         var posPoint = point;

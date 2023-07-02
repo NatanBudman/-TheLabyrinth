@@ -36,23 +36,7 @@ public class AgentController : MonoBehaviour
         _colliders = new Collider[10];
         CollNodes = new Collider[15];
     }
-
-    public void Start()
-    {
-        newRoute();
-
-    }
-    
-    public void Update()
-    {
-        if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 3)
-        {
-            Debug.Log("Cambio de ruta");
-            newRoute();
-
-        }
-    }
-    
+   
     public void AStarPlusRun()
     {
         var start = startNode;
@@ -62,7 +46,6 @@ public class AgentController : MonoBehaviour
         path = _ast.CleanPath(path, InView);
         crash.SetWayPoints(path);
         box.SetWayPoints(path);
-
     }
 
     private Vector3 RandomGeneratePos(int zone)
@@ -167,7 +150,7 @@ public class AgentController : MonoBehaviour
     }
     bool InView(diffNode from, diffNode to)
     {
-        Debug.Log("CLEAN");
+       // Debug.Log("CLEAN");
         if (Physics.Linecast(from.transform.position, to.transform.position, maskObs)) return false;
         //Distance
         //Angle
@@ -175,7 +158,7 @@ public class AgentController : MonoBehaviour
     }
     bool InView(Vector3 from, Vector3 to)
     {
-        Debug.Log("CLEAN");
+       // Debug.Log("CLEAN");
         if (Physics.Linecast(from, to, maskObs)) return false;
         return true;
     }
