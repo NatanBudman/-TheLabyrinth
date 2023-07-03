@@ -10,6 +10,7 @@ public class EnemyController : MonoBehaviour
     EnemyController _controller;
     Persuit _seek;
     public ObstacleAvoidance _obstacleAvoidance;
+    public AgentController _agentController;
     ITreeNode _root;
     public Transform target;
     
@@ -23,6 +24,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Detection Parameters")]
     [SerializeField] public LayerMask layerObstacle;
+    [SerializeField] public LayerMask enemyObstacle;
     [SerializeField] public LayerMask obstruirVision;
     public float detectionRadius;
     public float detectionAngle;
@@ -58,7 +60,7 @@ public class EnemyController : MonoBehaviour
 
         for (int i = 0; i < list.Count; i++)
         {
-            list[i].InitializedState(_model, _fsm, _controller, _patrol, _seek, _obstacleAvoidance);
+            list[i].InitializedState(_model, _fsm, _controller, _patrol, _seek, _obstacleAvoidance, _agentController);
         }
 
         idle.AddTransition(EnemyStateEnum.Chase, chase);
@@ -101,24 +103,19 @@ public class EnemyController : MonoBehaviour
         return _model.IsTouchPlayer;
     }
 
-    float timer = 0;
     bool isChaseingPlayer = false;
     bool Ischaseing()
     {
         if (SawPlayer())
         {
-            timer = 5;
+            
             isChaseingPlayer = true;
         }
-        if (!SawPlayer() )
+        if (!SawPlayer())
         {
-            timer -= Time.deltaTime;
-
-
-            if (timer <= 0)
-            {
+           
                 isChaseingPlayer = false;
-            }
+            
             
         }
         return isChaseingPlayer;

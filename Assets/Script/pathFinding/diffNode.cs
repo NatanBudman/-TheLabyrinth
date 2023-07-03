@@ -11,7 +11,7 @@ public class diffNode : MonoBehaviour
     {
         if(neightbourds.Count == 0)
         {
-            Debug.Log(this.gameObject.name);
+           // Debug.Log(this.gameObject.name);
         }
        /* mat = GetComponent<Renderer>().material;
         GetNeightbourd(Vector3.right);

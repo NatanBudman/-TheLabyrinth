@@ -60,7 +60,7 @@ public class FloorPuzzleController : MonoBehaviour
         {
             if (!_FloorPuzzleModel.isFloorInPila() && !_FloorPuzzleModel.IsCorrectFloor())
             {
-                Debug.Log("Perdistes");
+              //  Debug.Log("Perdistes");
                 _puzzlerManager.isResetPuzzle = true;
                 _FloorPuzzleModel.ChangeMat(_puzzlerManager._FaildColor);
 

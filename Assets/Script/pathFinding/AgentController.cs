@@ -5,8 +5,8 @@ using System.Linq;
 
 public class AgentController : MonoBehaviour
 {
-    private Dictionary<diffNode, float> dicNodos = new Dictionary<diffNode, float>();
-    public EntityBase crash;
+    public Dictionary<diffNode, float> dicNodos = new Dictionary<diffNode, float>();
+    public EntityBase IA;
     public Box box;
     public diffNode goalNode;
     public diffNode startNode;
@@ -26,7 +26,7 @@ public class AgentController : MonoBehaviour
     [Range(1,8)] public int minZonePatrol;
     [Range(1,8)] public int maxZonePatrol;
     public GameObject PruebaObjs;
-    AStar<diffNode> _ast;
+   [HideInInspector] public AStar<diffNode> _ast;
     
 
     private void Awake()
@@ -36,34 +36,8 @@ public class AgentController : MonoBehaviour
         _colliders = new Collider[10];
         CollNodes = new Collider[15];
     }
-
-    public void Start()
-    {
-        newRoute();
-
-    }
+   
     
-    public void Update()
-    {
-        if(Vector2.Distance(crash.transform.position, goalNode.transform.position)< 3)
-        {
-            Debug.Log("Cambio de ruta");
-            newRoute();
-
-        }
-    }
-    
-    public void AStarPlusRun()
-    {
-        var start = startNode;
-        if (start == null) return;
-        var path = _ast.Run(start, Satisfies, GetConections, GetCost, Heuristic, 500);
-        // mover el run al estado
-        path = _ast.CleanPath(path, InView);
-        crash.SetWayPoints(path);
-        box.SetWayPoints(path);
-
-    }
 
     private Vector3 RandomGeneratePos(int zone)
     {
@@ -132,7 +106,7 @@ public class AgentController : MonoBehaviour
         return pos;
     }
     
-    private void buildingDictionary()
+    public void buildingDictionary()
     {
         dicNodos.Clear();
         int random = Random.Range(minZonePatrol, maxZonePatrol);
@@ -158,35 +132,29 @@ public class AgentController : MonoBehaviour
             }
         
     }
-    public void newRoute()
+   
+    public bool InView(diffNode from, diffNode to)
     {
-        buildingDictionary();
-        goalNode = RandomSystem.Roulette(dicNodos);
-        AStarPlusRun();
-
-    }
-    bool InView(diffNode from, diffNode to)
-    {
-        Debug.Log("CLEAN");
+       // Debug.Log("CLEAN");
         if (Physics.Linecast(from.transform.position, to.transform.position, maskObs)) return false;
         //Distance
         //Angle
         return true;
     }
-    bool InView(Vector3 from, Vector3 to)
+   public bool InView(Vector3 from, Vector3 to)
     {
-        Debug.Log("CLEAN");
+       // Debug.Log("CLEAN");
         if (Physics.Linecast(from, to, maskObs)) return false;
         return true;
     }
-    float Heuristic(diffNode curr)
+    public float Heuristic(diffNode curr)
     {
         float multiplierDistance = 2;
         float cost = 0;
         cost += Vector3.Distance(curr.transform.position, goalNode.transform.position) * multiplierDistance;
         return cost;
     }
-    float GetCost(diffNode parent, diffNode son)
+   public float GetCost(diffNode parent, diffNode son)
     {
         float multiplierDistance = 1;
         //float multiplierEnemies = 20;
@@ -199,11 +167,11 @@ public class AgentController : MonoBehaviour
         //cost += 100 * multiplierEnemies;
         return cost;
     }
-    List<diffNode> GetConections(diffNode curr)
+    public List<diffNode> GetConections(diffNode curr)
     {
         return curr.neightbourds;
     }
-    bool Satisfies(diffNode curr)
+    public bool Satisfies(diffNode curr)
     {
         return curr == goalNode;
     }

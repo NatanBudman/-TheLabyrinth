@@ -32,7 +32,7 @@ public class JailButton : MonoBehaviour,IObstacles
 
     public void Execute()
     {
-            Debug.Log("entre");
+          //  Debug.Log("entre");
         if (Vector2.Distance(player.transform.position, transform.position) < 6)
         {
             if (Input.GetKeyDown(Interactue))

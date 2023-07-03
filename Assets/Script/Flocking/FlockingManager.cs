@@ -18,7 +18,6 @@ public class FlockingManager : MonoBehaviour
        _boids = new List<IBoid>();
        _collider = new Collider[maxBoids];
     }
-
     public void StarFlocking()
     {
         _boids.Clear();
@@ -45,7 +44,7 @@ public class FlockingManager : MonoBehaviour
         _selft.Move(_selft.Front);
         
     }
-    // Agregar en la maquina de estados
+
     public Vector3 FlockingDir()
     {
         _boids.Clear();
