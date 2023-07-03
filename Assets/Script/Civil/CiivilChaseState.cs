@@ -14,10 +14,10 @@ public class CiivilChaseState<T> : CivilStateBase<T>
     {
         base.Execute();
         Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
-
+        Vector3 dir = (_manager.FlockingDir() + dirAvoidance * 0.8f).normalized;
         Debug.Log("CivilSigue");
-        _model.Move(_manager.FlockingDir()+ dirAvoidance);
-        _model.LookDir(_manager.FlockingDir()+ dirAvoidance);
+        _model.Move(dir);
+        _model.LookDir(dir);
        
 
         
