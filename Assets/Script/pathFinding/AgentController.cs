@@ -190,7 +190,20 @@ public class AgentController : MonoBehaviour
 
         return patrolNodes;
     }
+    List<diffNode> GetPosNodes(Vector3 pos,float _radius)
+    {
+        List<diffNode> patrolNodes = new List<diffNode>();
+        
+        int count = Physics.OverlapSphereNonAlloc(pos, _radius, CollNodes, maskNodes);
+        for (int i = 0; i < count; i++)
+        {
+            Collider currColl = CollNodes[i];
+            
+            patrolNodes.Add(currColl.GetComponent<diffNode>());
+        }
 
+        return patrolNodes;
+    }
     diffNode GetPosNode(Vector3 pos)
     {
         int count = Physics.OverlapSphereNonAlloc(pos, radius, _colliders, maskNodes);
