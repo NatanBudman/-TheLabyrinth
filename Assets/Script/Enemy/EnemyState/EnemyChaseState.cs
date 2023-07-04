@@ -16,8 +16,8 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
         
       if (_obstacleAvoidance == null)
             _obstacleAvoidance = new ObstacleAvoidance(_model.transform, _controller.layerObstacle, 15, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
-          if (persuit == null)
-        persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(), 3);
+      if (persuit == null)
+          persuit = new Persuit(_model.transform, _controller.target.GetComponent<PlayerModel>(), 3);
         
 
         _steering = persuit;

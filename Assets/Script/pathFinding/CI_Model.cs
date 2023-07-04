@@ -30,9 +30,9 @@ public class CI_Model : MonoBehaviour, IPoints
         _nextPoint = 0;
         if (newPoints.Count == 0) return;
         waypoints = newPoints;
-        var pos = waypoints[_nextPoint];
-        pos.y = transform.position.y;
-        transform.position = pos;
+      //  var pos = waypoints[_nextPoint];
+      //  pos.y = transform.position.y;
+      //  transform.position = pos;
         readyToMove = true;
     }
     public void Run()

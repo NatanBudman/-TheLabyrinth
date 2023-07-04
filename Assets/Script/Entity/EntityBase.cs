@@ -76,7 +76,7 @@ public class EntityBase : MonoBehaviour, IPoints
         transform.position = pos;
         readyToMove = true;
     }
-    public void Run()
+    public Vector3 Run()
     {
        // Debug.Log("RunASTAR");
         var point = waypoints[_nextPoint];
@@ -92,10 +92,10 @@ public class EntityBase : MonoBehaviour, IPoints
             {
                 readyToMove = false;
 
-                return;
+                return dir;
             }
         }
-        MoveP(dir.normalized);
+        return dir;
     }
 
     public float GetRandomTime()

@@ -9,11 +9,14 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
     public override void Awake()
     {
         base.Awake();
+        
         if (_obstacleAvoidance == null)
             _obstacleAvoidance = new ObstacleAvoidance(_model.transform, _controller.enemyObstacle, 15, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
         _controller.InicializateSeek();
-        aStar = new AStar<T>();
-       newRoute();
+        if (aStar == null)
+            aStar = new AStar<T>();
+            
+        newRoute();
 
 
     }
@@ -23,21 +26,20 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
 
         if (Vector2.Distance(_agentController.IA.transform.position, _agentController.goalNode.transform.position) < 3)
         {
-            //  Debug.Log("Cambio de ruta");
             newRoute();
-
         }
 
+        Vector3 dir = Vector3.zero;
         if (_model.CurrentTimer >= 0)
         {
             Debug.Log("Patrol");
             _model.RunTimer();
-            _model.Run();
+            dir += _model.Run();
             _model.RotateTowardsMovement();
 
         }
 
-        Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
+        Vector3 dirAvoidance = (dir + _obstacleAvoidance.GetDir() * 1).normalized;
 
         _model.Move(dirAvoidance);
         _model.LookDir(dirAvoidance);
@@ -51,7 +53,7 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         // mover el run al estado
         path = _agentController._ast.CleanPath(path, _agentController.InView);
         _agentController.IA.SetWayPoints(path);
-        _agentController.box.SetWayPoints(path);
+       // _agentController.box.SetWayPoints(path);
     }
     public void newRoute()
     {
