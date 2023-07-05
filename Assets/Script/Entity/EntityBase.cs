@@ -30,6 +30,7 @@ public class EntityBase : MonoBehaviour, IPoints
 
     private void Awake()
     {
+        currentkeepTimer = keepTimer;
         _rb = GetComponent<Rigidbody>();
     }
 

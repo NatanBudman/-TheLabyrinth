@@ -111,14 +111,15 @@ public class EnemyController : MonoBehaviour
                 _model.resetTimer();
             }
         }
-        if (!SawPlayer())
+        else
         {
-
             _model.KeepTimer();
-
         }
 
-        return _model.currentKeep() >= _model.keepTimer;
+
+        bool p = _model.currentKeep() <= _model.keepTimer;
+Debug.Log(p);
+        return _model.currentKeep() <= _model.keepTimer;
     }
     bool IsTouching()
     {
@@ -136,10 +137,7 @@ public class EnemyController : MonoBehaviour
         }
         if (!SawPlayer())
         {
-           
                 isChaseingPlayer = false;
-            
-            
         }
         return isChaseingPlayer;
     }

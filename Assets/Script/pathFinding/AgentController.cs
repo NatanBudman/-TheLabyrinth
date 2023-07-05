@@ -190,7 +190,7 @@ public class AgentController : MonoBehaviour
         {
             float distance = Vector3.Distance(pos, collider.transform.position);
 
-            if (distance < closestDistance)
+            if (distance < closestDistance && InView(collider.transform.position,_player.transform.position))
             {
                 Node = collider.GetComponent<diffNode>();
                 closestDistance = distance;

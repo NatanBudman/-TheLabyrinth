@@ -15,7 +15,7 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         if (aStar == null)
             aStar = new AStar<T>();
             
-           newRoute();
+        newRoute();
 
 
     }
