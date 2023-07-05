@@ -24,7 +24,7 @@ public class EntityBase : MonoBehaviour, IPoints
     public float speedP = 2;
     public float speedRot = 10;
     public bool readyToMove;
-    int _nextPoint = 0;
+    [HideInInspector] public int _nextPoint = 0;
 
     private void Awake()
     {
@@ -71,32 +71,10 @@ public class EntityBase : MonoBehaviour, IPoints
         _nextPoint = 0;
         if (newPoints.Count == 0) return;
         waypoints = newPoints;
-        var pos = waypoints[_nextPoint];
-        pos.y = transform.position.y;
-        transform.position = pos;
+       
         readyToMove = true;
     }
-    public Vector3 Run()
-    {
-       // Debug.Log("RunASTAR");
-        var point = waypoints[_nextPoint];
-
-        var posPoint = point;
-        posPoint.y = transform.position.y;
-        Vector3 dir = posPoint - transform.position;
-        if (dir.magnitude < 0.2f)
-        {
-            if (_nextPoint + 1 < waypoints.Count)
-                _nextPoint++;
-            else
-            {
-                readyToMove = false;
-
-                return dir;
-            }
-        }
-        return dir;
-    }
+   
 
     public float GetRandomTime()
     {

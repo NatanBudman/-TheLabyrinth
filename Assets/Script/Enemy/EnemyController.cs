@@ -33,7 +33,7 @@ public class EnemyController : MonoBehaviour
     public float obstacleDetectionAngle;
     private void Awake()
     {
-        InicializateSeek();
+        
         _model = GetComponent<EntityBase>();
         
         _controller = GetComponent<EnemyController>();
@@ -166,15 +166,28 @@ public class EnemyController : MonoBehaviour
         _fsm.Transitions(EnemyStateEnum.Attack);
     }
 
-    public void InicializateSeek()
+  
+    public Vector3 Run()
     {
+        // Debug.Log("RunASTAR");
+        var point = _model.waypoints[_model._nextPoint];
 
-       
-        RandomSystem.Shuffle(patrolPoints);
-        _patrol = new Patrol(transform, patrolPoints, patrolPoints[0], _layerMaskPath, layerObstacle, 20, detectionRadius, detectionAngle, 20);
-    
+        var posPoint = point;
+        posPoint.y = transform.position.y;
+        Vector3 dir = posPoint - transform.position;
+        if (dir.magnitude < 0.2f)
+        {
+            if (_model._nextPoint + 1 < _model.waypoints.Count)
+                _model._nextPoint++;
+            else
+            {
+                _model.readyToMove = false;
+
+                return dir;
+            }
+        }
+        return dir;
     }
-
     private void Update()
     {
         _fsm.OnUpdate();

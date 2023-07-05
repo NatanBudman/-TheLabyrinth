@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class EnemyChaseState<T> : EnemeyStateBase<T>
 {
-    ObstacleAvoidance _obstacleAvoidance;
     Persuit persuit;
-    EnemyController enemyController;
     ISteering _steering;
-    EntityBase _entity;
 
     public override void Awake()
     {
