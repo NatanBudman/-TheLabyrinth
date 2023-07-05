@@ -93,9 +93,9 @@ public class EnemyController : MonoBehaviour
         //questions
         
         var isTimeOver = new TreeQuestion(IsTimeOver, patrol, idle);
-        var keepSeeing = new TreeQuestion(KeepSeeing, following, chase);
-        var isTouching = new TreeQuestion(IsTouching, attack, keepSeeing);
-        var sawPlayer = new TreeQuestion(Ischaseing, isTouching, isTimeOver);          
+       // var keepSeeing = new TreeQuestion(KeepSeeing, following, chase);
+        var isTouching = new TreeQuestion(IsTouching, attack, chase);
+        var sawPlayer = new TreeQuestion(KeepSeeing, isTouching, isTimeOver);          
         var isAlive = new TreeQuestion(IsAlive, sawPlayer, null);
 
         _root = isAlive;

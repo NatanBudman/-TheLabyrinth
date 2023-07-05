@@ -52,12 +52,22 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         // mover el run al estado
         path = _agentController._ast.CleanPath(path, _agentController.InView);
         _agentController.IA.SetWayPoints(path);
-        _agentController.box.SetWayPoints(path);
+       // _agentController.box.SetWayPoints(path);
     }
-   
+
+    private void SetNodes()
+    {
+        int random = Random.Range(_agentController.minZonePatrol, _agentController.maxZonePatrol);
+        Vector3 pos = _agentController.RandomGeneratePos(random);
+        _agentController.startNode = _agentController.GetPosNode(_agentController.IA.transform.position);
+        _agentController.setDiffNodes = _agentController.GetPosNodes(pos);
+    }
+
+
 
     private void newRoute()
     {
+        SetNodes();
         _agentController.buildingDictionary();
         _agentController.goalNode = RandomSystem.Roulette(_agentController.dicNodos);
         AStarPlusRun();
