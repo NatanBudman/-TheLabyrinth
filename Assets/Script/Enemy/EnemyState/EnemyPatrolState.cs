@@ -38,7 +38,7 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
 
         }
 
-        Vector3 dirAvoidance = (dir + _obstacleAvoidance.GetDir() * 1).normalized;
+        Vector3 dirAvoidance = (dir + _obstacleAvoidance.GetDir() * 1.5f).normalized;
 
         _model.Move(dirAvoidance);
         _model.LookDir(dirAvoidance);
@@ -49,10 +49,8 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         var start = _agentController.startNode;
         if (start == null) return;
         var path = _agentController._ast.Run(start, _agentController.Satisfies, _agentController.GetConections, _agentController.GetCost, _agentController.Heuristic, 500);
-        // mover el run al estado
         path = _agentController._ast.CleanPath(path, _agentController.InView);
         _agentController.IA.SetWayPoints(path);
-       // _agentController.box.SetWayPoints(path);
     }
 
     private void SetNodes()

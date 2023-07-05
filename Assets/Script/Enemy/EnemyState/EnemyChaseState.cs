@@ -31,7 +31,7 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
                 _agentController._player.transform.position))
         {
             Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
-            Vector3 dir = (_steering.GetDir() + dirAvoidance * 0.8f).normalized;
+            Vector3 dir = (_steering.GetDir() + dirAvoidance * 1.2f).normalized;
 
             _model.Move(dir);
             _model.LookDir(dir);
