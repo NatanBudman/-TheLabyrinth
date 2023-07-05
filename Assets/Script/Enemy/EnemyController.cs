@@ -33,7 +33,6 @@ public class EnemyController : MonoBehaviour
     public float obstacleDetectionAngle;
     private void Awake()
     {
-        InicializateSeek();
         _model = GetComponent<EntityBase>();
         
         _controller = GetComponent<EnemyController>();
@@ -193,14 +192,7 @@ public class EnemyController : MonoBehaviour
     {
         _fsm.Transitions(EnemyStateEnum.Following);
     }
-    public void InicializateSeek()
-    {
-
-       
-        RandomSystem.Shuffle(patrolPoints);
-        _patrol = new Patrol(transform, patrolPoints, patrolPoints[0], _layerMaskPath, layerObstacle, 20, detectionRadius, detectionAngle, 20);
-    
-    }
+   
     public Vector3 Run()
     {
         // Debug.Log("RunASTAR");

@@ -12,7 +12,6 @@ public class EnemyFollowingState<T> : EnemeyStateBase<T>
 
         if (_obstacleAvoidance == null)
             _obstacleAvoidance = new ObstacleAvoidance(_model.transform, _controller.enemyObstacle, 15, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
-        _controller.InicializateSeek();
         if (aStar == null)
             aStar = new AStar<T>();
 
