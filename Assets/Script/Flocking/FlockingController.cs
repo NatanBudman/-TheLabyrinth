@@ -70,19 +70,7 @@ public class FlockingController : MonoBehaviour
 
     bool Ischaseing()
     {
-        if (SawPlayer())
-        {
-
-            isChaseingPlayer = true;
-        }
-        if (!SawPlayer())
-        {
-
-            isChaseingPlayer = false;
-
-
-        }
-        return isChaseingPlayer;
+        return SawPlayer();
     }
     bool IsAlive()
     {

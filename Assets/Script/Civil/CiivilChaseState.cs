@@ -14,7 +14,7 @@ public class CiivilChaseState<T> : CivilStateBase<T>
     {
         base.Execute();
         Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
-        Vector3 dir = (_manager.FlockingDir() + dirAvoidance * 0.8f).normalized;
+        Vector3 dir = (_manager.FlockingDir() + dirAvoidance * 1.4f).normalized;
         Debug.Log("CivilSigue");
         _model.Move(dir);
         _model.LookDir(dir);
