@@ -22,7 +22,7 @@ public class AgentController : MonoBehaviour
     [Header("Map")] 
     public GameObject map;
     private Collider[] CollNodes;
-    List<diffNode> setDiffNodes;
+    [HideInInspector] public List<diffNode> setDiffNodes;
     [Range(1,8)] public int minZonePatrol;
     [Range(1,8)] public int maxZonePatrol;
     public GameObject PruebaObjs;
@@ -39,7 +39,7 @@ public class AgentController : MonoBehaviour
    
     
 
-    private Vector3 RandomGeneratePos(int zone)
+    public Vector3 RandomGeneratePos(int zone)
     {
         Vector3 pos = Vector3.zero;
         // Tomar el Ancho y larggo del mapa y que busque los nodos
@@ -105,34 +105,23 @@ public class AgentController : MonoBehaviour
         
         return pos;
     }
-    
+
     public void buildingDictionary()
     {
         dicNodos.Clear();
-        int random = Random.Range(minZonePatrol, maxZonePatrol);
-        
-        startNode = GetPosNode(transform.position);
-        Vector3 pos = RandomGeneratePos(random);
-        
-        PruebaObjs.transform.position = pos;
-        setDiffNodes = GetPosNodes( pos);
-        
-            for (int i = 0; i < setDiffNodes.Count; i++)
+
+        for (int i = 0; i < setDiffNodes.Count; i++)
+        {
+            float dist = Vector2.Distance(setDiffNodes[i].transform.position, _player.transform.position);
+            if (!dicNodos.ContainsKey(setDiffNodes[i]))
             {
-                float dist = Vector2.Distance(setDiffNodes[i].transform.position, _player.transform.position);
-                if (!dicNodos.ContainsKey(setDiffNodes[i]))
-                {
-                    dicNodos.Add(setDiffNodes[i], dist);
-                    continue;
-                }
-                else
-                {
-                    dicNodos[setDiffNodes[i]] = dist;
-                }
+                dicNodos.Add(setDiffNodes[i], dist);
+                continue;
             }
-        
+        }
+
     }
-   
+
     public bool InView(diffNode from, diffNode to)
     {
        // Debug.Log("CLEAN");
@@ -176,7 +165,7 @@ public class AgentController : MonoBehaviour
         return curr == goalNode;
     }
     
-    List<diffNode> GetPosNodes(Vector3 pos)
+   public List<diffNode> GetPosNodes(Vector3 pos)
     {
         List<diffNode> patrolNodes = new List<diffNode>();
         
@@ -190,21 +179,27 @@ public class AgentController : MonoBehaviour
 
         return patrolNodes;
     }
-    List<diffNode> GetPosNodes(Vector3 pos,float _radius)
+    public diffNode GetNodePlayerTransform(Vector3 pos, float _radius)
     {
-        List<diffNode> patrolNodes = new List<diffNode>();
-        
-        int count = Physics.OverlapSphereNonAlloc(pos, _radius, CollNodes, maskNodes);
-        for (int i = 0; i < count; i++)
+        Collider[] colliders = Physics.OverlapSphere(pos, _radius, maskNodes);
+
+        diffNode Node = null;
+        float closestDistance = Mathf.Infinity;
+
+        foreach (Collider collider in colliders)
         {
-            Collider currColl = CollNodes[i];
-            
-            patrolNodes.Add(currColl.GetComponent<diffNode>());
+            float distance = Vector3.Distance(pos, collider.transform.position);
+
+            if (distance < closestDistance)
+            {
+                Node = collider.GetComponent<diffNode>();
+                closestDistance = distance;
+            }
         }
 
-        return patrolNodes;
+        return Node;
     }
-    diffNode GetPosNode(Vector3 pos)
+    public diffNode GetPosNode(Vector3 pos)
     {
         int count = Physics.OverlapSphereNonAlloc(pos, radius, _colliders, maskNodes);
         float bestDistance = 0;
@@ -214,8 +209,8 @@ public class AgentController : MonoBehaviour
             Collider currColl = _colliders[i];
             float currDistance = Vector3.Distance(pos, currColl.transform.position);
             //InView-- SI no continue
-            if (!InView(pos,currColl.transform.position))continue;
-                
+            if (!InView(pos, currColl.transform.position)) continue;
+
             if (bestCollider == null || bestDistance > currDistance)
             {
                 bestDistance = currDistance;
@@ -231,6 +226,7 @@ public class AgentController : MonoBehaviour
             return null;
         }
     }
+
     private void OnDrawGizmos()
     {
         if (lastPathTest != null)

@@ -11390,6 +11390,7 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
   map: {fileID: 1784090923}
+  setDiffNodes: []
   minZonePatrol: 1
   maxZonePatrol: 3
   PruebaObjs: {fileID: 2073319113}
@@ -14186,6 +14187,7 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
   map: {fileID: 1784090923}
+  setDiffNodes: []
   minZonePatrol: 3
   maxZonePatrol: 6
   PruebaObjs: {fileID: 1479877799}
@@ -26233,6 +26235,7 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
   map: {fileID: 1784090923}
+  setDiffNodes: []
   minZonePatrol: 5
   maxZonePatrol: 8
   PruebaObjs: {fileID: 135633863}
@@ -41243,7 +41246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3136076685838664450, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -295
+      value: -277
       objectReference: {fileID: 0}
     - target: {fileID: 3136076685838664450, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -41251,7 +41254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3136076685838664450, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: -3.5
       objectReference: {fileID: 0}
     - target: {fileID: 3136076685838664450, guid: 54798ceee792d4c4e935b11a834b66a2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44688,6 +44691,7 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
   map: {fileID: 1784090923}
+  setDiffNodes: []
   minZonePatrol: 1
   maxZonePatrol: 8
   PruebaObjs: {fileID: 1555234270}
@@ -48323,6 +48327,7 @@ MonoBehaviour:
   _player: {fileID: 1400972578}
   range: 30
   map: {fileID: 1784090923}
+  setDiffNodes: []
   minZonePatrol: 4
   maxZonePatrol: 8
   PruebaObjs: {fileID: 1352557459}

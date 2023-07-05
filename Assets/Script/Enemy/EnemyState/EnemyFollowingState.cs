@@ -2,20 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPatrolState<T> : EnemeyStateBase<T>
+public class EnemyFollowingState<T> : EnemeyStateBase<T>
 {
     AStar<T> aStar;
 
     public override void Awake()
     {
         base.Awake();
-        
+
         if (_obstacleAvoidance == null)
             _obstacleAvoidance = new ObstacleAvoidance(_model.transform, _controller.enemyObstacle, 15, _controller.obstacleDetectionRadius, _controller.obstacleDetectionAngle);
         _controller.InicializateSeek();
         if (aStar == null)
             aStar = new AStar<T>();
-            
+
         newRoute();
 
 
@@ -53,21 +53,18 @@ public class EnemyPatrolState<T> : EnemeyStateBase<T>
         // mover el run al estado
         path = _agentController._ast.CleanPath(path, _agentController.InView);
         _agentController.IA.SetWayPoints(path);
-       // _agentController.box.SetWayPoints(path);
+        // _agentController.box.SetWayPoints(path);
     }
     private void SetNodes()
     {
-        int random = Random.Range(_agentController.minZonePatrol, _agentController.maxZonePatrol);
-        Vector3 pos = _agentController.RandomGeneratePos(random);
+      
         _agentController.startNode = _agentController.GetPosNode(_agentController.IA.transform.position);
-        _agentController.setDiffNodes = _agentController.GetPosNodes(pos);
+        _agentController.goalNode = _agentController.GetNodePlayerTransform(_agentController._player.transform.position, 15);
     }
 
     private void newRoute()
     {
         SetNodes();
-        _agentController.buildingDictionary();
-        _agentController.goalNode = RandomSystem.Roulette(_agentController.dicNodos);
         AStarPlusRun();
     }
 

@@ -9,6 +9,6 @@ public enum EnemyStateEnum
     Patrol,
     Chase,
     Attack,
-
+    Following,
 
 }

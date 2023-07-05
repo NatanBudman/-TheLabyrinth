@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class EnemyChaseState<T> : EnemeyStateBase<T>
 {
-    ObstacleAvoidance _obstacleAvoidance;
     Persuit persuit;
     EnemyController enemyController;
     ISteering _steering;
     EntityBase _entity;
-
+   
     public override void Awake()
     {
         base.Awake();
@@ -26,12 +25,13 @@ public class EnemyChaseState<T> : EnemeyStateBase<T>
     public override void Execute()
     {
         base.Execute();
-        Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
-        Vector3 dir = (_steering.GetDir() + dirAvoidance * 0.8f).normalized;
+        
+            Vector3 dirAvoidance = _obstacleAvoidance.GetDir();
+            Vector3 dir = (_steering.GetDir() + dirAvoidance * 0.8f).normalized;
 
-        _model.Move(dir);
-        _model.LookDir(dir);
-
+            _model.Move(dir);
+            _model.LookDir(dir);
+      
     }
      
 }
