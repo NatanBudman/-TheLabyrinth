@@ -24,13 +24,10 @@ public class EntityBase : MonoBehaviour, IPoints
     public float speedP = 2;
     public float speedRot = 10;
     public bool readyToMove;
-    [HideInInspector]public int _nextPoint = 0;
-    public float keepTimer = 5.0f;
-    public float currentkeepTimer = 0.0f;
+    [HideInInspector] public int _nextPoint = 0;
 
     private void Awake()
     {
-        currentkeepTimer = keepTimer;
         _rb = GetComponent<Rigidbody>();
     }
 
@@ -74,8 +71,11 @@ public class EntityBase : MonoBehaviour, IPoints
         _nextPoint = 0;
         if (newPoints.Count == 0) return;
         waypoints = newPoints;
+       
         readyToMove = true;
     }
+   
+
     public float GetRandomTime()
     {
         return UnityEngine.Random.Range(0, maxTime);
@@ -117,21 +117,6 @@ public class EntityBase : MonoBehaviour, IPoints
             player.gameObject.SetActive(false);
     }
 
-    public void KeepTimer()
-    {
-        currentkeepTimer += Time.deltaTime;
-
-    }
-
-    public float currentKeep()
-    {
-        return currentkeepTimer;
-    }
-
-    public void resetTimer()
-    {
-        currentkeepTimer = 0f;
-    }
     private void OnCollisionEnter(Collision collision)
     {
         PlayerModel player = collision.gameObject.GetComponent<PlayerModel>();
@@ -148,7 +133,6 @@ public class EntityBase : MonoBehaviour, IPoints
 
     public PlayerModel LastPlayerTouch => _lastPlayerTouch;
 
-    
 
     public float GetVelocity => _rb.velocity.magnitude;
 

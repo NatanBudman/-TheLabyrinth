@@ -33,6 +33,7 @@ public class EnemyController : MonoBehaviour
     public float obstacleDetectionAngle;
     private void Awake()
     {
+        
         _model = GetComponent<EntityBase>();
         
         _controller = GetComponent<EnemyController>();
@@ -49,13 +50,12 @@ public class EnemyController : MonoBehaviour
         var chase = new EnemyChaseState<EnemyStateEnum>();
         var patrol = new EnemyPatrolState<EnemyStateEnum>();
         var attack = new EnemyAttackState<EnemyStateEnum>();
-        var following = new EnemyFollowingState<EnemyStateEnum>();
 
         list.Add(idle);
         list.Add(chase);
         list.Add(patrol);
         list.Add(attack);
-        list.Add(following);
+      
 
 
         for (int i = 0; i < list.Count; i++)
@@ -70,13 +70,11 @@ public class EnemyController : MonoBehaviour
         chase.AddTransition(EnemyStateEnum.Patrol, patrol);
         chase.AddTransition(EnemyStateEnum.Attack, attack);
         chase.AddTransition(EnemyStateEnum.Idle, idle);
-        chase.AddTransition(EnemyStateEnum.Following, following);
 
         patrol.AddTransition(EnemyStateEnum.Chase, chase);
         patrol.AddTransition(EnemyStateEnum.Idle, idle);
 
-        following.AddTransition(EnemyStateEnum.Idle, idle);
-        following.AddTransition(EnemyStateEnum.Patrol, patrol);
+
 
         _fsm.SetInit(idle);
     }
@@ -88,46 +86,24 @@ public class EnemyController : MonoBehaviour
         var patrol = new TreeAction(ActionPatrol);
         var chase = new TreeAction(ActionChase);
         var attack = new TreeAction(ActionAttack);
-        var following = new TreeAction(ActionFollowing);
+       
 
         //questions
         
         var isTimeOver = new TreeQuestion(IsTimeOver, patrol, idle);
-       // var keepSeeing = new TreeQuestion(KeepSeeing, following, chase);
         var isTouching = new TreeQuestion(IsTouching, attack, chase);
-        var sawPlayer = new TreeQuestion(KeepSeeing, isTouching, isTimeOver);          
+        var sawPlayer = new TreeQuestion(Ischaseing, isTouching, isTimeOver);          
         var isAlive = new TreeQuestion(IsAlive, sawPlayer, null);
 
         _root = isAlive;
     }
 
-
-    bool KeepSeeing()
-    {
-        if (SawPlayer())
-        {
-            if(_model.currentKeep() > 0)
-            {
-                _model.resetTimer();
-            }
-        }
-        else
-        {
-            _model.KeepTimer();
-        }
-
-
-        bool p = _model.currentKeep() <= _model.keepTimer;
-Debug.Log(p);
-        return _model.currentKeep() <= _model.keepTimer;
-    }
     bool IsTouching()
     {
         return _model.IsTouchPlayer;
     }
 
     bool isChaseingPlayer = false;
-
     bool Ischaseing()
     {
         if (SawPlayer())
@@ -137,12 +113,15 @@ Debug.Log(p);
         }
         if (!SawPlayer())
         {
+           
                 isChaseingPlayer = false;
+            
+            
         }
         return isChaseingPlayer;
     }
 
-    public bool SawPlayer()
+    bool SawPlayer()
     {
         bool isSeePlayer = false ;
 
@@ -186,11 +165,8 @@ Debug.Log(p);
     {
         _fsm.Transitions(EnemyStateEnum.Attack);
     }
-    void ActionFollowing()
-    {
-        _fsm.Transitions(EnemyStateEnum.Following);
-    }
-   
+
+  
     public Vector3 Run()
     {
         // Debug.Log("RunASTAR");
